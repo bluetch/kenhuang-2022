@@ -1,0 +1,104 @@
+import { Container } from "components";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
+
+export const Header = () => {
+  const [open, setOpen] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
+  const [scrollTop, setScrollTop] = useState(0);
+  const LINKS = [
+    {
+      label: "Home",
+      path: "/",
+    },
+    {
+      label: "About",
+      path: "/about",
+    },
+    {
+      label: "Portfolio",
+      path: "/portfolio",
+    },
+    {
+      label: "Mentorship",
+      path: "/mentorship",
+    },
+    {
+      label: "Contact",
+      path: "/contact",
+    },
+  ];
+
+  const router = useRouter();
+
+  const show = () => {
+    setOpen(!open);
+  };
+
+  useEffect(() => {
+    const onScroll = e => {
+      setScrollTop(e.target.documentElement.scrollTop);
+      setScrolling(e.target.documentElement.scrollTop > scrollTop);
+    };
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [scrollTop]);
+
+  return (
+    <header className={`sticky top-0 z-10 bg-white ${scrolling && "shadow-md"}`}>
+      <Container>
+        <div className="flex flex-wrap justify-between items-center py-4 lg:py-0">
+          <Link href="/">
+            <a className="flex items-center group">
+              <img src="/images/k-logo.png" alt="Ken Huang" className="w-8" />
+              {/* <span className="px-4 text-gray-300">|</span>
+              <span className="text-xl lg:text-2xl group-hover:text-gray-500 transition">
+                Ken Huang
+              </span> */}
+            </a>
+          </Link>
+          <nav
+            className={`overflow-visible ${open ? "translate-x-0" : "-translate-x-full lg:-translate-x-0"
+              } text-gray-700 bg-gray-50 lg:bg-transparent transform transition-all w-1/3 lg:w-auto flex flex-col lg:flex-row fixed lg:static left-0 top-0 bottom-0 overflow-auto z-50 p-2 lg:p-0 shadow-lg lg:shadow-none`}
+          >
+            {LINKS.map((link) => {
+              let targetNew = false;
+              if (link.path.indexOf("http") == 0) targetNew = true;
+              return (
+                <Link href={link.path} key={link.path}>
+                  <a
+                    className={`p-4 flex items-center
+                    ${router.asPath === link.path
+                        ? "text-blue-500 lg:border-b-4 border-blue-500"
+                        : "hover:text-blue-500 hover:bg-gray-100"
+                      }`}
+                    target={targetNew ? "_blank" : ""}
+                    onClick={show}
+                  >
+                    {link.label}
+                  </a>
+                </Link>
+              );
+            })}
+          </nav>
+          <button
+            onClick={show}
+            className={`${open
+              ? "text-blue-500 rotate-90"
+              : "text-gray-700 hover:text-blue-500"
+              } absolute transform transition-all duration-300 lg:hidden right-0 top-0 bottom-0 z-10 p-4 w-16 space-y-1.5`}
+          >
+            {[1, 2, 3].map((line) => (
+              <span
+                key={line}
+                className="w-full border-2 rounded border-current block"
+              ></span>
+            ))}
+          </button>
+        </div>
+      </Container>
+    </header>
+  )
+}
