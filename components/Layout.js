@@ -28,6 +28,6 @@ export const Layout = ({ children, title = "Ken Huang | " }) => {
 
 export const Container = ({ className = "", children }) => {
   return (
-    <div className={`container mx-auto px-8 ${className}`}>{children}</div>
+    <div className={`container mx-auto px-16 ${className}`}>{children}</div>
   )
 }

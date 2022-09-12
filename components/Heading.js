@@ -23,13 +23,13 @@ export const H4 = ({ className = "", children }) => {
   );
 }
 
-export const H5 = ({ className="", children }) => {
+export const H5 = ({ className = "", children }) => {
   return (
     <h5 className={`text-lg ${className}`}>{children}</h5>
   );
 }
 
-export const H6 = ({ className="", children }) => {
+export const H6 = ({ className = "", children }) => {
   return (
     <h6 className={`text-base ${className}`}>{children}</h6>
   );

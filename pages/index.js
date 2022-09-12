@@ -1,10 +1,12 @@
 import Head from 'next/head';
-import { H1, H2, H3, H4, CategoryBar, Container, Layout } from 'components';
+import { H1, H2, H3, H4, H6, CategoryBar, Container, Layout } from 'components';
 import { codeMapping, dateConvert, fetcher } from "utils";
 import { useEffect, useState, useMemo } from "react";
 import Link from "next/link";
+import styles from "./index.module.scss";
 
 export default function Home() {
+  const circles = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const [articles, setArticles] = useState([]);
   const [portfolio, setPortfolio] = useState([]);
   const [category, setCategory] = useState("");
@@ -26,29 +28,42 @@ export default function Home() {
   }, []);
 
   return (
-    <Layout title="Ken Huang | Front-end Developer, Product Designer & Mentor">
+    <Layout title="Ken Huang | Front-end Developer, Product Designer & Mentor" className={styles.index}>
       <Head>
         <title>Ken Huang | Front-end Developer, Product Designer & Mentor</title>
         <meta name="description" content="I design and code beautifully simple things, and I love what I do." />
       </Head>
-      <section className="my-32 text-center">
+      <section className={`pt-64 pb-32 text-center h-[70vh] relative ${styles.index}`}>
         <Container className="space-y-16">
-          <H1>Designer, Frontend Developer & Mentor</H1>
-          <p className="text-2xl text-gray-500">I design and code beautifully simple things, and I love what I do.</p>
-          <img src="/images/about/kenhuang_avatar.png" alt="" className="w-1/4 mx-auto" />
-          <img src="/images/home/hero_devices.svg" alt="" />
+          <h1 className="font-light text-4xl leading-relaxed text-gray-400 w-2/3 mx-auto">Hi, I'm Ken Huang, a passionate Front-end engineer / product designer from Taipei, Taiwan.</h1>
+          <img src="/images/about/kenhuang_avatar.png" alt="" className="w-1/6 mx-auto" />
         </Container>
+        <div className={styles.area}>
+          <ul className={styles.circles}>
+            {circles.map((index) => <li key={`circle-${index}`}></li>)}
+          </ul>
+        </div>
       </section>
-      <section className="my-32 bg-gray-50 py-40">
+      <section className="mb-32 bg-gradient-to-t from-gray-100 py-32">
         <Container>
-          <H2>Featured posts</H2>
-          {articles.map((item) => {
-            return (
-              <article>
-                {item.name}
-              </article>
-            )
-          })}
+          <H2 className="mb-12">Featured posts</H2>
+          <div className="grid grid-cols-4 gap-x-12">
+            {articles.map((item) => {
+              return (
+                <Link key={item.url} href={item.url}>
+                  <a className="" target="_blank">
+                    <figure className="bg-white shadow-md hover:opacity-75">
+                      <img src={item.img} alt="" className="object-cover aspect-[4/3]" />
+                      <figcaption className="p-4 space-y-2">
+                        <H6 className="line-clamp-2 text-sm">{item.name}</H6>
+                        <p className="text-gray-500 text-sm">{dateConvert(item.date)}</p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </Link>
+              )
+            })}
+          </div>
         </Container>
       </section>
       <section className="my-32">

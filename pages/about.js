@@ -37,7 +37,7 @@ const About = () => {
   return (
     <Layout title="about">
       <Container>
-        <div className="grid grid-cols-2 gap-12">
+        <div className="grid grid-cols-2 gap-40 mt-20">
           <div className="space-y-8">
             <H1 className="mb-8">Ken Huang</H1>
             <H3 className="text-gray-500 font-light">I am a UX Engineer based in Taipei, Taiwan.</H3>
@@ -62,7 +62,7 @@ const About = () => {
                 <li>Design systems</li>
               </ul>
             </div>
-            <img src="/images/about/ux_engineer.jpg" alt="" />
+            <img src="/images/about/ux_engineer.png" alt="" />
             <div className="m-auto space-y-4">
               <H3>Part developer</H3>
               <ul className="text-gray-500 space-y-2 font-light">
@@ -95,7 +95,7 @@ const About = () => {
       <section className="my-40">
         <Container>
           <div className="grid grid-cols-2 gap-8">
-          <div className="m-auto space-y-4">
+            <div className="m-auto space-y-4">
               <H3>My story</H3>
               <p>Learn a little bit more about me, how I got into design, and how I built my career as a product designer. I’ve included key things I've learned, book recommendations, and even some sneak peeks of the first websites I created.</p>
             </div>
