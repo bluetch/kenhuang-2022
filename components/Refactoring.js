@@ -10,3 +10,5 @@ export const Refactoring = () => {
     </div>
   )
 }
+
+Loading.displayName = "Refactoring";
