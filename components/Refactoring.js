@@ -11,4 +11,4 @@ export const Refactoring = () => {
   )
 }
 
-Loading.displayName = "Refactoring";
+Refactoring.displayName = "Refactoring";
