@@ -2,7 +2,7 @@ import { Container, Layout } from "components";
 
 const goodfinanceCareers = () => {
   return(
-    <Layout>
+    <Layout title="GoodFinance Career site | Ken Huang">
       <Container>
       <h1>Good</h1>
       </Container>

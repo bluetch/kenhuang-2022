@@ -79,7 +79,7 @@ const Mentorship = () => {
     },
   ];
   return (
-    <Layout title="Mentorship">
+    <Layout title="Mentorship | Ken Huang">
       <section className="flex flex-col justify-center items-center space-y-8 my-32">
         <Container className="text-center space-y-8">
           <H2>I have not met you, and this is crazy...</H2>

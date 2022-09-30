@@ -16,7 +16,7 @@ const Contact = () => {
     },
   ];
   return (
-    <Layout title="Contact">
+    <Layout title="Contact | Ken Huang">
       <Container>
         <h1>Thanks for taking the time to reach out. How can I help you today?</h1>
         <label htmlFor="">

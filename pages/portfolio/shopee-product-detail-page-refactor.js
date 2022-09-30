@@ -2,7 +2,7 @@ import { Container, H1, Layout } from "components";
 
 const shopeeProductDetailPageRefactor = () => {
   return (
-    <Layout>
+    <Layout title="Shopee Product Detail Page Refactor | Ken Huang">
       <img src="/images/portfolio/shopee-workshop-01.jpg" alt="Shopee product detail page refactor workshop photo" />
       <Container>
         <H1>Shopee Product Detail Page Refactor</H1>

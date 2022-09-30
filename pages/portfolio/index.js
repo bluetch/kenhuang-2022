@@ -24,7 +24,7 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <Layout title="Portfolio">
+    <Layout title="Portfolio | Ken Huang">
       <Container>
         <H1>Portfolio</H1>
         <CategoryBar

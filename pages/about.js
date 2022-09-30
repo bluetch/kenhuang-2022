@@ -35,7 +35,7 @@ const photos = [
 
 const About = () => {
   return (
-    <Layout title="about">
+    <Layout title="About | Ken Huang">
       <Container>
         <div className="grid grid-cols-2 gap-40 mt-20">
           <div className="space-y-8">
