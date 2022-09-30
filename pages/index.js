@@ -35,7 +35,7 @@ export default function Home() {
       </Head>
       <section className={`pt-64 pb-32 text-center h-[70vh] relative ${styles.index}`}>
         <Container className="space-y-16">
-          <h1 className="font-light text-4xl leading-relaxed text-gray-400 w-2/3 mx-auto">Hi, I'm Ken Huang, a passionate Front-end engineer / product designer from Taipei, Taiwan.</h1>
+          <h1 className="font-light text-4xl leading-relaxed text-gray-400 w-2/3 mx-auto">Hi, I am Ken Huang, a passionate Front-end engineer / product designer from Taipei, Taiwan.</h1>
           <img src="/images/about/kenhuang_avatar.png" alt="" className="w-1/6 mx-auto" />
         </Container>
         <ul className={styles.circles}>

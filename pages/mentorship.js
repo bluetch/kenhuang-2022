@@ -32,27 +32,27 @@ const Mentorship = () => {
     {
       name: "Tools",
       img: "refresh",
-      desc: "I'll help you build confidence and skill in your design tools.",
+      desc: "I will help you build confidence and skill in your design tools.",
     },
     {
       name: "Resources",
       img: "refresh",
-      desc: "I'll point you towards informative content to learn from.",
+      desc: "I will point you towards informative content to learn from.",
     },
     {
       name: "Networking",
       img: "refresh",
-      desc: "I'll connect you with other pros to expand your reach.",
+      desc: "I will connect you with other pros to expand your reach.",
     },
     {
       name: "Opportunity",
       img: "refresh",
-      desc: "I'll make introductions and help you source potential work.",
+      desc: "I will make introductions and help you source potential work.",
     },
     {
       name: "Growth",
       img: "refresh",
-      desc: "I'll uncover blind spots and accelerate your growth.",
+      desc: "Iwill uncover blind spots and accelerate your growth.",
     },
   ];
 
@@ -60,36 +60,36 @@ const Mentorship = () => {
     {
       name: "Authenticity",
       img: "refresh",
-      desc: "No sugar-coated critiques here. I care about your growth too much to not keep it real. We'll tear things down and rebuild them better, together.",
+      desc: "No sugar-coated critiques here. I care about your growth too much to not keep it real. We will tear things down and rebuild them better, together.",
     },
     {
       name: "Humility",
       img: "refresh",
-      desc: "I don’t profess to be at the top of the design talent pool, because I know there is still much for me to master. Design is a moving target I'm hunting every day.",
+      desc: "I don’t profess to be at the top of the design talent pool, because I know there is still much for me to master. Design is a moving target I am hunting every day.",
     },
     {
       name: "Equality",
       img: "refresh",
-      desc: "To me, you're more than just a mentee. You’re a designer — an industry peer. I’m not the only one teaching and you’re not the only one learning.",
+      desc: "To me, you are more than just a mentee. You are a designer — an industry peer. I’m not the only one teaching and you’re not the only one learning.",
     },
     {
       name: "Transparency",
       img: "refresh",
-      desc: "I don’t have all the answers, but I’m happy to point you towards useful resources and share what I've learned from my own personal design journey.",
+      desc: "I don’t have all the answers, but I amm happy to point you towards useful resources and share what I have learned from my own personal design journey.",
     },
   ];
   return (
     <Layout title="Mentorship">
       <section className="flex flex-col justify-center items-center space-y-8 my-32">
         <Container className="text-center space-y-8">
-          <H2>I haven't met you, and this is crazy...</H2>
+          <H2>I have not met you, and this is crazy...</H2>
           <p>But if you need a mentor, then email me maybe.</p>
           <img src="/images/mentorship/mentorship_hero.png" alt="" className="w-1/2 mx-auto" />
         </Container>
       </section>
       <section className="my-32 p-20 space-y-8 text-center bg-gray-50">
         <H2>Being a designer is tough.</H2>
-        <p>It seems like every other day there's a new design trend to learn, tool to master, and endless design-related articles to read. Honestly, it can be overwhelming and intimidating. I know because I've walked more than a few miles in those shoes. So whether you're new to the field or simply looking for some guidance and support, I can help.</p>
+        <p>It seems like every other day there is a new design trend to learn, tool to master, and endless design-related articles to read. Honestly, it can be overwhelming and intimidating. I know because I have walked more than a few miles in those shoes. So whether you are new to the field or simply looking for some guidance and support, I can help.</p>
         <div className="grid grid-cols-3 gap-4">
           {programs.map((program, i) => {
             return (
@@ -105,15 +105,15 @@ const Mentorship = () => {
           )}
         </div>
         <div className="flex flex-col justify-center items-center py-24 space-y-8">
-          <H2>If you're wanting to level up, mentorship helps.</H2>
-          <p>Schedule a free consultation to ask questions, discuss details, and decide if it's a fit.</p>
+          <H2>If you are wanting to level up, mentorship helps.</H2>
+          <p>Schedule a free consultation to ask questions, discuss details, and decide if it is a fit.</p>
           <Button variant="primary-outline">Introduce yourself</Button>
         </div>
       </section>
       <section className="my-32">
         <Container className="text-center space-y-8">
           <H2>Benefits of Mentorship</H2>
-          <p>I know a thing or two because I've done a thing or two in my design career, and I'm committed to helping you make use of that knowledge.</p>
+          <p>I know a thing or two because I have done a thing or two in my design career, and I am committed to helping you make use of that knowledge.</p>
           <div className="grid grid-cols-5 gap-8">
             {benefits.map((benefit, i) => {
               return (
@@ -180,7 +180,7 @@ const Mentorship = () => {
         <Container className="text-center">
           <div className="flex flex-col justify-center items-center py-24 space-y-8">
             <H2>Book a consult</H2>
-            <p>Thinking about mentorship? Let's talk about it. The first call is on me.</p>
+            <p>Thinking about mentorship? Lets talk about it. The first call is on me.</p>
             <Button>Introduce yourself</Button>
           </div>
         </Container>

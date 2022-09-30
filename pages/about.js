@@ -97,7 +97,7 @@ const About = () => {
           <div className="grid grid-cols-2 gap-8">
             <div className="m-auto space-y-4">
               <H3>My story</H3>
-              <p>Learn a little bit more about me, how I got into design, and how I built my career as a product designer. I’ve included key things I've learned, book recommendations, and even some sneak peeks of the first websites I created.</p>
+              <p>Learn a little bit more about me, how I got into design, and how I built my career as a product designer. I’ve included key things I have learned, book recommendations, and even some sneak peeks of the first websites I created.</p>
             </div>
             <img src="https://via.placeholder.com/500/" alt="" className="m-auto" />
           </div>
