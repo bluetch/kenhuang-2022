@@ -35,8 +35,9 @@ export default function Home() {
       </Head>
       <section className={`pt-64 pb-32 text-center h-[70vh] relative ${styles.index}`}>
         <Container className="space-y-16">
-          <h1 className="font-light text-4xl leading-relaxed text-gray-400 w-2/3 mx-auto">Hi, I am Ken Huang, a passionate Front-end engineer / product designer from Taipei, Taiwan.</h1>
+          <h1 className="font-light text-4xl leading-relaxed text-black w-2/3 mx-auto">Hi, I am Ken Huang, a passionate Front-end engineer / product designer from Taipei, Taiwan.</h1>
           <img src="/images/about/kenhuang_avatar.png" alt="" className="w-1/6 mx-auto" />
+          <p className="text-xl text-red-500">Design Everywhere!</p>
         </Container>
         <ul className={styles.circles}>
           {circles.map((index) => <li key={`circle-${index}`}></li>)}
@@ -45,16 +46,16 @@ export default function Home() {
       <section className="mb-32 bg-gradient-to-t from-gray-100 py-32">
         <Container>
           <H2 className="mb-12">Featured posts</H2>
-          <div className="grid grid-cols-4 gap-x-12">
+          <div className="grid grid-cols-3 gap-4">
             {articles.map((item) => {
               return (
                 <Link key={item.url} href={item.url}>
                   <a className="" target="_blank">
-                    <figure className="bg-white shadow-md hover:opacity-75">
-                      <img src={item.img} alt="" className="object-cover aspect-[4/3]" />
-                      <figcaption className="p-4 space-y-2">
-                        <H6 className="line-clamp-2 text-sm">{item.name}</H6>
+                    <figure className="bg-white shadow-md hover:opacity-75 flex">
+                      <img src={item.img} alt="" className="object-cover aspect-[1/1] w-1/4 m-4" />
+                      <figcaption className="p-4 pl-0 space-y-2 relative">
                         <p className="text-gray-500 text-sm">{dateConvert(item.date)}</p>
+                        <H6 className="line-clamp-2 text-sm">{item.name}</H6>
                       </figcaption>
                     </figure>
                   </a>

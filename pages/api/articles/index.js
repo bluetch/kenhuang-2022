@@ -1,6 +1,15 @@
 const Articles = (req, res) => {
   const articles = [
     {
+      name: "Next.js project quick deploy with Vercel",
+      category: [],
+      desc: "工程師及設計師的證券公司Side project。",
+      url: "https://medium.com/@bluetch/vercel-quick-start-with-next-js-f7becc28d4bb",
+      img: "https://miro.medium.com/max/1400/1*EEEPht7Ch-B2BuLCT7AnDA.jpeg",
+      code: "20221001",
+      date: 20221001,
+    },
+    {
       name: "GoodNote 財剛起步，金融業的side project",
       category: [],
       desc: "工程師及設計師的證券公司Side project。",
