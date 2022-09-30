@@ -38,11 +38,9 @@ export default function Home() {
           <h1 className="font-light text-4xl leading-relaxed text-gray-400 w-2/3 mx-auto">Hi, I'm Ken Huang, a passionate Front-end engineer / product designer from Taipei, Taiwan.</h1>
           <img src="/images/about/kenhuang_avatar.png" alt="" className="w-1/6 mx-auto" />
         </Container>
-        <div className={styles.area}>
-          <ul className={styles.circles}>
-            {circles.map((index) => <li key={`circle-${index}`}></li>)}
-          </ul>
-        </div>
+        <ul className={styles.circles}>
+          {circles.map((index) => <li key={`circle-${index}`}></li>)}
+        </ul>
       </section>
       <section className="mb-32 bg-gradient-to-t from-gray-100 py-32">
         <Container>

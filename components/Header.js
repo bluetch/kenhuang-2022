@@ -72,7 +72,7 @@ export const Header = () => {
                     className={`p-4 flex items-center
                     ${router.asPath === link.path
                         ? "text-blue-500 lg:border-b-4 border-blue-500"
-                        : "hover:text-blue-500 hover:bg-gray-100"
+                        : "hover:text-blue-500"
                       }`}
                     target={targetNew ? "_blank" : ""}
                     onClick={show}
