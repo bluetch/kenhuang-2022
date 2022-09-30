@@ -41,7 +41,7 @@ const About = () => {
           <div className="space-y-8">
             <H1 className="mb-8">Ken Huang</H1>
             <H3 className="text-gray-500 font-light">I am a UX Engineer based in Taipei, Taiwan.</H3>
-            <p className="text-gray-500 font-light">Since 2005, I've enjoyed turning complex problems into simple, beautiful and intuitive designs. When I'm not pushing pixels, you'll find me cooking, gardening or working out in the park.</p>
+            <p className="text-gray-500 font-light">Since 2005, I have enjoyed turning complex problems into simple, beautiful and intuitive designs. When I am not pushing pixels, you will find me cooking, gardening or working out in the park.</p>
           </div>
           <div>
             <img src="/images/about/kenhuang_blue2.png" alt="Ken Huang" className="mx-auto" />
