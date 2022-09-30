@@ -32,7 +32,7 @@ export const Button = memo(
         primary:
           "cursor-pointer py-3 px-8 bg-sky-600 hover:bg-sky-700 text-white flex-shrink-0 rounded-full h-12",
         ["primary-outline"]:
-          "cursor-pointer py-3 px-8 bg-white border border-sky-600 hover:bg-sky-700 hover:text-white text-black rounded-full h-12",
+          "cursor-pointer py-3 px-8 bg-white border border-sky-600 hover:bg-sky-700 hover:text-white text-sky-700 rounded-full h-12",
         // primary:
         //   "bg-gradient-to-r from-blue-light to-purple-light text-gray-darker md:hover:from-[#78DAFF] md:hover:to-[#BAD3FF] active:from-[#78DAFF] active:to-[#BAD3FF]",
         secondary:

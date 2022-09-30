@@ -107,7 +107,8 @@ const Mentorship = () => {
         <div className="flex flex-col justify-center items-center py-24 space-y-8">
           <H2>If you are wanting to level up, mentorship helps.</H2>
           <p>Schedule a free consultation to ask questions, discuss details, and decide if it is a fit.</p>
-          <Button variant="primary-outline">Introduce yourself</Button>
+          {/* <Button variant="primary-outline">Introduce yourself</Button> */}
+          <p className="text-sky-500">Mail me: bluetch@gmail.com</p>
         </div>
       </section>
       <section className="my-32">
@@ -181,7 +182,8 @@ const Mentorship = () => {
           <div className="flex flex-col justify-center items-center py-24 space-y-8">
             <H2>Book a consult</H2>
             <p>Thinking about mentorship? Lets talk about it. The first call is on me.</p>
-            <Button>Introduce yourself</Button>
+            {/* <Button href="">Introduce yourself</Button> */}
+            <p className="text-sky-500">Mail me: bluetch@gmail.com</p>
           </div>
         </Container>
       </section>

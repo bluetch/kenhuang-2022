@@ -18,10 +18,10 @@ const Contact = () => {
   return (
     <Layout title="Contact | Ken Huang">
       <Container>
-        <h1>Thanks for taking the time to reach out. How can I help you today?</h1>
-        <label htmlFor="">
-          <input type="text" />
-        </label>
+        <section className="text-center">
+          <h1 className="text-4xl my-40">Thanks for taking the time to reach out.<br /> How can I help you today?</h1>
+          <a href="mailto:bluetch@gmail.com" className="text-blue-500">bluetch@gmail.com</a>
+        </section>
       </Container>
     </Layout>
   )

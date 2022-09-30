@@ -7,3 +7,4 @@ export * from "components/Icon";
 export * from "components/Footer";
 export * from "components/Layout";
 export * from "components/Loading";
+export * from "components/Refactoring";

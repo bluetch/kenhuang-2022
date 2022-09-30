@@ -7,6 +7,7 @@ const shopeeProductDetailPageRefactor = () => {
       <Container>
         <H1>Shopee Product Detail Page Refactor</H1>
         <p>In order to help our users browsing service in south east area, especially in Indonesia, there are not enough internet infrastructure to support friendly web service, we have to make it better.</p>
+        <Refactoring />
       </Container>
     </Layout>
   )

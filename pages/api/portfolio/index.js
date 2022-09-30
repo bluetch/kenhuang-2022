@@ -63,15 +63,6 @@ const Portfolio = (req, res) => {
       img: "/images/portfolio/pet-adoption-cover.png",
       state: true
     },
-    // {
-    //   name: "Shopee microsite",
-    //   category: ["design"],
-    //   date: 2018,
-    //   url: "/portfolio/shopee-microsite",
-    //   desc: "A content management system help on E-commerce",
-    //   img: "/images/portfolio/design-language-system-cover.jpg",
-    //   state: false
-    // },
     {
       name: "Shopee Graphic Recruitment",
       category: ["design"],

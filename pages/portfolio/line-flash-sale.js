@@ -1,8 +1,8 @@
 import { Container, Layout, Refactoring } from "components";
 
-const goodfinanceCareers = () => {
+const lineFlashSale = () => {
   return (
-    <Layout title="GoodFinance Career site | Ken Huang">
+    <Layout title="LINE Flash Sale | Ken Huang">
       <Container>
         <Refactoring />
       </Container>
@@ -10,4 +10,4 @@ const goodfinanceCareers = () => {
   )
 }
 
-export default goodfinanceCareers;
+export default lineFlashSale;
