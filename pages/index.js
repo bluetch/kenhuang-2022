@@ -46,12 +46,12 @@ export default function Home() {
       <section className="mb-32 bg-gradient-to-t from-gray-100 py-32">
         <Container>
           <H2 className="mb-12">Featured posts</H2>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 gap-8">
             {articles.map((item) => {
               return (
                 <Link key={item.url} href={item.url}>
                   <a className="" target="_blank">
-                    <figure className="bg-white shadow-md hover:opacity-75 flex">
+                    <figure className="bg-white shadow-md flex rounded-lg hover:opacity-75 hover:bg-sky-50 transition ease-in-out">
                       <img src={item.img} alt="" className="object-cover aspect-[1/1] w-1/4 m-4" />
                       <figcaption className="p-4 pl-0 space-y-2 relative">
                         <p className="text-gray-500 text-sm">{dateConvert(item.date)}</p>
@@ -78,7 +78,7 @@ export default function Home() {
               return (
                 <Link key={item.url} href={item.url}>
                   <a className="">
-                    <figure className="flex flex-col space-y-4 hover:opacity-75">
+                    <figure className="flex flex-col space-y-4 transition ease-in-out hover:opacity-75">
                       <img src={item.img} alt={item.name} className="rounded-lg object-cover aspect-[4/3]" />
                       <figcaption className="">
                         <H4>{item.name}</H4>

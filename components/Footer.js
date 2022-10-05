@@ -1,26 +1,44 @@
 import Link from "next/link";
+import { Icon } from "components";
+
+const links = [
+  {
+    name: "facebook",
+    url: "https://www.facebook.com/bluetch",
+  },
+  {
+    name: "linkedin",
+    url: "https://www.linkedin.com/in/bluetch/",
+  },
+  {
+    name: "github",
+    url: "https://github.com/bluetch",
+  },
+  {
+    name: "medium",
+    url: "https://medium.com/@bluetch",
+  },
+];
 
 export const Footer = () => {
   return (
-    <footer className="border-t border-gray-300 text-sm text-gray-400 text-center p-4 lg:p-8 leading-6 mt-12">
-      <p className="text-base text-black">2022 Ken Huang</p>
+    <footer className="border-t border-gray-300 text-sm text-gray-400 text-center p-12 leading-6 mt-12 space-y-8">
+      <p className="text-xl text-black">Feel free to reach out, I’d love to chat with you!</p>
       <p className="space-x-4">
-        <Link href="https://www.facebook.com/goodfinancetw/" passHref>
-          <a target="_blank" rel="noreferrer" className="hover:text-blue-500 hover:underline">
-            Facebook
-          </a>
-        </Link>
-        <span className="mx-2">|</span>
-        <Link href="https://www.linkedin.com/company/%E5%A4%A7%E6%85%B6%E8%AD%89%E5%88%B8/">
-          <a target="_blank" rel="noreferrer" className="hover:text-blue-500 hover:underline">
-            Linkedin
-          </a>
-        </Link>
-        <span className="mx-2">|</span>
-        <Link href="https://github.com/bluetch">
-          <a className="hover:text-blue-500 hover:underline">GitHub</a>
-        </Link>
+        {links.map((link) => {
+          return (
+            <Link href={link.url} key={link.name}>
+              <a target="_blank" rel="noreferrer" className="inline-block shadow-lg rounded-lg p-4 border border-white hover:border-black">
+                <Icon name={link.name} />
+              </a>
+            </Link>
+          )
+        })}
       </p>
+      <p>
+        <a href="maitl:bluetch@gmail.com">bluetch@gmail.com</a>
+      </p>
+      <p>© Ken Huang 2022 Copyright. All Rights Reserved.</p>
     </footer>
   );
 };

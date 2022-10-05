@@ -69,9 +69,9 @@ export const Header = () => {
               return (
                 <Link href={link.path} key={link.path}>
                   <a
-                    className={`p-4 flex items-center
+                    className={`p-4 flex items-center lg:border-b-4 border-b-white
                     ${router.asPath === link.path
-                        ? "text-blue-500 lg:border-b-4 border-blue-500"
+                        ? "text-blue-500 border-b-blue-500"
                         : "hover:text-blue-500"
                       }`}
                     target={targetNew ? "_blank" : ""}
