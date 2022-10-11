@@ -6,7 +6,11 @@ const IconNameOptions = Object.freeze([
   "github",
   "linkedin",
   "medium",
+  "portfolio",
   "refresh",
+  "smile",
+  "tools",
+  "work",
 ]);
 
 const Icon = memo(({ name, ...rest }) => {

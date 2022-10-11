@@ -79,7 +79,12 @@ const About = () => {
       <section className="my-40">
         <Container>
           <div className="grid grid-cols-2 gap-8">
-            <img src="https://via.placeholder.com/500/" alt="" className="m-auto" />
+            <div className="grid grid-cols-2 gap-8">
+            <img src="/images/about/20200219.jpg" alt="" className="rounded-lg aspect-square object-cover" />
+            <img src="/images/about/20220724.jpg" alt="" className="rounded-lg aspect-square object-cover" />
+            <img src="/images/about/20190612.jpg" alt="" className="rounded-lg aspect-square object-cover" />
+            <img src="/images/about/20161206.jpg" alt="" className="rounded-lg aspect-square object-cover" />
+            </div>
             <div className="m-auto space-y-4">
               <H3>Funny facts?</H3>
               <ul className="text-gray-500 space-y-2 font-light">
@@ -99,7 +104,12 @@ const About = () => {
               <H3>My story</H3>
               <p className="text-gray-500 font-light">Learn a little bit more about me, how I got into design, and how I built my career as a product designer. I’ve included key things I have learned, book recommendations, and even some sneak peeks of the first websites I created.</p>
             </div>
-            <img src="https://via.placeholder.com/500/" alt="" className="m-auto" />
+            <div className="grid grid-cols-2 gap-8">
+              <img src="/images/about/20201219.jpg" alt="" className="rounded-lg" />
+              <img src="/images/about/20190511.jpg" alt="" className="rounded-lg" />
+              <img src="/images/about/20190508.jpg" alt="" className="rounded-lg" />
+              <img src="/images/about/20201219.jpg" alt="" className="rounded-lg" />
+            </div>
           </div>
         </Container>
       </section>

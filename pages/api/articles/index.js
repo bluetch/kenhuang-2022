@@ -1,6 +1,15 @@
 const Articles = (req, res) => {
   const articles = [
     {
+      name: "JavaScript from ES6 to ES12 in 2022",
+      category: [],
+      desc: "Javascript a one of the three most crucial programming at front-end positions. However, the author Brendan Eich just spent 10 days on it. It helps a lot in the website technically, but it also caused many issues to fix, that’s why there are from ES6(2015) to ES12(2021) born to fix better JavaScript.",
+      url: "https://medium.com/p/519d8be7d48c",
+      img: "https://miro.medium.com/max/1400/1*AXj2HwF25HVmch0RvIZplQ.png",
+      code: "20221010",
+      date: 20221010,
+    },
+    {
       name: "Next.js project quick deploy with Vercel",
       category: [],
       desc: "工程師及設計師的證券公司Side project。",

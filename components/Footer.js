@@ -22,7 +22,7 @@ const links = [
 
 export const Footer = () => {
   return (
-    <footer className="border-t border-gray-300 text-sm text-gray-400 text-center p-12 leading-6 mt-12 space-y-8">
+    <footer className="border-t border-gray-300 text-sm text-gray-400 text-center py-20 leading-6 space-y-8">
       <p className="text-xl text-black">Feel free to reach out, I’d love to chat with you!</p>
       <p className="space-x-4">
         {links.map((link) => {
@@ -35,10 +35,12 @@ export const Footer = () => {
           )
         })}
       </p>
+      <div>
       <p>
         <a href="maitl:bluetch@gmail.com">bluetch@gmail.com</a>
       </p>
       <p>© Ken Huang 2022 Copyright. All Rights Reserved.</p>
+      </div>
     </footer>
   );
 };
