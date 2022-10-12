@@ -18,6 +18,10 @@ const links = [
     name: "medium",
     url: "https://medium.com/@bluetch",
   },
+  {
+    name: "instagram",
+    url: "https://www.instagram.com/kenbluerr/",
+  },
 ];
 
 export const Footer = () => {

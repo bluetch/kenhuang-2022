@@ -4,6 +4,7 @@ import { memo } from "react";
 const IconNameOptions = Object.freeze([
   "facebook",
   "github",
+  "instagram",
   "linkedin",
   "medium",
   "portfolio",
