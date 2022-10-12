@@ -26,7 +26,7 @@ const links = [
 
 export const Footer = () => {
   return (
-    <footer className="border-t border-gray-300 text-sm text-gray-400 text-center py-20 leading-6 space-y-8">
+    <footer className="border-t border-gray-300 text-sm text-gray-400 text-center py-20 leading-6 space-y-8 mt-20">
       <p className="text-xl text-black">Feel free to reach out, I’d love to chat with you!</p>
       <p className="space-x-4">
         {links.map((link) => {
