@@ -44,10 +44,10 @@ const About = () => {
             <p className="text-gray-500 font-light">Since 2005, I have enjoyed turning complex problems into simple, beautiful and intuitive designs. When I am not pushing pixels, you will find me cooking, gardening or working out in the park.</p>
           </div>
           <div>
-            <img src="/images/about/kenhuang_blue2.png" alt="Ken Huang" className="mx-auto" />
+            {/* <img src="/images/about/kenhuang_blue2.png" alt="Ken Huang" className="mx-auto" /> */}
           </div>
         </div>
-        <Gallery photos={photos} className="py-8 mb-12 border-t" />
+        <Gallery photos={photos} className="py-8 my-12 border-t" />
       </Container>
       <section className="bg-gray-50 py-20">
         <Container>
@@ -106,9 +106,9 @@ const About = () => {
             </div>
             <div className="grid grid-cols-2 gap-8">
               <img src="/images/about/20201219.jpg" alt="" className="rounded-lg" />
-              <img src="/images/about/20190511.jpg" alt="" className="rounded-lg" />
+              <img src="/images/about/20151122.jpg" alt="" className="rounded-lg" />
               <img src="/images/about/20190508.jpg" alt="" className="rounded-lg" />
-              <img src="/images/about/20201219.jpg" alt="" className="rounded-lg" />
+              <img src="/images/about/20200302.jpg" alt="" className="rounded-lg" />
             </div>
           </div>
         </Container>

@@ -20,7 +20,7 @@ const Contact = () => {
       <Container>
         <section className="text-center">
           <h1 className="text-4xl my-40">Thanks for taking the time to reach out.<br /> How can I help you today?</h1>
-          <a href="mailto:bluetch@gmail.com" className="text-blue-500">bluetch@gmail.com</a>
+          <p className="text-gray-500">Contace Me: <a href="mailto:bluetch@gmail.com" className="text-sky-500">bluetch@gmail.com</a></p>
         </section>
       </Container>
     </Layout>

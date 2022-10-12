@@ -31,7 +31,7 @@ export default function Portfolio() {
           data="portfolioSpec"
           method={(e) => setCategory(e)}
         />
-        <section className="grid grid-cols-2 gap-20">
+        <section className="grid grid-cols-2 gap-20 mb-20">
           {displayTerms.map((article) => {
             return (
               <Link key={article.name} href={article.url}>
