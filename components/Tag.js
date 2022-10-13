@@ -1,4 +1,4 @@
-export const Tag = ({ children }) => {
+export const Tag = ({ children, style="gray" }) => {
   if (children.isArray) {
     return (
       <div className="space-x-2">
@@ -12,5 +12,4 @@ export const Tag = ({ children }) => {
   } else {
     <span className="rounded bg-black text-white inline-block py-0 px-2 mr-2">{children}</span>
   }
-
 }

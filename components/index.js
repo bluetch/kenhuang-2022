@@ -9,4 +9,4 @@ export * from "components/Layout";
 export * from "components/Loading";
 export * from "components/Portfolio";
 export * from "components/Refactoring";
-export * from "components/Tags";
+export * from "components/Tag";

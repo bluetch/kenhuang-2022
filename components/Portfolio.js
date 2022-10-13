@@ -1,4 +1,4 @@
-import { Tag } from "./Tags";
+import { Tag } from "./Tag";
 
 export const PortfolioCover = ({ tags, date, title, duration, myRole, responsibility, company }) => {
   return (
