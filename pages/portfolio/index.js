@@ -26,7 +26,7 @@ export default function Portfolio() {
   return (
     <Layout title="Portfolio | Ken Huang">
       <Container>
-        <H1>Portfolio</H1>
+        <H1 className="mt-40">Portfolio</H1>
         <CategoryBar
           data="portfolioSpec"
           method={(e) => setCategory(e)}
@@ -39,7 +39,7 @@ export default function Portfolio() {
                   <img
                     src={article.img}
                     alt={article.name}
-                    className="w-1/3 object-cover aspect-[4/3] group-hover:opacity-50 transform transition-all duration-300 rounded"
+                    className="w-1/3 object-cover aspect-square group-hover:opacity-50 transform transition-all duration-300 rounded"
                   />
                   <figcaption className="w-2/3 pl-4 space-y-2">
                     <p className="text-gray-400 text-sm">

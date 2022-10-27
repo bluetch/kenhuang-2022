@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Container, H1, Layout, PortfolioCover, PortfolioOverview, PortfolioProcess } from "components";
+import { Container, H1, H3, Layout, PortfolioCover, PortfolioOverview, PortfolioProcess } from "components";
 
 import affinityMapping from "public/images/portfolio/shopee-affinity-map.jpg";
 import cardSorting from "public/images/portfolio/shopee-workshop-card-sorting.jpg";

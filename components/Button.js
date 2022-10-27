@@ -30,7 +30,7 @@ export const Button = memo(
       };
       const variants = {
         primary:
-          "cursor-pointer py-3 px-8 bg-sky-600 hover:bg-sky-700 text-white flex-shrink-0 rounded-full h-12",
+          "cursor-pointer py-3 px-8 bg-black hover:bg-gray-700 text-white flex-shrink-0 rounded-full h-12",
         ["primary-outline"]:
           "cursor-pointer py-3 px-8 bg-white border border-sky-600 hover:bg-sky-700 hover:text-white text-sky-700 rounded-full h-12",
         // primary:
@@ -65,7 +65,7 @@ export const Button = memo(
             {
               "opacity-40 pointer-events-none": disabled,
             },
-            `p-3 text-center appearance-none rounded-full flex items-center justify-center space-x-2 transition-all duration-300 focus:outline-none ${variants} ${className}`
+            `p-3 text-center appearance-none rounded-full inline-flex items-center justify-center space-x-2 transition-all duration-300 focus:outline-none ${variants} ${className}`
           )}
         >
           {icon.name && (
@@ -88,8 +88,8 @@ export const Button = memo(
 
       return link ? (
         <Link href={href} onClick={(e) => (disabled ? e.preventDefault() : "")}
-        className={className}>
-            {element}
+          className={className}>
+          {element}
         </Link>
       ) : (
         element

@@ -1,4 +1,8 @@
-import { Container, Layout, Refactoring, Tags, PortfolioCover, PortfolioOverview } from "components";
+import Link from "next/link";
+import Image from "next/image";
+import { Button, Container, Layout, Refactoring, Tags, PortfolioCover, PortfolioOverview } from "components";
+import ldpCover from "public/images/portfolio/lost-device-protection-cover.jpg";
+import trendmicroChristmas from "public/images/portfolio/trendmicro-christmas.jpg";
 
 const lostDeviceProtection = () => {
   return (
@@ -36,6 +40,44 @@ const lostDeviceProtection = () => {
             },
           ]}
         />
+        <h3 className="text-center mt-24 mb-12 text-3xl font-bold">Background</h3>
+        <div className="grid grid-cols-2 gap-8">
+          <div className="space-y-4 text-gray-500">
+            <p>There was a project called Lost Device Protection when I worked at Trend Micro. The product team asked me to develop the next version for new UI and responsive web design. I used a bootstrap framework, I also assisted with the HTML & CSS for the mobile version of the site, and wrote a separate stylesheet specifically for the site when being viewed on an iPad.</p>
+            <Button href="https://mobilesecurity.trendmicro.com/" target="_blank">View Website</Button>
+          </div>
+          <Image src={ldpCover} alt="lost device protection home page" />
+        </div>
+        <hr className="my-24" />
+        <h3 className="text-center mt-24 mb-12 text-3xl font-bold">Process</h3>
+        <div className="grid grid-cols-2 gap-8">
+          <div className="space-y-4 text-gray-500">
+            <p>The PM was very happy with the designs and with the back-end already in place we were able to quickly move onto the build of the front-end.</p>
+            <p>I built the front-end “mobile-up”, meaning it was first created for mobile layouts, then using media queries and progressive enhancement additional styles and functionality were added for tablet and desktop.</p>
+            <p>To keep performance optimal, I used hardware acceleration for smooth animations across all devices, minimized and concatenated scripts, and used sprite sheets to keep the number of browser requests at a minimum.</p>
+          </div>
+          <div className="space-y-4 text-gray-500">
+            <p>Where possible, I relied on third-party libraries such as:</p>
+            <ul className="list-disc pl-4 space-y-2">
+              <li>JQuery for general behaviours</li>
+              <li>Modernizr for testing browser features</li>
+              <li>Bootstrap for basic UI framework</li>
+              <li>Google Analytics for tracking performance</li>
+              <li>Google Map API to connect our service</li>
+              <li>JSON format to support L10n</li>
+            </ul>
+            <p>The front end build process included the use of Grunt for automated tasks to speed up development and Git for version control.</p>
+          </div>
+        </div>
+        <hr className="my-24" />
+        <h3 className="text-center mt-24 mb-12 text-3xl font-bold">Outcome</h3>
+        <div className="grid grid-cols-2 gap-8">
+          <div className="space-y-4 text-gray-500">
+            <p>The Lost Device Protection site is a culmination of my skills in 2012, taking designs and converting them into a responsive, cross browser website, whilst maintaining the highest standard that Lost Device Protection offer their clients.</p>
+            <p>After the project finished, we have also created a Thousand Sunny ship for christmas event together!</p>
+          </div>
+          <Image src={trendmicroChristmas} alt="trend micro teamwork" />
+        </div>
       </Container>
     </Layout>
   )
