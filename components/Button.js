@@ -87,13 +87,9 @@ export const Button = memo(
       );
 
       return link ? (
-        <Link href={href}>
-          <a
-            onClick={(e) => (disabled ? e.preventDefault() : "")}
-            className={className}
-          >
+        <Link href={href} onClick={(e) => (disabled ? e.preventDefault() : "")}
+        className={className}>
             {element}
-          </a>
         </Link>
       ) : (
         element

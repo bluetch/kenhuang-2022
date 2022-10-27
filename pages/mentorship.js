@@ -1,4 +1,6 @@
+import Image from "next/image";
 import { Button, Container, H2, H3, Icon, Layout } from "components";
+import mentorshipHero from "public/images/mentorship/mentorship_hero.jpg";
 
 const Mentorship = () => {
   const programs = [
@@ -83,12 +85,13 @@ const Mentorship = () => {
           <div className="space-y-4">
             <H2>Mentor Program</H2>
             <p className="text-gray-500">Boost your career and become a better designer or engineer</p>
+            <p className="text-gray-500">As a self-thought designer with years of experience in multinational organization, I deeply understand the challenges product design learners could face so I’m able to help them achieve their goals at different stages of careers. In this mentorship program, I will provide professional advice based on your needs, help you to clarify problems and set goals, and address them systematically. In the past three years, I have helped more than 50 designers from more than 10 countries around the world to achieve their career goals.  They have better performance on projects and start to influence their team.</p>
             <p className="text-gray-500">Contace Me: <a href="mailto:bluetch@gmail.com" className="text-sky-500">bluetch@gmail.com</a></p>
           </div>
-          <img src="/images/mentorship/mentorship_hero.png" alt="" className="w-1/2 mx-auto" />
+          <Image src={mentorshipHero} alt="Ken Huang mentorship" />
         </Container>
       </section>
-      <section className="py-32 px-20 space-y-8 bg-gray-50">
+      {/* <section className="py-32 px-20 space-y-8 bg-gray-50">
         <H2 className="text-center">Select your program</H2>
         <div className="grid grid-cols-3 gap-4">
           {programs.map((program, i) => {
@@ -108,16 +111,16 @@ const Mentorship = () => {
           }
           )}
         </div>
-      </section>
-      <section className="bg-black text-white py-32">
+      </section> */}
+      <section className="py-32">
         <Container className="text-center space-y-8">
           <H2>Benefits of Mentorship</H2>
           <p>I know a thing or two because I have done a thing or two in my design career, and I am committed to helping you make use of that knowledge.</p>
-          <div className="grid grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 gap-8">
             {benefits.map((benefit, i) => {
               return (
-                <div key={`benefit-${i}`} className="space-y-4 rounded-lg bg-gray-900 p-8">
-                  <Icon name={benefit.img} className="w-10 h-10 inline-block" />
+                <div key={`benefit-${i}`} className="shadow-md space-y-4 rounded-lg p-8">
+                  {/* <Icon name={benefit.img} className="w-12 h-12 inline-block bg-black rounded-lg" /> */}
                   <H3>{benefit.name}</H3>
                   <p className="text-gray-500">{benefit.desc}</p>
                 </div>

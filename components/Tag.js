@@ -1,5 +1,6 @@
 export const Tag = ({ children, style="gray" }) => {
-  if (children.isArray) {
+  
+  if (Array.isArray(children)) {
     return (
       <div className="space-x-2">
         {children.map((item) => {
@@ -10,6 +11,8 @@ export const Tag = ({ children, style="gray" }) => {
       </div>
     )
   } else {
-    <span className="rounded bg-black text-white inline-block py-0 px-2 mr-2">{children}</span>
+    return(
+      <span className="rounded bg-black text-white inline-block py-0 px-2 mr-2">{children}</span>
+    )
   }
 }

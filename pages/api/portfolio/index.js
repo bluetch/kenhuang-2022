@@ -1,41 +1,41 @@
 const Portfolio = (req, res) => {
   const portfolio = [
-    {
-      name: "Good Finance Careers",
-      category: ["frontend", "design"],
-      date: 2021,
-      url: "/portfolio/goodfinance-careers",
-      desc: "To improve performance and get more acquisition for e-commerce",
-      img: "/images/portfolio/goodfinance_careers_cover.png",
-      state: true
-    },
-    {
-      name: "Good Finance Learning Center",
-      category: ["frontend"],
-      date: 2022,
-      url: "/portfolio/goodfinance-learning-center",
-      desc: "To improve performance and get more acquisition for e-commerce",
-      img: "/images/portfolio/goodfinance_learning_center_cover.png",
-      state: true
-    },
-    {
-      name: "Good Finance GoodNote",
-      category: ["frontend", "design"],
-      date: 2022,
-      url: "/portfolio/goodfinance-goodnote",
-      desc: "To improve performance and get more acquisition for e-commerce",
-      img: "/images/portfolio/goodfinance_goodnote_cover.png",
-      state: true
-    },
-    {
-      name: "Good Finance One Account Admin",
-      category: ["frontend"],
-      date: 2021,
-      url: "/portfolio/goodfinance-one-account-admin",
-      desc: "To improve performance and get more acquisition for e-commerce",
-      img: "/images/portfolio/goodfinance_one_account_admin_cover.png",
-      state: true
-    },
+    // {
+    //   name: "Good Finance Careers",
+    //   category: ["frontend", "design"],
+    //   date: 2021,
+    //   url: "/portfolio/goodfinance-careers",
+    //   desc: "To improve performance and get more acquisition for e-commerce",
+    //   img: "/images/portfolio/goodfinance_careers_cover.png",
+    //   state: true
+    // },
+    // {
+    //   name: "Good Finance Learning Center",
+    //   category: ["frontend"],
+    //   date: 2022,
+    //   url: "/portfolio/goodfinance-learning-center",
+    //   desc: "To improve performance and get more acquisition for e-commerce",
+    //   img: "/images/portfolio/goodfinance_learning_center_cover.png",
+    //   state: true
+    // },
+    // {
+    //   name: "Good Finance GoodNote",
+    //   category: ["frontend", "design"],
+    //   date: 2022,
+    //   url: "/portfolio/goodfinance-goodnote",
+    //   desc: "To improve performance and get more acquisition for e-commerce",
+    //   img: "/images/portfolio/goodfinance_goodnote_cover.png",
+    //   state: true
+    // },
+    // {
+    //   name: "Good Finance One Account Admin",
+    //   category: ["frontend"],
+    //   date: 2021,
+    //   url: "/portfolio/goodfinance-one-account-admin",
+    //   desc: "To improve performance and get more acquisition for e-commerce",
+    //   img: "/images/portfolio/goodfinance_one_account_admin_cover.png",
+    //   state: true
+    // },
     {
       name: "Shopee Product Detail Page Refactor",
       category: ["design"],
@@ -72,15 +72,15 @@ const Portfolio = (req, res) => {
       img: "/images/portfolio/shopee-recruitment-frog-cover.png",
       state: true
     },
-    {
-      name: "Prescription Helper",
-      category: ["design", "frontend"],
-      date: 2016,
-      url: "/portfolio/prescription-helper",
-      desc: "A simple Medical App for get drugs of prescription",
-      img: "/images/portfolio/prescription-helper-cover.png",
-      state: true
-    },
+    // {
+    //   name: "Prescription Helper",
+    //   category: ["design", "frontend"],
+    //   date: 2016,
+    //   url: "/portfolio/prescription-helper",
+    //   desc: "A simple Medical App for get drugs of prescription",
+    //   img: "/images/portfolio/prescription-helper-cover.png",
+    //   state: true
+    // },
     {
       name: "LINE Flash Sale",
       category: ["frontend"],
@@ -99,15 +99,15 @@ const Portfolio = (req, res) => {
       img: "/images/portfolio/lost-device-protection-cover.jpg",
       state: true
     },
-    {
-      name: "Jewelry Box",
-      date: 2012,
-      category: ["frontend"],
-      url: "/portfolio/jewelry-box",
-      desc: "Trend Micro",
-      img: "/images/portfolio/jewelry-box-cover.jpg",
-      state: true
-    },
+    // {
+    //   name: "Jewelry Box",
+    //   date: 2012,
+    //   category: ["frontend"],
+    //   url: "/portfolio/jewelry-box",
+    //   desc: "Trend Micro",
+    //   img: "/images/portfolio/jewelry-box-cover.jpg",
+    //   state: true
+    // },
   ];
   return res.status(200).json(portfolio);
 };

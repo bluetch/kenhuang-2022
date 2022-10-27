@@ -9,10 +9,6 @@ export const Header = () => {
   const [scrollTop, setScrollTop] = useState(0);
   const LINKS = [
     {
-      label: "Home",
-      path: "/",
-    },
-    {
       label: "About",
       path: "/about",
     },
@@ -21,13 +17,17 @@ export const Header = () => {
       path: "/portfolio",
     },
     {
+      label: "Writing",
+      path: "https://medium.com/@bluetch",
+    },
+    {
       label: "Mentorship",
       path: "/mentorship",
     },
-    {
-      label: "Contact",
-      path: "/contact",
-    },
+    // {
+    //   label: "Contact",
+    //   path: "/contact",
+    // },
   ];
 
   const router = useRouter();
@@ -47,17 +47,15 @@ export const Header = () => {
   }, [scrollTop]);
 
   return (
-    <header className={`sticky top-0 z-10 bg-white ${scrolling && "shadow-md"}`}>
+    <header className={`fixed top-0 left-0 right-0 z-10 bg-white py-4 ${scrolling && "shadow-md"}`}>
       <Container>
         <div className="flex flex-wrap justify-between items-center py-4 lg:py-0">
-          <Link href="/">
-            <a className="flex items-center group">
-              <img src="/images/k-logo.png" alt="Ken Huang" className="w-8" />
-              {/* <span className="px-4 text-gray-300">|</span>
-              <span className="text-xl lg:text-2xl group-hover:text-gray-500 transition">
+          <Link href="/" className="flex items-center group">
+            <img src="/images/k-logo.png" alt="Ken Huang" className="w-8" />
+            <span className="px-4 text-gray-300">|</span>
+              <span className="font-bold text-xl lg:text-2xl group-hover:text-gray-500 transition">
                 Ken Huang
-              </span> */}
-            </a>
+              </span>
           </Link>
           <nav
             className={`overflow-visible ${open ? "translate-x-0" : "-translate-x-full lg:-translate-x-0"
@@ -67,18 +65,14 @@ export const Header = () => {
               let targetNew = false;
               if (link.path.indexOf("http") == 0) targetNew = true;
               return (
-                <Link href={link.path} key={link.path}>
-                  <a
-                    className={`p-4 flex items-center lg:border-b-4 border-b-white
-                    ${router.asPath === link.path
-                        ? "text-blue-500 border-b-blue-500"
-                        : "hover:text-blue-500"
-                      }`}
-                    target={targetNew ? "_blank" : ""}
-                    onClick={show}
-                  >
-                    {link.label}
-                  </a>
+                <Link href={link.path} key={link.path} className={`px-4 py-2 flex items-center rounded-full
+                ${router.asPath === link.path
+                    ? "text-white bg-black"
+                    : "hover:text-gray-500 hover:bg-gray-100"
+                  }`}
+                  target={targetNew ? "_blank" : ""}
+                  onClick={show}>
+                  {link.label}
                 </Link>
               );
             })}

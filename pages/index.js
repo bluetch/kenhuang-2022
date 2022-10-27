@@ -49,16 +49,14 @@ export default function Home() {
           <div className="grid grid-cols-3 gap-8">
             {articles.map((item) => {
               return (
-                <Link key={item.url} href={item.url}>
-                  <a className="" target="_blank">
-                    <figure className="bg-white shadow-md flex rounded-lg hover:opacity-75 hover:bg-sky-50 transition ease-in-out">
-                      <img src={item.img} alt="" className="object-cover aspect-[1/1] w-1/4 m-4" />
-                      <figcaption className="p-4 pl-0 space-y-2 relative">
-                        <p className="text-gray-500 text-sm">{dateConvert(item.date)}</p>
-                        <H6 className="line-clamp-2 text-sm">{item.name}</H6>
-                      </figcaption>
-                    </figure>
-                  </a>
+                <Link key={item.url} href={item.url} target="_blank">
+                  <figure className="bg-white shadow-md flex rounded-lg hover:opacity-75 hover:bg-sky-50 transition ease-in-out">
+                    <img src={item.img} alt="" className="object-cover aspect-[1/1] w-1/4 m-4" />
+                    <figcaption className="p-4 pl-0 space-y-2 relative">
+                      <p className="text-gray-500 text-sm">{dateConvert(item.date)}</p>
+                      <H6 className="line-clamp-2 text-sm">{item.name}</H6>
+                    </figcaption>
+                  </figure>
                 </Link>
               )
             })}
@@ -77,16 +75,14 @@ export default function Home() {
               if (!item.state) return;
               return (
                 <Link key={item.url} href={item.url}>
-                  <a className="">
-                    <figure className="flex flex-col space-y-4 transition ease-in-out hover:opacity-75">
-                      <img src={item.img} alt={item.name} className="rounded-lg object-cover aspect-[4/3]" />
-                      <figcaption className="">
-                        <H4>{item.name}</H4>
-                        <p className="text-gray-500">{item.desc}</p>
-                        <span>{item.date}</span>
-                      </figcaption>
-                    </figure>
-                  </a>
+                  <figure className="flex flex-col space-y-4 transition ease-in-out hover:opacity-75">
+                    <img src={item.img} alt={item.name} className="rounded-lg object-cover aspect-[4/3]" />
+                    <figcaption className="">
+                      <H4>{item.name}</H4>
+                      <p className="text-gray-500">{item.desc}</p>
+                      <span>{item.date}</span>
+                    </figcaption>
+                  </figure>
                 </Link>
               )
             })}

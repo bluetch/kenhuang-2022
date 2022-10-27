@@ -1,4 +1,15 @@
+import Image from "next/image";
 import { Container, H1, Layout, PortfolioCover, PortfolioOverview, PortfolioProcess } from "components";
+
+import affinityMapping from "public/images/portfolio/shopee-affinity-map.jpg";
+import cardSorting from "public/images/portfolio/shopee-workshop-card-sorting.jpg";
+import sketchStorming from "public/images/portfolio/shopee-workshop-sketch-vote.jpg";
+import wireframeOverall from "public/images/portfolio/shopee-amp-pdp-wireframe-overall.png";
+import wireframeFirst from "public/images/portfolio/shopee-amp-pdp-wireframe-voucher.png";
+import wireframeFourth from "public/images/portfolio/shopee-amp-pdp-wireframe-recommendation.png";
+import mockup01 from "public/images/portfolio/shopee-amp-pdp-mockup-01.png";
+import mockup02 from "public/images/portfolio/shopee-amp-pdp-mockup-02.png";
+import mockupError from "public/images/portfolio/shopee-amp-pdp-mockup-error.png";
 
 const shopeeProductDetailPageRefactor = () => {
   return (
@@ -36,9 +47,9 @@ const shopeeProductDetailPageRefactor = () => {
             },
           ]}
         />
-        <h3 className="text-center mt-24 mb-12 text-3xl">Background</h3>
-        <div className="space-y-4">
-          <p className="text-gray-800">In order to help our users browsing service in south east area, especially in Indonesia, there are not enough internet infrastructure to support friendly web service, we have to make it better.</p>
+        <h3 className="text-center mt-24 mb-12 text-3xl font-bold">Background</h3>
+        <div className="space-y-4 text-gray-500">
+          <p>In order to help our users browsing service in south east area, especially in Indonesia, there are not enough internet infrastructure to support friendly web service, we have to make it better.</p>
           <p>There were some reasons that drove this project:</p>
           <ol className="list-decimal pl-4 space-y-2">
             <li><strong>Business:</strong> We wanted to reduce the drop-off rate of web pages, and increase discoverability from Google search.</li>
@@ -47,12 +58,13 @@ const shopeeProductDetailPageRefactor = () => {
           </ol>
         </div>
         <hr className="my-24" />
-        <h3 className="text-center mb-12 text-3xl">Design Process</h3>
+        <h3 className="text-center mb-12 text-3xl font-bold">Design Process</h3>
         <PortfolioProcess />
         <hr className="my-24" />
-        <h3 className="text-center mb-12 text-3xl">Research</h3>
+        <h3 className="text-center mb-12 text-3xl font-bold">01. Research</h3>
         <div className="grid grid-cols-2 gap-8">
-          <div className="space-y-4">
+          <div className="space-y-4 text-gray-500">
+            <h4 className="text-2xl">Data Analytics</h4>
             <p>Via Google analytics, we pick some statistics up and figure out what might be helpful to measure success and pain point.</p>
             <p>There are some data we might track or enhance:</p>
             <ul className="list-disc pl-4 space-y-2">
@@ -67,15 +79,102 @@ const shopeeProductDetailPageRefactor = () => {
           <img src="/images/portfolio/shopee-overall-sessions.png" alt="" />
         </div>
         <hr className="my-24" />
-        <div className="grid grid-cols-3 gap-8">
-          <img src="/images/portfolio/sprint-diagram.png" alt="" />
-          <div className="space-y-4 col-span-2">
-          <h3 className="mb-12 text-3xl">Design Sprint</h3>
+        <h3 className="text-center mb-12 text-3xl font-bold">02. Design Sprint</h3>
+        <div className="grid grid-cols-2 gap-8">
+          <div className="space-y-4 text-gray-500">
             <p>The sprint is a five-day process for answering critical business questions through design, prototyping, and testing ideas with customers. Developed at GV, it’s a “greatest hits” of business strategy, innovation, behavior science, design thinking, and more—packaged into a battle-tested process that any team can use.</p>
             <p>Working together in a sprint, you can shortcut the endless-debate cycle and compress months of time into a single week. Instead of waiting to launch a minimal product to understand if an idea is any good, you’ll get clear data from a realistic prototype. The sprint gives you a superpower: You can fast-forward into the future to see your finished product and customer reactions, before making any expensive commitments.</p>
           </div>
+          <img src="/images/portfolio/sprint-diagram.png" alt="" />
+        </div>
+        <hr className="my-24" />
+        <h3 className="text-center mb-12 text-3xl">Affinity Mapping</h3>
+        <div className="grid grid-cols-2 gap-8">
+          <div className="space-y-4 text-gray-500">
+            <p>Each participant watched user interview videos from 1 of 6 different user segments and came prepared with their observations written on post-it notes.</p>
+            <p>Affinity mapswere then used to organize and categorize these many different data points, from which common themes and relationships surrounding the observations emerged — even uncovering previously hidden ones.</p>
+            <h4 className="text-2xl">Solution Discovery</h4>
+            <p>The second half of the day focused on devising a design that met different user groups’ needs. To do this, participants were regrouped so each group had a mix of user personas.</p>
+          </div>
+          <Image src={affinityMapping} alt="affinity mapping" />
+        </div>
+        <hr className="my-24" />
+        <h3 className="text-center mb-12 text-3xl">Card Sorting</h3>
+        <div className="grid grid-cols-2 gap-8">
+          <div className="space-y-4 text-gray-500">
+            <p>Teams were given cards with components of Shopee’s digital interface and tasked to first classify, then sort according to importance. The open card sort method allowed participants to explore each others’ conceptions of user mental models. From this, teams were able to organically determine their design guidelines for the next phase of the sprint.</p>
+            <p>And here is the output:</p>
+            <ol className="list-decimal pl-4 space-y-2">
+              <li>Product image</li>
+              <li>Basic product information (e.g product name, price)</li>
+              <li>Product details</li>
+              <li>Comments sections</li>
+              <li>Rating section</li>
+              <li>Shipping details</li>
+              <li>Promotion information (e.g voucher)</li>
+              <li>Seller info</li>
+              <li>Wholesale details</li>
+              <li>Recommendation</li>
+            </ol>
+          </div>
+          <Image src={cardSorting} alt="workshop card sorting" />
+        </div>
+        <hr className="my-24" />
+        <h3 className="text-center mb-12 text-3xl">Sketch Storming</h3>
+        <div className="grid grid-cols-2 gap-8">
+          <div className="space-y-4 text-gray-500">
+            <p>Participants first put pen to paper and individually sketched their ideal product, then sketched a single mock-up as a group. The insights that emerged from the diverse set of participants will no doubt be invaluable to future product development and innovations.</p>
+          </div>
+          <Image src={sketchStorming} alt="workshop sketch storming" />
         </div>
       </Container>
+      <section>
+        <hr className="my-24" />
+        <Container>
+          <h3 className="text-center mb-12 text-3xl font-bold">03. Execution</h3>
+          <div className="space-y-4 text-gray-500">
+            <p>Base on the sketch storming of design sprint, we could start from product detail page. My goal is to solve all the problems and implement the idea of design.</p>
+          </div>
+        </Container>
+        <Image src={wireframeOverall} alt="wireframe overall" className="my-20" />
+        <Container>
+          <div className="grid grid-cols-2 gap-8">
+            <div className="space-y-4 text-gray-500">
+              <h4 className="text-2xl">First Screen</h4>
+              <p>According to the card sorting and user survey, beyond the images, product page needs to give high-level information of the product right off the bat.</p>
+              <p>That information includes:</p>
+              <ul className="list-disc pl-4 space-y-2">
+                <li>Product title</li>
+                <li>Price</li>
+                <li>Features and components</li>
+                <li>CTA</li>
+                <li>Customization options</li>
+              </ul>
+              <p>Ideally, all of this information lives above the fold. That isn’t always possible (in fact, it is rarely possible). The solution here is to extraction the most meaningful wording of each service. Like voucher, via interview survey, there are few people need it, but which they actually need. We make it as a small block, only display the discount percentage, if they really like to know in detail (expire date, min speed, capped), they can click to see more in detail.</p>
+            </div>
+            <Image src={wireframeFirst} alt="wireframe first screen" />
+          </div>
+          <hr className="my-24" />
+          <div className="grid grid-cols-2 gap-8">
+            <div className="space-y-4 text-gray-500">
+              <h4 className="text-2xl">Fourth Screen: Recommendation</h4>
+              <p>There are 3 recommendation sections, We put these under the product information, it can help users find out more ideal, similiar, cheaper products. For You May Also Like section, it relate the users browse history and current product, make people more choice.</p>
+              <ul className="list-disc pl-4 space-y-2">
+                <li>From the same shop</li>
+                <li>Similar products</li>
+                <li>You may also like</li>
+              </ul>
+            </div>
+            <Image src={wireframeFourth} alt="wireframe fouth screen" />
+          </div>
+          <hr className="my-24" />
+          <h3 className="text-center mb-12 text-3xl">Visual Design</h3>
+          <p>Instead of using heavy text for an overview (this is *not* the description), we use colors, fonts, and icons. And we could only fetch some representative signal for that information.</p>
+        </Container>
+        <Image src={mockup01} alt="mockup 01" className="my-20" />
+        <Image src={mockup02} alt="mockup 02" className="my-20" />
+        <Image src={mockupError} alt="mockup error" className="my-20" />
+      </section>
     </Layout>
   )
 }

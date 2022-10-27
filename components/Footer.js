@@ -31,10 +31,8 @@ export const Footer = () => {
       <p className="space-x-4">
         {links.map((link) => {
           return (
-            <Link href={link.url} key={link.name}>
-              <a target="_blank" rel="noreferrer" className="inline-block shadow-lg rounded-lg p-4 border border-white hover:border-black">
+            <Link href={link.url} key={link.name} target="_blank" rel="noreferrer" className="inline-block shadow-lg rounded-lg p-4 border border-white hover:border-black">
                 <Icon name={link.name} />
-              </a>
             </Link>
           )
         })}
