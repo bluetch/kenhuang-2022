@@ -65,7 +65,7 @@ const Portfolio = (req, res) => {
       company: "Side Project",
       category: ["design"],
       date: 2018,
-      url: "/portfolio/design-exercise-pet-adoption",
+      url: "/portfolio/pet-adoption",
       desc: "Design an experience that will help connect people looking for a new pet with the right companion for them. Help an adopter find a pet which matches their lifestyle, considering factors including breed, gender, age, temperament, and health status.",
       img: "/images/portfolio/pet-adoption-cover.png",
       state: true
