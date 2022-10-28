@@ -3,7 +3,7 @@ import { Button } from "./Button"
 export const Refactoring = () => {
   return (
     <div className="text-center p-20 mt-60 flex flex-col items-center justify-center rounded-lg opacity-100 space-y-12">
-      <p className="text-3xl">Content refactoring... :)</p>
+      <p className="text-3xl">Coming Soon :)</p>
       <Button href="/">Back to Home</Button>
     </div>
   )

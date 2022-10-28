@@ -1,10 +1,11 @@
 import Image from "next/image";
-import { Container, Layout, PortfolioCover, PortfolioOverview, Tag } from "components";
+import { Container, Layout, PortfolioCover, PortfolioOverview, Tag, Refactoring } from "components";
 
 const goodfinanceOneAccountAdmin = () => {
   return (
     <Layout title="GoodFinance One Account Admin | Ken Huang">
-      <section>
+      <Refactoring/>
+      {/* <section>
         <img src="/images/portfolio/goodfinance_office_03.png" alt="" className="h-96 w-full object-cover" />
       </section>
       <Container>
@@ -90,7 +91,7 @@ const goodfinanceOneAccountAdmin = () => {
       </Container>
       <Image src={require('public/images/portfolio/goodfinance_one_account_admin_cover.png')} alt="one account admin home page" />
       <Image src={require('public/images/portfolio/goodfinance_one_account_admin_list.png')} alt="one account admin list page" />
-      <Image src={require('public/images/portfolio/goodfinance_one_account_admin_profile.png')} alt="one account admin profile page" />
+      <Image src={require('public/images/portfolio/goodfinance_one_account_admin_profile.png')} alt="one account admin profile page" /> */}
     </Layout>
   )
 }
