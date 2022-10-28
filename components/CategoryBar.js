@@ -15,9 +15,9 @@ export const CategoryBar = ({ name = "", data = [], method }) => {
       {/* {name ? `${name}:` : ""} */}
       {!isSSR && _data.map((item) => {
         let classType =
-          "bg-white px-2 py-1 border rounded-lg text-sm hover:cursor-pointer hover:border-blue-500 hover:text-blue-500 ";
+          "bg-white px-2 py-1 border rounded-lg text-sm hover:cursor-pointer hover:border-black ";
         if (category === item.code) {
-          classType += "text-blue-500 border-blue-500";
+          classType += "text-black border border-black hover:text-black";
         } else {
           classType += "text-gray-400";
         }

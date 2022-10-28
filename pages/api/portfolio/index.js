@@ -36,7 +36,7 @@ const Portfolio = (req, res) => {
       category: ["frontend"],
       date: 2021,
       url: "/portfolio/goodfinance-one-account-admin",
-      desc: "Make an all in one account platform to help different services and business units work stability and efficiency.",
+      desc: "Make an all in one account admin to help different services and business units.",
       img: "/images/portfolio/goodfinance_one_account_admin_cover.png",
       state: true
     },
@@ -66,7 +66,7 @@ const Portfolio = (req, res) => {
       category: ["design"],
       date: 2018,
       url: "/portfolio/pet-adoption",
-      desc: "Design an experience that will help connect people looking for a new pet with the right companion for them. Help an adopter find a pet which matches their lifestyle, considering factors including breed, gender, age, temperament, and health status.",
+      desc: "Design an experience that will help connect people looking for a new pet with the right companion.",
       img: "/images/portfolio/pet-adoption-cover.png",
       state: true
     },
@@ -76,7 +76,7 @@ const Portfolio = (req, res) => {
       category: ["design"],
       date: 2018,
       url: "/portfolio/shopee-recruitment",
-      desc: "Social network recruitment strategy",
+      desc: "Design a social network media for recruitment in South East Area.",
       img: "/images/portfolio/shopee-recruitment-frog-cover.png",
       state: true
     },
@@ -96,7 +96,7 @@ const Portfolio = (req, res) => {
       category: ["frontend"],
       date: 2015,
       url: "/portfolio/line-flash-sale",
-      desc: "LINE Flash Sale is the first E-commerce service of LINE in Asia. I was very excited to be a part of this team. It was my proud project for LINE when I worked in Uitox and business trip in South Korea.",
+      desc: "The first E-commerce service of LINE in Asia. When I worked in Uitox and business trip in South Korea.",
       img: "/images/portfolio/line-flash-sale-cover.png",
       state: true
     },
@@ -106,7 +106,7 @@ const Portfolio = (req, res) => {
       date: 2013,
       category: ["frontend"],
       url: "/portfolio/lost-device-protection",
-      desc: "Protects you against malicious apps, ransomware, dangerous websites, unsafe Wi-Fi networks, unwanted access to your device, and more. Optimize your mobile phone to keep it running at peak performance.",
+      desc: "Protects you against malicious apps, ransomware, and dangerous websites.",
       img: "/images/portfolio/lost-device-protection-cover.jpg",
       state: true
     },
