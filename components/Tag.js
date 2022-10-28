@@ -1,4 +1,4 @@
-export const Tag = ({ children, style="gray" }) => {
+export const Tag = ({ children, variant="black" }) => {
   
   if (Array.isArray(children)) {
     return (

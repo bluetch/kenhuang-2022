@@ -10,7 +10,7 @@ const lineFlashSale = () => {
       <Container>
         <PortfolioCover
           date="2018 Feb - 2018 October"
-          tags={["Front-end", "Mobile"]}
+          tags={["Front-end", "Mobile", "App"]}
           title="LINE Flash Sale"
           duration="6 months"
           myRole="Front-end lead"

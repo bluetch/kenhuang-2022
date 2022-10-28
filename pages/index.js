@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { H1, H2, H3, H4, H6, CategoryBar, Container, Layout } from 'components';
+import { H1, H2, H3, H4, H6, CategoryBar, Container, Layout, PortfolioList } from 'components';
 import { codeMapping, dateConvert, fetcher } from "utils";
 import { useEffect, useState, useMemo } from "react";
 import Link from "next/link";
@@ -70,23 +70,7 @@ export default function Home() {
             data="portfolioSpec"
             method={(e) => setCategory(e)}
           />
-          <div className="grid grid-cols-2 gap-x-8 gap-y-20">
-            {portfolioResult.map((item) => {
-              if (!item.state) return;
-              return (
-                <Link key={item.url} href={item.url}>
-                  <figure className="flex flex-col space-y-4 transition ease-in-out hover:opacity-75">
-                    <img src={item.img} alt={item.name} className="rounded-lg object-cover aspect-[4/3]" />
-                    <figcaption className="">
-                      <H4>{item.name}</H4>
-                      <p className="text-gray-500">{item.desc}</p>
-                      <span>{item.date}</span>
-                    </figcaption>
-                  </figure>
-                </Link>
-              )
-            })}
-          </div>
+          <PortfolioList data={portfolioResult}/>
         </Container>
       </section>
     </Layout>

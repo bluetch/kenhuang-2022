@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { Container, H1, H3, Layout, PortfolioCover, PortfolioOverview, PortfolioProcess } from "components";
 
@@ -10,46 +11,69 @@ const shopeeProductDetailPageRefactor = () => {
       <Container>
         <PortfolioCover
           date="2018 Feb - 2018 October"
-          tags={["UX/UI Design", "Mobile", "Research", "Workshop"]}
+          tags={["UX/UI Design", "Mobile", "Research", "Workshop", "PM"]}
           title="Product Detail Page Refactor"
           duration="6 months"
           myRole="Product Designer"
-          responsibility="End to end UX/UI Developer"
+          responsibility="UX/UI, project management"
           company="Shopee, Singapore"
         />
         <PortfolioOverview
           overview={[
             {
               title: "01. Objective",
-              description: "The team wanted to redesign the existing TrendMicro mobile security for international. Also, we wanted to refactor our infrastructure for the future scale.",
+              desc: "The team wanted to refactor the existing mobile product detail page for South Ease area customers to get better user experience.",
             },
             {
               title: "02. Role & Deliverables",
-              description: "In this project, I worked closely with Designers, PM and four engineers. I was responsible for the end to end web design, from mobile first to desktop responsive web design and API handling.",
+              desc: "Not only an end-to end UX/UI designer, but also as a PM to ",
             },
             {
               title: "03. Challenges",
-              description: "This project had quite a few technical dependencies with other teams & products, we also needed to deal with many prioritizations to make sure we can deliver MVP on time.",
+              desc: "This project had quite a few technical dependencies with other teams & products, we also needed to deal with many prioritizations to make sure we can deliver MVP on time.",
             },
             {
               title: "04. Outcome & Impact",
-              description: "We launched the MVP in 3 months that increased our overall metrics significantly, especially it decreased the page loading time by 32%. We also received a lot of positive feedback from users.",
+              desc: "We launched the MVP in 3 months that increased our overall metrics significantly, especially it increased the users satisfaction, decrease drop-off rate and page rank. We also received a lot of positive feedback from users.",
             },
           ]}
         />
         <h3 className="text-center mt-24 mb-12 text-3xl font-bold">Background</h3>
-        <div className="space-y-4 text-gray-500">
-          <p>In order to help our users browsing service in south east area, especially in Indonesia, there are not enough internet infrastructure to support friendly web service, we have to make it better.</p>
-          <p>There were some reasons that drove this project:</p>
-          <ol className="list-decimal pl-4 space-y-2">
-            <li><strong>Business:</strong> We wanted to reduce the drop-off rate of web pages, and increase discoverability from Google search.</li>
-            <li><strong>Technology:</strong> The previous app design and architecture was difficult to fit low-bandwidth internet environment like Indonesia. It need to load a page around 11 seconds.</li>
-            <li><strong>User’s pain points:</strong> There is too much information for many South-east-Asians use the older smartphone with small screen size. A lot of our users in Indonesia are hard to filter the more meaningful thing they care. </li>
-          </ol>
+        <div className="grid grid-cols-2 gap-8">
+          <div className="space-y-4 text-gray-500">
+            <p>In order to help our users browsing service in south east area, especially in Indonesia, there are not enough internet infrastructure to support friendly web service, we have to make it better.</p>
+            <p>There were some reasons that drove this project:</p>
+            <ol className="list-decimal pl-4 space-y-2">
+              <li>
+                <strong className="text-black">Business:</strong> We wanted to reduce the drop-off rate of web pages, and increase discoverability from Google search.</li>
+              <li>
+                <strong className="text-black">Technology:</strong> The previous app design and architecture was difficult to fit low-bandwidth internet environment like Indonesia. It need to load a page around 11 seconds.</li>
+              <li>
+                <strong className="text-black">User’s pain points:</strong> There is too much information for many South-east-Asians use the older smartphone with small screen size. A lot of our users in Indonesia are hard to filter the more meaningful thing they care. </li>
+            </ol>
+          </div>
+          <Image src={require('public/images/portfolio/customer-pain-points.jpg')} alt="customer pain points" />
         </div>
         <hr className="my-24" />
         <h3 className="text-center mb-12 text-3xl font-bold">Design Process</h3>
-        <PortfolioProcess />
+        <PortfolioProcess data={[
+          {
+            title: "Research",
+            desc: "Data Analytics, user survey",
+          },
+          {
+            title: "Design sprint",
+            desc: "Workshop: user discovery, solution discovery",
+          },
+          {
+            title: "Execution",
+            desc: "UX/UI design, prototype, project management",
+          },
+          {
+            title: "Validation",
+            desc: "Google analytics, NPS",
+          },
+        ]} />
         <hr className="my-24" />
         <h3 className="text-center mb-12 text-3xl font-bold">01. Research</h3>
         <div className="grid grid-cols-2 gap-8">
@@ -164,6 +188,72 @@ const shopeeProductDetailPageRefactor = () => {
         <Image src={require('public/images/portfolio/shopee-amp-pdp-mockup-02.png')} alt="mockup 01" className="my-20" />
         <Image src={require('public/images/portfolio/shopee-amp-pdp-mockup-02.png')} alt="mockup 02" className="my-20" />
         <Image src={require('public/images/portfolio/shopee-amp-pdp-mockup-error.png')} alt="mockup error" className="my-20" />
+      </section>
+      <hr className="my-24" />
+      <section>
+        <Container>
+          <h3 className="text-center mb-12 text-3xl font-bold">Technical solution</h3>
+          <div className="grid grid-cols-2 gap-8">
+            <div className="space-y-4 text-gray-500">
+              <p>Via workshop with Google, we launch the <Link href="AMP project" target="_blank" className="font-bold text-black">AMP project</Link> for this version which is an open-source initiative aiming to make the web better for all. The project enables the creation of websites and ads that are consistently fast, beautiful and high-performing across devices and distribution platforms.</p>
+              <p>In a highly competitive e-commerce market, it’s critical to provide the best user experience for customers, including for those using low-end smartphones on 3G or 2G connections. As Shopee mobile traffic grew, the company saw an opportunity to acquire new users and improve mobile conversions through this valuable channel.</p>
+            </div>
+            <Image src={require('public/images/portfolio/google-ux-workshop.jpg')} alt="Google AMP has changed SEO" />
+          </div>
+        </Container>
+      </section>
+      <hr className="my-24" />
+      <section>
+        <Container>
+          <h3 className="text-center mb-12 text-3xl font-bold">Product Management</h3>
+          <div className="grid grid-cols-2 gap-8">
+            <div className="space-y-4 text-gray-500">
+              <p>Due to this project was new and start up with designers and developers for the beginning, I raise myself to be a product manager in this project to work with each team:</p>
+              <ul className="list-disc pl-4 space-y-2">
+                <li>Design team</li>
+                <li>Product team</li>
+                <li>Front end developer team</li>
+                <li>Backend developer team</li>
+                <li>SEO team</li>
+                <li>QA(Quality assurance) team</li>
+                <li>Local country team (7 countries)</li>
+              </ul>
+              <h4 className="text-2xl text-black">Documentation</h4>
+              <p>I created and maintaind some documents like PRD (Product Requirements Document) containing all the requirements to a certain product. It is written to allow people to understand what a product should do.</p>
+              <ul className="list-disc pl-4 space-y-2">
+                <li>Product Requirements Document (PRD)</li>
+                <li>Tracking point requirement</li>
+                <li>Design spec</li>
+                <li>Test case</li>
+              </ul>
+            </div>
+          <Image src={require('public/images/portfolio/shopee-20190508.jpg')} alt="shopee team work"/>
+          </div>
+        </Container>
+      </section>
+      <hr className="my-24" />
+      <section>
+        <Container>
+          <h3 className="text-center mb-12 text-3xl font-bold">04. Validation</h3>
+          <div className="grid grid-cols-2 gap-8">
+            <div className="space-y-4 text-gray-500">
+              <p>We use Google Analytics and NPS (Net Promoter Score) to track the performance with internal data to validate the result.</p>
+              <p>3 months after launch, product detail page continued to have a positive impact on the user experience: </p>
+              <ul className="list-disc pl-4 space-y-2">
+                <li>
+                  <strong className="text-black">User satisfaction</strong> increased significantly 14%.</li>
+                <li>
+                  <strong className="text-black">active usage</strong> of 28 day for pages increased by 50%.</li>
+                <li>
+                  <strong className="text-black">Organic traffic</strong> incrase 39%.</li>
+                <li>
+                  <strong className="text-black">Loading time</strong> runs 3 times as fast as before launch.</li>
+              </ul>
+              <p>For confidentiality reasons I have omitted the actual values for these metrics.</p>
+            </div>
+            <Image src={require('public/images/portfolio/shopee-20180909.jpg')} />
+          </div>
+        </Container>
       </section>
     </Layout>
   )

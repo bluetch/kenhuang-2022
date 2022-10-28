@@ -1,7 +1,8 @@
 const Portfolio = (req, res) => {
   const portfolio = [
     // {
-    //   name: "Good Finance Careers",
+    //   name: "Careers",
+    //   company: "Good Finance",
     //   category: ["frontend", "design"],
     //   date: 2021,
     //   url: "/portfolio/goodfinance-careers",
@@ -10,7 +11,8 @@ const Portfolio = (req, res) => {
     //   state: true
     // },
     // {
-    //   name: "Good Finance Learning Center",
+    //   name: "Learning Center",
+    //   company: "Good Finance",
     //   category: ["frontend"],
     //   date: 2022,
     //   url: "/portfolio/goodfinance-learning-center",
@@ -19,7 +21,8 @@ const Portfolio = (req, res) => {
     //   state: true
     // },
     // {
-    //   name: "Good Finance GoodNote",
+    //   name: "GoodNote",
+    //   company: "Good Finance",
     //   category: ["frontend", "design"],
     //   date: 2022,
     //   url: "/portfolio/goodfinance-goodnote",
@@ -28,16 +31,18 @@ const Portfolio = (req, res) => {
     //   state: true
     // },
     {
-      name: "Good Finance One Account Admin",
+      name: "One Account Admin",
+      company: "Good Finance",
       category: ["frontend"],
       date: 2021,
       url: "/portfolio/goodfinance-one-account-admin",
-      desc: "To improve performance and get more acquisition for e-commerce",
+      desc: "Make an all in one account platform to help different services and business units work stability and efficiency.",
       img: "/images/portfolio/goodfinance_one_account_admin_cover.png",
       state: true
     },
     {
-      name: "Shopee Product Detail Page Refactor",
+      name: "Product Detail Page Refactor",
+      company: "Shopee",
       category: ["design"],
       date: 2018,
       url: "/portfolio/shopee-product-detail-page-refactor",
@@ -46,7 +51,8 @@ const Portfolio = (req, res) => {
       state: true
     },
     // {
-    //   name: "Shopee Design Language System",
+    //   name: "Design Language System",
+    //   company: "Shopee",
     //   category: ["design"],
     //   date: 2018,
     //   url: "/portfolio/design-language-system",
@@ -56,15 +62,17 @@ const Portfolio = (req, res) => {
     // },
     {
       name: "Pet Adoption",
+      company: "Side Project",
       category: ["design"],
       date: 2018,
       url: "/portfolio/design-exercise-pet-adoption",
-      desc: "Design exercise",
+      desc: "Design an experience that will help connect people looking for a new pet with the right companion for them. Help an adopter find a pet which matches their lifestyle, considering factors including breed, gender, age, temperament, and health status.",
       img: "/images/portfolio/pet-adoption-cover.png",
       state: true
     },
     {
-      name: "Shopee Graphic Recruitment",
+      name: "Graphic Recruitment",
+      company: "Shopee",
       category: ["design"],
       date: 2018,
       url: "/portfolio/shopee-recruitment",
@@ -74,6 +82,7 @@ const Portfolio = (req, res) => {
     },
     // {
     //   name: "Prescription Helper",
+    //   company: "Uitox",
     //   category: ["design", "frontend"],
     //   date: 2016,
     //   url: "/portfolio/prescription-helper",
@@ -83,24 +92,27 @@ const Portfolio = (req, res) => {
     // },
     {
       name: "LINE Flash Sale",
+      company: "Uitox, LINE",
       category: ["frontend"],
       date: 2015,
       url: "/portfolio/line-flash-sale",
-      desc: "Deliver UX/UI design for Web App for LINE",
+      desc: "LINE Flash Sale is the first E-commerce service of LINE in Asia. I was very excited to be a part of this team. It was my proud project for LINE when I worked in Uitox and business trip in South Korea.",
       img: "/images/portfolio/line-flash-sale-cover.png",
       state: true
     },
     {
       name: "Lost Device Protection",
+      company: "Trend Micro",
       date: 2013,
       category: ["frontend"],
       url: "/portfolio/lost-device-protection",
-      desc: "Trend Micro",
+      desc: "Protects you against malicious apps, ransomware, dangerous websites, unsafe Wi-Fi networks, unwanted access to your device, and more. Optimize your mobile phone to keep it running at peak performance.",
       img: "/images/portfolio/lost-device-protection-cover.jpg",
       state: true
     },
     // {
     //   name: "Jewelry Box",
+    //  company: "Trend Micro",
     //   date: 2012,
     //   category: ["frontend"],
     //   url: "/portfolio/jewelry-box",

@@ -1,4 +1,7 @@
+import { H4 } from "components";
+import Link from "next/link";
 import { Tag } from "./Tag";
+import { dateConvert } from "utils";
 
 export const PortfolioCover = ({ tags, date, title, duration, myRole, responsibility, company }) => {
   return (
@@ -39,7 +42,7 @@ export const PortfolioOverview = ({ overview }) => {
           return (
             <div className="border rounded-lg p-8" key={item.title}>
               <h3 className="font-semibold mb-2">{item.title}</h3>
-              <p className="text-gray-500">{item.description}</p>
+              <p className="text-gray-500">{item.desc}</p>
             </div>
           )
         })}
@@ -48,37 +51,79 @@ export const PortfolioOverview = ({ overview }) => {
   )
 }
 
-export const PortfolioProcess = () => {
+export const PortfolioProcess = ({ data }) => {
   return (
     <div className="grid grid-cols-4 gap-8">
-      <div className="shadow-lg rounded-lg p-4 border border-white">
-        <h6 className="font-bold mb-4">
-          <Tag>01.</Tag>
-          Research
-        </h6>
-        <p className="text-gray-500">Data Analytics, user survey</p>
-      </div>
-      <div className="shadow-lg rounded-lg p-4 border border-white">
-        <h6 className="font-bold mb-4">
-          <Tag>02.</Tag>
-          Design sprint
-        </h6>
-        <p className="text-gray-500">Workshop: user discovery, solution discovery</p>
-      </div>
-      <div className="shadow-lg rounded-lg p-4 border border-white">
-        <h6 className="font-bold mb-4">
-          <Tag>03.</Tag>
-          Execution
-        </h6>
-        <p className="text-gray-500">UX/UI design, prototype, project management</p>
-      </div>
-      <div className="shadow-lg rounded-lg p-4 border border-white">
-        <h6 className="font-bold mb-4">
-          <Tag>04.</Tag>
-          Research
-        </h6>
-        <p className="text-gray-500">Google analytics, business intelligence</p>
-      </div>
+      {data.map((item, index) => {
+        return (
+          <div className="shadow-lg rounded-lg p-4 border border-white">
+            <h6 className="font-bold mb-4">
+              <Tag>{`0${index + 1}.`}</Tag>
+              {item.title}
+            </h6>
+            <p className="text-gray-500">{item.desc}</p>
+          </div>
+        )
+      })}
     </div>
   )
+}
+
+export const PortfolioList = ({ data, layout = "figure" }) => {
+  if (layout === "figure") {
+    return (
+      <div className="grid grid-cols-2 gap-x-8 gap-y-20">
+        {data.map((item) => {
+          if (!item.state) return;
+          return (
+            <Link key={item.url} href={item.url}>
+              <figure className="flex flex-col space-y-4 transition ease-in-out hover:opacity-75">
+                <img src={item.img} alt={item.name} className="rounded-lg object-cover aspect-[4/3]" />
+                <figcaption className="">
+                  <H4 className="text-gray-500 font-normal">{item.name}</H4>
+                  <strong>{item.company}, {item.date}</strong>
+                  {/* <p className="text-gray-500">{item.desc}</p> */}
+                </figcaption>
+              </figure>
+            </Link>
+          )
+        })}
+      </div>
+    )
+  } else {
+    return (
+      <section className="grid grid-cols-2 gap-20 mb-20">
+        {data.map((item) => {
+          if (!item.state) return;
+          return (
+            <Link key={item.name} href={item.url} className="group transition">
+              <figure className="flex space-x-4">
+                <img
+                  src={item.img}
+                  alt={item.name}
+                  className="w-1/3 object-cover aspect-square group-hover:opacity-50 transform transition-all duration-300 rounded"
+                />
+                <figcaption className="w-2/3 pl-4 space-y-2">
+                  <p className="text-gray-400 text-sm">
+                    {dateConvert(item.date, "year")}
+                    {" | "}
+                    {item.company}
+                    {" | "}
+                    {item.category.join(" / ")}
+                  </p>
+                  <H4>
+                    {item.name}
+                  </H4>
+                  <p className="text-gray-500 leading-6 max-h-24 overflow-ellipsis overflow-hidden">
+                    {item.desc}
+                  </p>
+                </figcaption>
+              </figure>
+            </Link>
+          );
+        })}
+      </section>
+    )
+  }
+
 }

@@ -21,19 +21,19 @@ const goodfinanceOneAccountAdmin = () => {
           overview={[
             {
               title: "01. Objective",
-              description: "Due to there are many business unit and service with different account system, we would like to integrate all in one to help work stability and efficiency.",
+              desc: "Due to there are many business unit and service with different account system, we would like to integrate all in one to help work stability and efficiency.",
             },
             {
               title: "02. Role & Deliverables",
-              description: "In this project, I worked closely with Designers, PM and back-end engineers. I was responsible for the end to end web design, from PRD to front-end implementation and API handling.",
+              desc: "In this project, I worked closely with Designers, PM and back-end engineers. I was responsible for the end to end web design, from PRD to front-end implementation and API handling.",
             },
             {
               title: "03. Challenges",
-              description: "I am the first one front-end developer in this company, so that there are many standard and rule what I have to clearify, then make a scalable web structure.",
+              desc: "I am the first one front-end developer in this company, so that there are many standard and rule what I have to clearify, then make a scalable web structure.",
             },
             {
               title: "04. Outcome & Impact",
-              description: "After launched the one account admin that decreased repetitive work for open account, when customers register new service we can maintain and update the same account. Save 30% of working time.",
+              desc: "After launched the one account admin that decreased repetitive work for open account, when customers register new service we can maintain and update the same account. Save 30% of working time.",
             },
           ]}
         />
