@@ -5,7 +5,7 @@ export const Tag = ({ children, variant="black" }) => {
       <div className="space-x-2">
         {children.map((item) => {
           return (
-            <span className="rounded bg-gray-100 inline-block text-xs px-4 py-1" key={`tag-${item}`}>{item}</span>
+            <span className="rounded bg-gray-100 inline-block text-xs px-4 py-1 mb-2" key={`tag-${item}`}>{item}</span>
           )
         })}
       </div>

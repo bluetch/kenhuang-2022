@@ -41,17 +41,17 @@ const myTrips = [
 ];
 
 const myWorkExperience = [
-  {
-    company: "TXOne Networks",
-    location: "Taipei, Taiwan",
-    position: "Staff Frontend Developer",
-    logo: "https://media-exp1.licdn.com/dms/image/C560BAQGJSrmlPyGOTQ/company-logo_200_200/0/1652442822162?e=1675296000&v=beta&t=ZvOn0iw47DuvQUGM7adcq13htnT08MSBZHDImIfiNy0",
-    desc: [
-      "Migrated all the services from TrendMicro to TXOne",
-      "Develop and maintain automated all OT security products."
-    ],
-    duration: "Nov 2022 - Now"
-  },
+  // {
+  //   company: "TXOne Networks",
+  //   location: "Taipei, Taiwan",
+  //   position: "Staff Frontend Developer",
+  //   logo: "https://media-exp1.licdn.com/dms/image/C560BAQGJSrmlPyGOTQ/company-logo_200_200/0/1652442822162?e=1675296000&v=beta&t=ZvOn0iw47DuvQUGM7adcq13htnT08MSBZHDImIfiNy0",
+  //   desc: [
+  //     "Migrated all the services from TrendMicro to TXOne",
+  //     "Develop and maintain automated all OT security products."
+  //   ],
+  //   duration: "Nov 2022 - Now"
+  // },
   {
     company: "Good Finance",
     location: "Taipei, Taiwan",

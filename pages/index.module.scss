@@ -22,7 +22,7 @@
     list-style: none;
     background: rgba(0, 0, 0, 0.05);
     // border: 1px solid rgba(0,0,0,0.3);
-    animation: animate 25s linear infinite;
+    animation: animate 5s linear infinite;
     bottom: -150px;
 
     // border-right: 0.3em solid transparent;
@@ -64,7 +64,7 @@
     width: 30px;
     height: 30px;
     animation-delay: 2s;
-    animation-duration: 12s;
+    animation-duration: 2s;
   }
 
   .circles li:nth-child(3) {
@@ -79,7 +79,7 @@
     width: 55px;
     height: 55px;
     animation-delay: 0s;
-    animation-duration: 18s;
+    animation-duration: 8s;
   }
 
   .circles li:nth-child(5) {
@@ -100,14 +100,14 @@
     left: 35%;
     width: 20px;
     height: 20px;
-    animation-delay: 7s;
+    animation-delay: 1s;
   }
 
   .circles li:nth-child(8) {
     left: 75%;
     width: 70px;
     height: 70px;
-    animation-delay: 15s;
+    animation-delay: 5s;
     animation-duration: 45s;
   }
 

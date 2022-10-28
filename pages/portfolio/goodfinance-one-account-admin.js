@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Container, Layout, PortfolioCover, PortfolioOverview } from "components";
+import { Container, Layout, PortfolioCover, PortfolioOverview, Tag } from "components";
 
 const goodfinanceOneAccountAdmin = () => {
   return (
@@ -10,11 +10,11 @@ const goodfinanceOneAccountAdmin = () => {
       <Container>
         <PortfolioCover
           date="2021 Apr - 2022 Apr"
-          tags={["Front-end", "API", "React", "Finance"]}
+          tags={["Front-end", "APIs", "React", "Finance"]}
           title="One Account Admin"
           duration="12 months"
           myRole="Sr. Front-end developer"
-          responsibility="End to end UX/UI Developer"
+          responsibility="React, Semantic HTML, APIs, Testing"
           company="Good Finance, Taipei, Taiwan"
         />
         <PortfolioOverview
@@ -44,23 +44,53 @@ const goodfinanceOneAccountAdmin = () => {
             <p>However, With the development of a new product, we decided to solve this heavy burden.</p>
             <p>Additionally, the global financial services kept rolling out new content and features worldwide, which may not be an optimal experience to current market, it also affected the new product in many aspects.</p>
           </div>
-          <Image src={require('public/images/portfolio/goodfinance_old_computer.jpg')} alt="old services"/>
+          <Image src={require('public/images/portfolio/goodfinance_old_computer.jpg')} alt="old services" />
         </div>
         <hr className="my-24" />
         <h3 className="text-center mb-12 text-3xl font-bold">Task</h3>
         <div className="grid grid-cols-2 gap-8">
           <div className="space-y-4 text-gray-500">
-            <p>The sprint is a five-day process for answering critical business questions through design, prototyping, and testing ideas with customers. Developed at GV, it’s a “greatest hits” of business strategy, innovation, behavior science, design thinking, and more—packaged into a battle-tested process that any team can use.</p>
-            <p>Working together in a sprint, you can shortcut the endless-debate cycle and compress months of time into a single week. Instead of waiting to launch a minimal product to understand if an idea is any good, you’ll get clear data from a realistic prototype. The sprint gives you a superpower: You can fast-forward into the future to see your finished product and customer reactions, before making any expensive commitments.</p>
+            <p>Because of there are many legacy service have to maintain with new product, I have to understand existing domain knowledge and propose a scalable structure plan, so that here are tasks to do:</p>
+            <ul className="list-disc pl-4 space-y-2">
+              <li>PRD discussion</li>
+              <li>Frontend technical specification.</li>
+              <li>Refactor old systems.</li>
+              <li>Define API data specification.</li>
+              <li>Technological selection for product.</li>
+              <li>Ensure browser compatibility.</li>
+            </ul>
           </div>
-          <img src="/images/portfolio/sprint-diagram.png" alt="" />
+          <div className="grid grid-cols-2 gap-8">
+            <Image src={require("public/images/portfolio/goodfinance_securities_sequence_diagram.png")} className="aspect-square" />
+            <Image src={require("public/images/portfolio/goodfinance_one_account_api_natural.png")} className="aspect-square" />
+          </div>
+
         </div>
         <hr className="my-24" />
-        <h3 className="text-center mb-12 text-3xl font-bold">Actions</h3>
+        <h3 className="text-center mb-12 text-3xl font-bold">Action</h3>
+        <div className="space-y-4 text-gray-500 text-center lg:w-1/2 mx-auto">
+          <p>I am the first one frontend developer in this company, and worked very closely with designers and backend developers on the implementation of the features and in some cases even had my hands on project management to help team work and better understand the development process.</p>
+          <Tag>{[
+            "React.js",
+            "SASS",
+            "Keycloak.js",
+            "MUI",
+            "Date-io",
+            "React-hook-form",
+            "React-pdf",
+            "Jest",
+            "Figma",
+          ]}</Tag>
+            
+          <p>The front end build process included the use of Gitlab CI/CD for automated tasks to speed up development and Git for version control.</p>
+        </div>
         <hr className="my-24" />
         <h3 className="text-center mb-12 text-3xl font-bold">Result</h3>
-        <Image src={require('public/images/portfolio/goodfinance_one_account_admin_cover.png')} alt="old services"/>
+
       </Container>
+      <Image src={require('public/images/portfolio/goodfinance_one_account_admin_cover.png')} alt="one account admin home page" />
+      <Image src={require('public/images/portfolio/goodfinance_one_account_admin_list.png')} alt="one account admin list page" />
+      <Image src={require('public/images/portfolio/goodfinance_one_account_admin_profile.png')} alt="one account admin profile page" />
     </Layout>
   )
 }

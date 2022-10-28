@@ -1,7 +1,12 @@
+// import { Shalimar } from "@next/font/google";
 import { Container } from "components";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
+
+// const font = Shalimar({
+//   weight: "400"
+// });
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -53,9 +58,9 @@ export const Header = () => {
           <Link href="/" className="flex items-center group">
             <img src="/images/k-logo.png" alt="Ken Huang" className="w-8" />
             <span className="px-4 text-gray-300">|</span>
-              <span className="font-bold text-xl lg:text-2xl group-hover:text-gray-500 transition">
-                Ken Huang
-              </span>
+            <span className="font-bold text-xl lg:text-2xl group-hover:text-gray-500 transition">
+              Ken Huang
+            </span>
           </Link>
           <nav
             className={`overflow-visible ${open ? "translate-x-0" : "-translate-x-full lg:-translate-x-0"
