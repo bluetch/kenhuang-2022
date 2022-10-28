@@ -1,7 +1,5 @@
 import Image from "next/image";
 import { Container, Layout, PortfolioCover, PortfolioOverview } from "components";
-import oldComputer from "public/images/portfolio/goodfinance_old_computer.jpg";
-import gfCover from "public/images/portfolio/goodfinance_one_account_admin_cover.png";
 
 const goodfinanceOneAccountAdmin = () => {
   return (
@@ -46,7 +44,7 @@ const goodfinanceOneAccountAdmin = () => {
             <p>However, With the development of a new product, we decided to solve this heavy burden.</p>
             <p>Additionally, the global financial services kept rolling out new content and features worldwide, which may not be an optimal experience to current market, it also affected the new product in many aspects.</p>
           </div>
-          <Image src={oldComputer} alt="old services"/>
+          <Image src={require('public/images/portfolio/goodfinance_old_computer.jpg')} alt="old services"/>
         </div>
         <hr className="my-24" />
         <h3 className="text-center mb-12 text-3xl font-bold">Task</h3>
@@ -61,7 +59,7 @@ const goodfinanceOneAccountAdmin = () => {
         <h3 className="text-center mb-12 text-3xl font-bold">Actions</h3>
         <hr className="my-24" />
         <h3 className="text-center mb-12 text-3xl font-bold">Result</h3>
-        <Image src={gfCover} alt="old services"/>
+        <Image src={require('public/images/portfolio/goodfinance_one_account_admin_cover.png')} alt="old services"/>
       </Container>
     </Layout>
   )

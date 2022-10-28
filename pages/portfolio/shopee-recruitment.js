@@ -1,9 +1,5 @@
 import Image from "next/image";
 import { Container, Layout, PortfolioCover } from "components";
-import frogApp from "public/images/portfolio/shopee-recruitment-frog-app.jpg";
-import wechat from "public/images/portfolio/shopee-recruitment-wechat.png";
-import frogLayout from "public/images/portfolio/shopee-recruitment-content.png";
-import frogEmail from "public/images/portfolio/shopee-recruitment-email.png";
 
 const shopeeRecruitment = () => {
   return (
@@ -35,19 +31,19 @@ const shopeeRecruitment = () => {
               <li>Helps you connect with passive candidates</li>
             </ul>
           </div>
-          <Image src={frogApp} alt="Travel Frog" />
+          <Image src={require('public/images/portfolio/shopee-recruitment-frog-app.jpg')} alt="Travel Frog" />
         </div>
         <hr className="my-24" />
       </Container>
       <h3 className="text-center mt-24 mb-12 text-3xl font-bold">Visual</h3>
-      <Image src={wechat} alt="Travel Frog" />
-      <Image src={frogLayout} alt="Travel Frog" className="my-20"/>
+      <Image src={require('public/images/portfolio/shopee-recruitment-wechat.png')} alt="Travel Frog" />
+      <Image src={require('public/images/portfolio/shopee-recruitment-content.png')} alt="Travel Frog" className="my-20"/>
       <Container>
         <div className="grid grid-cols-2 gap-8">
           <h3 className="text-3xl font-bold">Result</h3>
           <div className="space-y-4 text-gray-500">
             <p>We got nearly <strong>hundred</strong> of great designer resumes around the China, Taiwan, Indonesia, Singapore, and Thailand ...etc, in one week.</p>
-            <Image src={frogEmail} alt="Travel Frog" />
+            <Image src={require('public/images/portfolio/shopee-recruitment-email.png')} alt="Travel Frog" />
           </div>
         </div>
       </Container>

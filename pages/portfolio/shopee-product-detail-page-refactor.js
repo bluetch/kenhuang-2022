@@ -1,16 +1,6 @@
 import Image from "next/image";
 import { Container, H1, H3, Layout, PortfolioCover, PortfolioOverview, PortfolioProcess } from "components";
 
-import affinityMapping from "public/images/portfolio/shopee-affinity-map.jpg";
-import cardSorting from "public/images/portfolio/shopee-workshop-card-sorting.jpg";
-import sketchStorming from "public/images/portfolio/shopee-workshop-sketch-vote.jpg";
-import wireframeOverall from "public/images/portfolio/shopee-amp-pdp-wireframe-overall.png";
-import wireframeFirst from "public/images/portfolio/shopee-amp-pdp-wireframe-voucher.png";
-import wireframeFourth from "public/images/portfolio/shopee-amp-pdp-wireframe-recommendation.png";
-import mockup01 from "public/images/portfolio/shopee-amp-pdp-mockup-01.png";
-import mockup02 from "public/images/portfolio/shopee-amp-pdp-mockup-02.png";
-import mockupError from "public/images/portfolio/shopee-amp-pdp-mockup-error.png";
-
 const shopeeProductDetailPageRefactor = () => {
   return (
     <Layout title="Shopee Product Detail Page Refactor | Ken Huang">
@@ -21,7 +11,7 @@ const shopeeProductDetailPageRefactor = () => {
         <PortfolioCover
           date="2018 Feb - 2018 October"
           tags={["UX/UI Design", "Mobile", "Research", "Workshop"]}
-          title="Shopee Product Detail Page Redesign"
+          title="Product Detail Page Refactor"
           duration="6 months"
           myRole="Product Designer"
           responsibility="End to end UX/UI Developer"
@@ -96,7 +86,7 @@ const shopeeProductDetailPageRefactor = () => {
             <h4 className="text-2xl">Solution Discovery</h4>
             <p>The second half of the day focused on devising a design that met different user groups’ needs. To do this, participants were regrouped so each group had a mix of user personas.</p>
           </div>
-          <Image src={affinityMapping} alt="affinity mapping" />
+          <Image src={require('public/images/portfolio/shopee-affinity-map.jpg')} alt="affinity mapping" />
         </div>
         <hr className="my-24" />
         <h3 className="text-center mb-12 text-3xl">Card Sorting</h3>
@@ -117,7 +107,7 @@ const shopeeProductDetailPageRefactor = () => {
               <li>Recommendation</li>
             </ol>
           </div>
-          <Image src={cardSorting} alt="workshop card sorting" />
+          <Image src={require('public/images/portfolio/shopee-workshop-card-sorting.jpg')} alt="workshop card sorting" />
         </div>
         <hr className="my-24" />
         <h3 className="text-center mb-12 text-3xl">Sketch Storming</h3>
@@ -125,7 +115,7 @@ const shopeeProductDetailPageRefactor = () => {
           <div className="space-y-4 text-gray-500">
             <p>Participants first put pen to paper and individually sketched their ideal product, then sketched a single mock-up as a group. The insights that emerged from the diverse set of participants will no doubt be invaluable to future product development and innovations.</p>
           </div>
-          <Image src={sketchStorming} alt="workshop sketch storming" />
+          <Image src={require('public/images/portfolio/shopee-workshop-sketch-vote.jpg')} alt="workshop sketch storming" />
         </div>
       </Container>
       <section>
@@ -136,7 +126,7 @@ const shopeeProductDetailPageRefactor = () => {
             <p>Base on the sketch storming of design sprint, we could start from product detail page. My goal is to solve all the problems and implement the idea of design.</p>
           </div>
         </Container>
-        <Image src={wireframeOverall} alt="wireframe overall" className="my-20" />
+        <Image src={require('public/images/portfolio/shopee-amp-pdp-wireframe-overall.png')} alt="wireframe overall" className="my-20" />
         <Container>
           <div className="grid grid-cols-2 gap-8">
             <div className="space-y-4 text-gray-500">
@@ -152,7 +142,7 @@ const shopeeProductDetailPageRefactor = () => {
               </ul>
               <p>Ideally, all of this information lives above the fold. That isn’t always possible (in fact, it is rarely possible). The solution here is to extraction the most meaningful wording of each service. Like voucher, via interview survey, there are few people need it, but which they actually need. We make it as a small block, only display the discount percentage, if they really like to know in detail (expire date, min speed, capped), they can click to see more in detail.</p>
             </div>
-            <Image src={wireframeFirst} alt="wireframe first screen" />
+            <Image src={require('public/images/portfolio/shopee-amp-pdp-wireframe-voucher.png')} alt="wireframe first screen" />
           </div>
           <hr className="my-24" />
           <div className="grid grid-cols-2 gap-8">
@@ -165,15 +155,15 @@ const shopeeProductDetailPageRefactor = () => {
                 <li>You may also like</li>
               </ul>
             </div>
-            <Image src={wireframeFourth} alt="wireframe fouth screen" />
+            <Image src={require('public/images/portfolio/shopee-amp-pdp-wireframe-recommendation.png')} alt="wireframe fouth screen" />
           </div>
           <hr className="my-24" />
           <h3 className="text-center mb-12 text-3xl">Visual Design</h3>
           <p>Instead of using heavy text for an overview (this is *not* the description), we use colors, fonts, and icons. And we could only fetch some representative signal for that information.</p>
         </Container>
-        <Image src={mockup01} alt="mockup 01" className="my-20" />
-        <Image src={mockup02} alt="mockup 02" className="my-20" />
-        <Image src={mockupError} alt="mockup error" className="my-20" />
+        <Image src={require('public/images/portfolio/shopee-amp-pdp-mockup-02.png')} alt="mockup 01" className="my-20" />
+        <Image src={require('public/images/portfolio/shopee-amp-pdp-mockup-02.png')} alt="mockup 02" className="my-20" />
+        <Image src={require('public/images/portfolio/shopee-amp-pdp-mockup-error.png')} alt="mockup error" className="my-20" />
       </section>
     </Layout>
   )
