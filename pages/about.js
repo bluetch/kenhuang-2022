@@ -207,7 +207,7 @@ const About = () => {
           <div className="grid grid-cols-6 gap-8 my-12">
             {myTrips.map((item) => {
               return (
-                <img src={item.img} alt={item.name} className="rounded-lg object-cover aspect-[4/3]" />
+                <img key={`trip-${item.name}`} src={item.img} alt={item.name} className="rounded-lg object-cover aspect-[4/3]" />
               )
             })}
           </div>

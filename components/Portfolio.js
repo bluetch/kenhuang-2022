@@ -40,7 +40,7 @@ export const PortfolioOverview = ({ overview }) => {
       <div className="grid grid-cols-2 gap-4">
         {overview.map((item) => {
           return (
-            <div className="border rounded-lg p-8" key={item.title}>
+            <div key={item.title} className="border rounded-lg p-8">
               <h3 className="font-semibold mb-2">{item.title}</h3>
               <p className="text-gray-500">{item.desc}</p>
             </div>
@@ -56,7 +56,7 @@ export const PortfolioProcess = ({ data }) => {
     <div className="grid grid-cols-4 gap-8">
       {data.map((item, index) => {
         return (
-          <div className="shadow-lg rounded-lg p-4 border border-white">
+          <div key={item.title} className="shadow-lg rounded-lg p-4 border border-white">
             <h6 className="font-bold mb-4">
               <Tag>{`0${index + 1}.`}</Tag>
               {item.title}
