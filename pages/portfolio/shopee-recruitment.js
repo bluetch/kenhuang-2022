@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Container, Layout, PortfolioCover } from "components";
+import { Container, Layout, PortfolioSummary } from "components";
 
 const shopeeRecruitment = () => {
   return (
@@ -8,7 +8,7 @@ const shopeeRecruitment = () => {
         <img src="/images/portfolio/shopee-recruitment-frog-cover.png" alt="" className="h-96 w-full object-cover" />
       </section>
       <Container>
-        <PortfolioCover
+        <PortfolioSummary
           date="2018 Apr"
           tags={["Design", "Mobile", "Recruitment", "Social media"]}
           title="Graphic for Recruitment"

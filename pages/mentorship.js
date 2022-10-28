@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button, Container, H2, H3, Icon, Layout } from "components";
+import { Button, Container, H1, H2, H3, Icon, Layout } from "components";
 import mentorshipHero from "public/images/mentorship/mentorship_hero.jpg";
 
 const Mentorship = () => {
@@ -80,15 +80,17 @@ const Mentorship = () => {
   ];
   return (
     <Layout title="Mentorship | Ken Huang">
-      <section className="flex flex-col justify-center items-center space-y-8 my-32">
-        <Container className="grid grid-cols-2 gap-8">
-          <div className="space-y-4">
-            <H2>Mentor Program</H2>
-            <p className="text-gray-500">Boost your career and become a better designer or engineer</p>
-            <p className="text-gray-500">As a self-thought designer with years of experience in multinational organization, I deeply understand the challenges product design learners could face so I’m able to help them achieve their goals at different stages of careers. In this mentorship program, I will provide professional advice based on your needs, help you to clarify problems and set goals, and address them systematically. In the past three years, I have helped more than 50 designers from more than 10 countries around the world to achieve their career goals.  They have better performance on projects and start to influence their team.</p>
-            <p className="text-gray-500">Contace Me: <a href="mailto:bluetch@gmail.com" className="text-sky-500">bluetch@gmail.com</a></p>
+      <section className="flex flex-col justify-center items-center space-y-8 lg:py-32 py-16">
+        <Container>
+          <H1 className="text-center">Mentor Program</H1>
+          <div className="grid lg:grid-cols-2 gap-8">
+            <div className="space-y-4">
+              <p className="text-gray-500">Boost your career and become a better designer or engineer</p>
+              <p className="text-gray-500">As a self-thought designer with years of experience in multinational organization, I deeply understand the challenges product design learners could face so I’m able to help them achieve their goals at different stages of careers. In this mentorship program, I will provide professional advice based on your needs, help you to clarify problems and set goals, and address them systematically. In the past three years, I have helped more than 50 designers from more than 10 countries around the world to achieve their career goals.  They have better performance on projects and start to influence their team.</p>
+              <p className="text-gray-500">Contace Me: <a href="mailto:bluetch@gmail.com" className="text-sky-500">bluetch@gmail.com</a></p>
+            </div>
+            <Image src={mentorshipHero} alt="Ken Huang mentorship" />
           </div>
-          <Image src={mentorshipHero} alt="Ken Huang mentorship" />
         </Container>
       </section>
       {/* <section className="py-32 px-20 space-y-8 bg-gray-50">
@@ -112,11 +114,11 @@ const Mentorship = () => {
           )}
         </div>
       </section> */}
-      <section className="py-32">
+      <section className="lg:py-32">
         <Container className="text-center space-y-8">
           <H2>Benefits of Mentorship</H2>
           <p>I know a thing or two because I have done a thing or two in my design career, and I am committed to helping you make use of that knowledge.</p>
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-8">
             {benefits.map((benefit, i) => {
               return (
                 <div key={`benefit-${i}`} className="shadow-md space-y-4 rounded-lg p-8">
@@ -132,7 +134,7 @@ const Mentorship = () => {
       <section className="my-32">
         <Container className="text-center space-y-20">
           <H2>I’ve mentored talented <br />designers & engineers from all over the world</H2>
-          <div className="grid grid-cols-4 gap-20">
+          <div className="grid lg:grid-cols-4 lg:gap-20 grid-cols-2 gap-4">
             <div className="flex items-center">
               <img src="/images/mentorship/facebook_logo.png" alt="Facebook" />
             </div>

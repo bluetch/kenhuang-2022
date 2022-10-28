@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Button, Container, Layout, PortfolioCover, PortfolioOverview } from "components";
+import { Button, Container, Layout, PortfolioSummary, PortfolioOverview } from "components";
 
 const lostDeviceProtection = () => {
   return (
@@ -9,7 +9,7 @@ const lostDeviceProtection = () => {
         <img src="/images/portfolio/lost-device-protection-cover.jpg" alt="" className="h-96 w-full object-cover" />
       </section>
       <Container>
-        <PortfolioCover
+        <PortfolioSummary
           date="2012 Feb - 2013 Feb"
           tags={["Front-end", "RWD", "L10N", "Google Map API"]}
           title="Lost Device Protection of TrendMicro"

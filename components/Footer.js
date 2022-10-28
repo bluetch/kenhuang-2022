@@ -26,12 +26,12 @@ const links = [
 
 export const Footer = () => {
   return (
-    <footer className="border-t border-gray-300 text-sm text-gray-500 text-center py-20 leading-6 space-y-8 mt-20">
-      <p className="text-xl text-black">Feel free to reach out, I’d love to chat with you!</p>
+    <footer className="text-sm text-gray-500 text-center lg:py-20 py-8 space-y-8">
+      <p className="lg:text-xl text-black">Feel free to reach out, I’d love to chat with you!</p>
       <p className="space-x-4">
         {links.map((link) => {
           return (
-            <Link href={link.url} key={link.name} target="_blank" rel="noreferrer" className="inline-block shadow-lg rounded-lg p-4 border border-white hover:border-black">
+            <Link href={link.url} key={link.name} target="_blank" rel="noreferrer" className="inline-block shadow-lg rounded-lg lg:p-4 border border-white hover:border-black">
                 <Icon name={link.name} />
             </Link>
           )

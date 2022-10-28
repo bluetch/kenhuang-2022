@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Container, Layout, PortfolioCover } from "components";
+import { Container, Layout, PortfolioSummary } from "components";
 
 const lineFlashSale = () => {
   return (
@@ -8,7 +8,7 @@ const lineFlashSale = () => {
         <img src="/images/portfolio/line-5th-anniversary.png" alt="" className="h-96 w-full object-cover" />
       </section>
       <Container>
-        <PortfolioCover
+        <PortfolioSummary
           date="2018 Feb - 2018 October"
           tags={["Front-end", "Mobile", "App"]}
           title="LINE Flash Sale"

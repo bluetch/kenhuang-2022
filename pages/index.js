@@ -28,15 +28,15 @@ export default function Home() {
   }, []);
 
   return (
-    <Layout title="Ken Huang | Front-end Developer, Product Designer & Mentor" className={styles.index}>
+    <Layout title="Ken Huang | Front-end Developer, Product Designer & Mentor">
       <Head>
         <title>Ken Huang | Front-end Developer, Product Designer & Mentor</title>
         <meta name="description" content="I design and code beautifully simple things, and I love what I do." />
       </Head>
-      <section className={`pt-64 pb-32 text-center h-[70vh] relative ${styles.index}`}>
+      <section className={`pt-64 lg:pb-32 text-center lg:h-[70vh] relative ${styles.index}`}>
         <Container className="space-y-16">
-          <h1 className="font-light text-4xl leading-relaxed text-black w-2/3 mx-auto">Hi, I am Ken Huang, a passionate Front-end engineer / product designer from Taipei, Taiwan.</h1>
-          <img src="/images/about/kenhuang_avatar.png" alt="" className={styles.portrait} />
+          <h1 className="font-light lg:text-4xl leading-relaxed text-black w-2/3 mx-auto">Hi, I am Ken Huang, a passionate Front-end engineer / product designer from Taipei, Taiwan.</h1>
+          <img src="/images/about/kenhuang_avatar.png" alt="Ken Huang" className="w-32 mx-auto" />
           <p className="text-xl text-red-500">Design Everywhere!</p>
         </Container>
         <ul className={styles.circles}>
@@ -46,7 +46,7 @@ export default function Home() {
       <section className="mb-32 bg-gradient-to-t from-gray-100 py-32">
         <Container>
           <H2 className="mb-12">Featured posts</H2>
-          <div className="grid grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-3 gap-8 sm:grid-cols-2">
             {articles.map((item) => {
               return (
                 <Link key={item.url} href={item.url} target="_blank">

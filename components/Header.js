@@ -52,7 +52,7 @@ export const Header = () => {
   }, [scrollTop]);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-10 bg-white py-4 ${scrolling && "shadow-md"}`}>
+    <header className={`fixed top-0 left-0 right-0 z-10 bg-white lg:py-4 ${scrolling && "shadow-md"}`}>
       <Container>
         <div className="flex flex-wrap justify-between items-center py-4 lg:py-0">
           <Link href="/" className="flex items-center group">
@@ -64,7 +64,7 @@ export const Header = () => {
           </Link>
           <nav
             className={`overflow-visible ${open ? "translate-x-0" : "-translate-x-full lg:-translate-x-0"
-              } text-gray-700 bg-gray-50 lg:bg-transparent transform transition-all w-1/3 lg:w-auto flex flex-col lg:flex-row fixed lg:static left-0 top-0 bottom-0 overflow-auto z-50 p-2 lg:p-0 shadow-lg lg:shadow-none`}
+              } text-gray-700 bg-gray-50 lg:bg-transparent transform transition-all w-2/3 lg:w-auto flex flex-col lg:flex-row fixed lg:static left-0 top-0 bottom-0 overflow-auto z-50 p-2 lg:p-0 shadow-lg lg:shadow-none`}
           >
             {LINKS.map((link) => {
               let targetNew = false;

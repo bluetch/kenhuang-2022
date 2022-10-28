@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Container, H1, H3, Layout, PortfolioCover, PortfolioOverview, PortfolioProcess } from "components";
+import { Container, H3, H4, HR, Layout, PortfolioSummary, PortfolioOverview, PortfolioProcess } from "components";
 
 const shopeeProductDetailPageRefactor = () => {
   return (
@@ -9,7 +9,7 @@ const shopeeProductDetailPageRefactor = () => {
         <img src="/images/portfolio/shopee-workshop-01.jpg" alt="" className="h-96 w-full object-cover" />
       </section>
       <Container>
-        <PortfolioCover
+        <PortfolioSummary
           date="2018 Feb - 2018 October"
           tags={["UX/UI Design", "Mobile", "Research", "Workshop", "PM"]}
           title="Product Detail Page Refactor"
@@ -38,9 +38,9 @@ const shopeeProductDetailPageRefactor = () => {
             },
           ]}
         />
-        <h3 className="text-center mt-24 mb-12 text-3xl font-bold">Background</h3>
-        <div className="grid grid-cols-2 gap-8">
-          <div className="space-y-4 text-gray-500">
+        <H3 className="text-center">Background</H3>
+        <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
+          <div className="lg:w-1/2 space-y-4 text-gray-500">
             <p>In order to help our users browsing service in south east area, especially in Indonesia, there are not enough internet infrastructure to support friendly web service, we have to make it better.</p>
             <p>There were some reasons that drove this project:</p>
             <ol className="list-decimal pl-4 space-y-2">
@@ -52,10 +52,15 @@ const shopeeProductDetailPageRefactor = () => {
                 <strong className="text-black">User’s pain points:</strong> There is too much information for many South-east-Asians use the older smartphone with small screen size. A lot of our users in Indonesia are hard to filter the more meaningful thing they care. </li>
             </ol>
           </div>
-          <Image src={require('public/images/portfolio/customer-pain-points.jpg')} alt="customer pain points" />
+          <div className="lg:w-1/2">
+            <Image
+              src={require('public/images/portfolio/customer-pain-points.jpg')}
+              alt="customer pain points"
+            />
+          </div>
         </div>
-        <hr className="my-24" />
-        <h3 className="text-center mb-12 text-3xl font-bold">Design Process</h3>
+        <HR />
+        <H3 className="text-center">Design Process</H3>
         <PortfolioProcess data={[
           {
             title: "Research",
@@ -74,11 +79,11 @@ const shopeeProductDetailPageRefactor = () => {
             desc: "Google analytics, NPS",
           },
         ]} />
-        <hr className="my-24" />
-        <h3 className="text-center mb-12 text-3xl font-bold">01. Research</h3>
-        <div className="grid grid-cols-2 gap-8">
-          <div className="space-y-4 text-gray-500">
-            <h4 className="text-2xl">Data Analytics</h4>
+        <HR />
+        <H3 className="text-center">01. Research</H3>
+        <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
+          <div className="lg:w-1/2 space-y-4 text-gray-500">
+            <H4>Data Analytics</H4>
             <p>Via Google analytics, we pick some statistics up and figure out what might be helpful to measure success and pain point.</p>
             <p>There are some data we might track or enhance:</p>
             <ul className="list-disc pl-4 space-y-2">
@@ -90,32 +95,46 @@ const shopeeProductDetailPageRefactor = () => {
             </ul>
             <p>Base on the above data, we found the product page which has too long load time, high bounce rate for lots of new users than other pages. In E-commerce, the product page is the one of the most important pages for conversion rate. So we decide to improve this page for higher priority, and also make a product roadmap to summarize that maps out the vision and direction.</p>
           </div>
-          <img src="/images/portfolio/shopee-overall-sessions.png" alt="" />
+          <div className="lg:w-1/2">
+            <Image
+              src={require('public/images/portfolio/shopee-overall-sessions.png')}
+              alt="overall sessions for pages"
+            />
+          </div>
         </div>
-        <hr className="my-24" />
-        <h3 className="text-center mb-12 text-3xl font-bold">02. Design Sprint</h3>
-        <div className="grid grid-cols-2 gap-8">
-          <div className="space-y-4 text-gray-500">
+        <HR />
+        <H3 className="text-center">02. Design Sprint</H3>
+        <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
+          <div className="lg:w-1/2 space-y-4 text-gray-500">
             <p>The sprint is a five-day process for answering critical business questions through design, prototyping, and testing ideas with customers. Developed at GV, it’s a “greatest hits” of business strategy, innovation, behavior science, design thinking, and more—packaged into a battle-tested process that any team can use.</p>
             <p>Working together in a sprint, you can shortcut the endless-debate cycle and compress months of time into a single week. Instead of waiting to launch a minimal product to understand if an idea is any good, you’ll get clear data from a realistic prototype. The sprint gives you a superpower: You can fast-forward into the future to see your finished product and customer reactions, before making any expensive commitments.</p>
           </div>
-          <img src="/images/portfolio/sprint-diagram.png" alt="" />
+          <div className="lg:w-1/2">
+            <Image
+              src={require('public/images/portfolio/sprint-diagram.png')}
+              alt="design sprint diagram"
+            />
+          </div>
         </div>
-        <hr className="my-24" />
-        <h3 className="text-center mb-12 text-3xl">Affinity Mapping</h3>
-        <div className="grid grid-cols-2 gap-8">
-          <div className="space-y-4 text-gray-500">
+        <HR />
+        <H3 className="text-center">Affinity Mapping</H3>
+        <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
+          <div className="lg:w-1/2 space-y-4 text-gray-500">
             <p>Each participant watched user interview videos from 1 of 6 different user segments and came prepared with their observations written on post-it notes.</p>
             <p>Affinity mapswere then used to organize and categorize these many different data points, from which common themes and relationships surrounding the observations emerged — even uncovering previously hidden ones.</p>
-            <h4 className="text-2xl">Solution Discovery</h4>
+            <H4>Solution Discovery</H4>
             <p>The second half of the day focused on devising a design that met different user groups’ needs. To do this, participants were regrouped so each group had a mix of user personas.</p>
           </div>
-          <Image src={require('public/images/portfolio/shopee-affinity-map.jpg')} alt="affinity mapping" />
+          <div className="lg:w-1/2">
+            <Image
+              src={require('public/images/portfolio/shopee-affinity-map.jpg')}
+              alt="affinity mapping" />
+          </div>
         </div>
-        <hr className="my-24" />
-        <h3 className="text-center mb-12 text-3xl">Card Sorting</h3>
-        <div className="grid grid-cols-2 gap-8">
-          <div className="space-y-4 text-gray-500">
+        <HR />
+        <H3 className="text-center">Card Sorting</H3>
+        <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
+          <div className="lg:w-1/2 space-y-4 text-gray-500">
             <p>Teams were given cards with components of Shopee’s digital interface and tasked to first classify, then sort according to importance. The open card sort method allowed participants to explore each others’ conceptions of user mental models. From this, teams were able to organically determine their design guidelines for the next phase of the sprint.</p>
             <p>And here is the output:</p>
             <ol className="list-decimal pl-4 space-y-2">
@@ -131,30 +150,38 @@ const shopeeProductDetailPageRefactor = () => {
               <li>Recommendation</li>
             </ol>
           </div>
-          <Image src={require('public/images/portfolio/shopee-workshop-card-sorting.jpg')} alt="workshop card sorting" />
+          <div className="lg:w-1/2">
+            <Image
+              src={require('public/images/portfolio/shopee-workshop-card-sorting.jpg')}
+              alt="workshop card sorting" />
+          </div>
         </div>
-        <hr className="my-24" />
-        <h3 className="text-center mb-12 text-3xl">Sketch Storming</h3>
-        <div className="grid grid-cols-2 gap-8">
-          <div className="space-y-4 text-gray-500">
+        <HR />
+        <H3 className="text-center">Sketch Storming</H3>
+        <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
+          <div className="lg:w-1/2 space-y-4 text-gray-500">
             <p>Participants first put pen to paper and individually sketched their ideal product, then sketched a single mock-up as a group. The insights that emerged from the diverse set of participants will no doubt be invaluable to future product development and innovations.</p>
           </div>
-          <Image src={require('public/images/portfolio/shopee-workshop-sketch-vote.jpg')} alt="workshop sketch storming" />
+          <div className="lg:w-1/2">
+            <Image
+              src={require('public/images/portfolio/shopee-workshop-sketch-vote.jpg')}
+              alt="workshop sketch storming" />
+          </div>
         </div>
       </Container>
       <section>
-        <hr className="my-24" />
+        <HR />
         <Container>
-          <h3 className="text-center mb-12 text-3xl font-bold">03. Execution</h3>
+          <H3 className="text-center">03. Execution</H3>
           <div className="space-y-4 text-gray-500">
             <p>Base on the sketch storming of design sprint, we could start from product detail page. My goal is to solve all the problems and implement the idea of design.</p>
           </div>
         </Container>
         <Image src={require('public/images/portfolio/shopee-amp-pdp-wireframe-overall.png')} alt="wireframe overall" className="my-20" />
         <Container>
-          <div className="grid grid-cols-2 gap-8">
-            <div className="space-y-4 text-gray-500">
-              <h4 className="text-2xl">First Screen</h4>
+          <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
+            <div className="lg:w-1/2 space-y-4 text-gray-500">
+              <H4>First Screen</H4>
               <p>According to the card sorting and user survey, beyond the images, product page needs to give high-level information of the product right off the bat.</p>
               <p>That information includes:</p>
               <ul className="list-disc pl-4 space-y-2">
@@ -166,12 +193,16 @@ const shopeeProductDetailPageRefactor = () => {
               </ul>
               <p>Ideally, all of this information lives above the fold. That isn’t always possible (in fact, it is rarely possible). The solution here is to extraction the most meaningful wording of each service. Like voucher, via interview survey, there are few people need it, but which they actually need. We make it as a small block, only display the discount percentage, if they really like to know in detail (expire date, min speed, capped), they can click to see more in detail.</p>
             </div>
-            <Image src={require('public/images/portfolio/shopee-amp-pdp-wireframe-voucher.png')} alt="wireframe first screen" />
+            <div className="lg:w-1/2">
+              <Image
+                src={require('public/images/portfolio/shopee-amp-pdp-wireframe-voucher.png')}
+                alt="wireframe first screen" />
+            </div>
           </div>
-          <hr className="my-24" />
-          <div className="grid grid-cols-2 gap-8">
-            <div className="space-y-4 text-gray-500">
-              <h4 className="text-2xl">Fourth Screen: Recommendation</h4>
+          <HR />
+          <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
+            <div className="lg:w-1/2 space-y-4 text-gray-500">
+              <H4>Fourth Screen: Recommendation</H4>
               <p>There are 3 recommendation sections, We put these under the product information, it can help users find out more ideal, similiar, cheaper products. For You May Also Like section, it relate the users browse history and current product, make people more choice.</p>
               <ul className="list-disc pl-4 space-y-2">
                 <li>From the same shop</li>
@@ -179,35 +210,43 @@ const shopeeProductDetailPageRefactor = () => {
                 <li>You may also like</li>
               </ul>
             </div>
-            <Image src={require('public/images/portfolio/shopee-amp-pdp-wireframe-recommendation.png')} alt="wireframe fouth screen" />
+            <div className="lg:w-1/2">
+              <Image
+                src={require('public/images/portfolio/shopee-amp-pdp-wireframe-recommendation.png')}
+                alt="wireframe fouth screen" />
+            </div>
           </div>
-          <hr className="my-24" />
-          <h3 className="text-center mb-12 text-3xl">Visual Design</h3>
+          <HR />
+          <H3 className="text-center">Visual Design</H3>
           <p>Instead of using heavy text for an overview (this is *not* the description), we use colors, fonts, and icons. And we could only fetch some representative signal for that information.</p>
         </Container>
         <Image src={require('public/images/portfolio/shopee-amp-pdp-mockup-02.png')} alt="mockup 01" className="my-20" />
         <Image src={require('public/images/portfolio/shopee-amp-pdp-mockup-02.png')} alt="mockup 02" className="my-20" />
         <Image src={require('public/images/portfolio/shopee-amp-pdp-mockup-error.png')} alt="mockup error" className="my-20" />
       </section>
-      <hr className="my-24" />
+      <HR />
       <section>
         <Container>
-          <h3 className="text-center mb-12 text-3xl font-bold">Technical solution</h3>
-          <div className="grid grid-cols-2 gap-8">
-            <div className="space-y-4 text-gray-500">
+          <H3 className="text-center">Technical solution</H3>
+          <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
+            <div className="lg:w-1/2 space-y-4 text-gray-500">
               <p>Via workshop with Google, we launch the <Link href="AMP project" target="_blank" className="font-bold text-black">AMP project</Link> for this version which is an open-source initiative aiming to make the web better for all. The project enables the creation of websites and ads that are consistently fast, beautiful and high-performing across devices and distribution platforms.</p>
               <p>In a highly competitive e-commerce market, it’s critical to provide the best user experience for customers, including for those using low-end smartphones on 3G or 2G connections. As Shopee mobile traffic grew, the company saw an opportunity to acquire new users and improve mobile conversions through this valuable channel.</p>
             </div>
-            <Image src={require('public/images/portfolio/google-ux-workshop.jpg')} alt="Google AMP has changed SEO" />
+            <div className="lg:w-1/2">
+              <Image
+                src={require('public/images/portfolio/google-ux-workshop.jpg')}
+                alt="Google AMP has changed SEO" />
+            </div>
           </div>
         </Container>
       </section>
-      <hr className="my-24" />
+      <HR />
       <section>
         <Container>
-          <h3 className="text-center mb-12 text-3xl font-bold">Product Management</h3>
-          <div className="grid grid-cols-2 gap-8">
-            <div className="space-y-4 text-gray-500">
+          <H3 className="text-center">Product Management</H3>
+          <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
+            <div className="lg:w-1/2 space-y-4 text-gray-500">
               <p>Due to this project was new and start up with designers and developers for the beginning, I raise myself to be a product manager in this project to work with each team:</p>
               <ul className="list-disc pl-4 space-y-2">
                 <li>Design team</li>
@@ -218,7 +257,7 @@ const shopeeProductDetailPageRefactor = () => {
                 <li>QA(Quality assurance) team</li>
                 <li>Local country team (7 countries)</li>
               </ul>
-              <h4 className="text-2xl text-black">Documentation</h4>
+              <H4>Documentation</H4>
               <p>I created and maintaind some documents like PRD (Product Requirements Document) containing all the requirements to a certain product. It is written to allow people to understand what a product should do.</p>
               <ul className="list-disc pl-4 space-y-2">
                 <li>Product Requirements Document (PRD)</li>
@@ -227,16 +266,20 @@ const shopeeProductDetailPageRefactor = () => {
                 <li>Test case</li>
               </ul>
             </div>
-          <Image src={require('public/images/portfolio/shopee-20190508.jpg')} alt="shopee team work"/>
+            <div className="lg:w-1/2">
+              <Image
+                src={require('public/images/portfolio/shopee-20190508.jpg')}
+                alt="shopee team work" />
+            </div>
           </div>
         </Container>
       </section>
-      <hr className="my-24" />
+      <HR />
       <section>
         <Container>
-          <h3 className="text-center mb-12 text-3xl font-bold">04. Validation</h3>
-          <div className="grid grid-cols-2 gap-8">
-            <div className="space-y-4 text-gray-500">
+          <H3 className="text-center">04. Validation</H3>
+          <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
+            <div className="lg:w-1/2 space-y-4 text-gray-500">
               <p>We use Google Analytics and NPS (Net Promoter Score) to track the performance with internal data to validate the result.</p>
               <p>3 months after launch, product detail page continued to have a positive impact on the user experience: </p>
               <ul className="list-disc pl-4 space-y-2">
@@ -251,7 +294,11 @@ const shopeeProductDetailPageRefactor = () => {
               </ul>
               <p>For confidentiality reasons I have omitted the actual values for these metrics.</p>
             </div>
-            <Image src={require('public/images/portfolio/shopee-20180909.jpg')} />
+            <div className="lg:w-1/2">
+              <Image
+                src={require('public/images/portfolio/shopee-20180909.jpg')}
+                alt="team photo" />
+            </div>
           </div>
         </Container>
       </section>

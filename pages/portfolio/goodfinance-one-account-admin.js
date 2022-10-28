@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Container, Layout, PortfolioCover, PortfolioOverview, Tag, Refactoring } from "components";
+import { Container, Layout, PortfolioSummary, PortfolioOverview, Tag, Refactoring } from "components";
 
 const goodfinanceOneAccountAdmin = () => {
   return (
@@ -9,7 +9,7 @@ const goodfinanceOneAccountAdmin = () => {
         <img src="/images/portfolio/goodfinance_office_03.png" alt="" className="h-96 w-full object-cover" />
       </section>
       <Container>
-        <PortfolioCover
+        <PortfolioSummary
           date="2021 Apr - 2022 Apr"
           tags={["Front-end", "APIs", "React", "Finance"]}
           title="One Account Admin"
