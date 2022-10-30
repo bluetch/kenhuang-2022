@@ -6,7 +6,7 @@ const shopeeProductDetailPageRefactor = () => {
   return (
     <Layout title="Shopee Product Detail Page Refactor | Ken Huang">
       <section>
-        <img src="/images/portfolio/shopee-workshop-01.jpg" alt="" className="h-96 w-full object-cover" />
+        <img src="/images/portfolio/shopee-workshop-01.jpg" alt="Shopee Design Workshop" className="h-96 w-full object-cover" />
       </section>
       <Container>
         <PortfolioSummary
@@ -26,7 +26,7 @@ const shopeeProductDetailPageRefactor = () => {
             },
             {
               title: "02. Role & Deliverables",
-              desc: "Not only an end-to end UX/UI designer, but also as a PM to ",
+              desc: "Not only an end-to end UX/UI designer, but also as a PM to manage project and follow up tasks.",
             },
             {
               title: "03. Challenges",
