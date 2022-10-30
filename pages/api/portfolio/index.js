@@ -50,16 +50,16 @@ const Portfolio = (req, res) => {
       img: "/images/portfolio/shopee-amp-product-detail-page.jpg",
       state: true
     },
-    // {
-    //   name: "Design Language System",
-    //   company: "Shopee",
-    //   category: ["design"],
-    //   date: 2018,
-    //   url: "/portfolio/design-language-system",
-    //   desc: "A set of rules and guidelines help work efficiency",
-    //   img: "/images/portfolio/design-language-system-cover.jpg",
-    //   state: true
-    // },
+    {
+      name: "Design Language System",
+      company: "Shopee",
+      category: ["design"],
+      date: 2018,
+      url: "/portfolio/design-language-system",
+      desc: "A set of rules and guidelines help work efficiency",
+      img: "/images/portfolio/design-language-system-cover.jpg",
+      state: true
+    },
     {
       name: "Pet Adoption",
       company: "Side Project",

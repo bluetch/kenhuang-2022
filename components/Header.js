@@ -26,6 +26,10 @@ export const Header = () => {
       path: "https://medium.com/@bluetch",
     },
     {
+      label: "Art",
+      path: "http://instgram.com/kenbluerr",
+    },
+    {
       label: "Mentorship",
       path: "/mentorship",
     },
@@ -63,8 +67,10 @@ export const Header = () => {
             </span>
           </Link>
           <nav
-            className={`overflow-visible ${open ? "translate-x-0" : "-translate-x-full lg:-translate-x-0"
-              } text-gray-700 bg-gray-50 lg:bg-transparent transform transition-all w-2/3 lg:w-auto flex flex-col lg:flex-row fixed lg:static left-0 top-0 bottom-0 overflow-auto z-50 p-2 lg:p-0 shadow-lg lg:shadow-none`}
+            className={`${open 
+              ? "translate-x-0" 
+              : "-translate-x-full lg:-translate-x-0"
+              } text-gray-700 bg-gray-50 lg:bg-transparent transform transition-all w-2/3 lg:w-auto flex flex-col lg:flex-row fixed lg:static left-0 top-0 bottom-0 overflow-auto z-50 p-2 lg:p-0 shadow-lg lg:shadow-none space-x-2`}
           >
             {LINKS.map((link) => {
               let targetNew = false;

@@ -26,7 +26,7 @@ export default function Portfolio() {
   return (
     <Layout title="Portfolio | Ken Huang">
       <Container>
-        <H1 className="mt-40">Portfolio</H1>
+        <H1 className="pt-16">Portfolio</H1>
         <CategoryBar
           data="portfolioSpec"
           method={(e) => setCategory(e)}
