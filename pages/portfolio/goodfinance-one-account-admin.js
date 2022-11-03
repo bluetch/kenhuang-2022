@@ -4,9 +4,12 @@ import { useState } from "react";
 
 const goodfinanceOneAccountAdmin = () => {
   const [permission, setPermission] = useState(false);
+
   return (
     <Layout title="GoodFinance One Account Admin | Ken Huang">
-      {permission ? ("...") : ("...")}
+      {/* {!permission && (
+        <Refactoring type="" />
+      )} */}
       <section>
         <img src="/images/portfolio/goodfinance_office_03.png" alt="" className="h-96 w-full object-cover" />
       </section>
