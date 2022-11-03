@@ -1,11 +1,13 @@
 import Image from "next/image";
 import { Container, Layout, PortfolioSummary, PortfolioOverview, Tag, Refactoring } from "components";
+import { useState } from "react";
 
 const goodfinanceOneAccountAdmin = () => {
+  const [permission, setPermission] = useState(false);
   return (
     <Layout title="GoodFinance One Account Admin | Ken Huang">
-      <Refactoring/>
-      {/* <section>
+      {permission ? ("...") : ("...")}
+      <section>
         <img src="/images/portfolio/goodfinance_office_03.png" alt="" className="h-96 w-full object-cover" />
       </section>
       <Container>
@@ -62,8 +64,16 @@ const goodfinanceOneAccountAdmin = () => {
             </ul>
           </div>
           <div className="grid grid-cols-2 gap-8">
-            <Image src={require("public/images/portfolio/goodfinance_securities_sequence_diagram.png")} className="aspect-square" />
-            <Image src={require("public/images/portfolio/goodfinance_one_account_api_natural.png")} className="aspect-square" />
+            <Image
+              src={require("public/images/portfolio/goodfinance_securities_sequence_diagram.png")}
+              className="aspect-square"
+              alt="sequence fiagram"
+            />
+            <Image
+              src={require("public/images/portfolio/goodfinance_one_account_api_natural.png")}
+              className="aspect-square"
+              alt="api"
+            />
           </div>
 
         </div>
@@ -82,7 +92,7 @@ const goodfinanceOneAccountAdmin = () => {
             "Jest",
             "Figma",
           ]}</Tag>
-            
+
           <p>The front end build process included the use of Gitlab CI/CD for automated tasks to speed up development and Git for version control.</p>
         </div>
         <hr className="my-24" />
@@ -91,7 +101,7 @@ const goodfinanceOneAccountAdmin = () => {
       </Container>
       <Image src={require('public/images/portfolio/goodfinance_one_account_admin_cover.png')} alt="one account admin home page" />
       <Image src={require('public/images/portfolio/goodfinance_one_account_admin_list.png')} alt="one account admin list page" />
-      <Image src={require('public/images/portfolio/goodfinance_one_account_admin_profile.png')} alt="one account admin profile page" /> */}
+      <Image src={require('public/images/portfolio/goodfinance_one_account_admin_profile.png')} alt="one account admin profile page" />
     </Layout>
   )
 }
