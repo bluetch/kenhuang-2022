@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { Container, Layout, PortfolioSummary, PortfolioOverview, Tag, Refactoring } from "components";
-import { useState } from "react";
+// import { useState } from "react";
 
 const goodfinanceOneAccountAdmin = () => {
-  const [permission, setPermission] = useState(false);
+  // const [permission, setPermission] = useState(false);
 
   return (
     <Layout title="GoodFinance One Account Admin | Ken Huang">
