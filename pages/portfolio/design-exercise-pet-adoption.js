@@ -262,7 +262,7 @@ const designExercisePetAdoption = () => {
         </div>
         <HR />
         <H3 className="text-center">04. Measure success</H3>
-        <div className="space-y-4 text-gray-500 lg:w-3/4 mx-auto">
+        <div className="space-y-4 text-gray-500 lg:w-3/4 mx-auto lg:py-8">
           <p>How can we measure success for this experience?</p>
           <ol className="list-decimal pl-4 space-y-2">
             <li>Decreased number of pets being euthanized.</li>
