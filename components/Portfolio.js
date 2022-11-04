@@ -53,7 +53,7 @@ export const PortfolioOverview = ({ overview }) => {
 
 export const PortfolioProcess = ({ data }) => {
   return (
-    <div className="grid lg:grid-cols-4 gap-8">
+    <div className={`grid lg:grid-cols-${data.length} gap-8`}>
       {data.map((item, index) => {
         return (
           <div key={item.title} className="shadow-lg rounded-lg p-4 border border-white">
