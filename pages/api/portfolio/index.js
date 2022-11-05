@@ -62,7 +62,7 @@ const Portfolio = (req, res) => {
     },
     {
       name: "Pet Adoption",
-      company: "Side Project",
+      company: "Design Exercise",
       category: ["design"],
       date: 2018,
       url: "/portfolio/design-exercise-pet-adoption",
