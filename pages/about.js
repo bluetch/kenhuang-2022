@@ -41,17 +41,17 @@ const myTrips = [
 ];
 
 const myWorkExperience = [
-  // {
-  //   company: "TXOne Networks",
-  //   location: "Taipei, Taiwan",
-  //   position: "Staff Frontend Developer",
-  //   logo: "https://media-exp1.licdn.com/dms/image/C560BAQGJSrmlPyGOTQ/company-logo_200_200/0/1652442822162?e=1675296000&v=beta&t=ZvOn0iw47DuvQUGM7adcq13htnT08MSBZHDImIfiNy0",
-  //   desc: [
-  //     "Migrated all the services from TrendMicro to TXOne",
-  //     "Develop and maintain automated all OT security products."
-  //   ],
-  //   duration: "Nov 2022 - Now"
-  // },
+  {
+    company: "TXOne Networks",
+    location: "Taipei, Taiwan",
+    position: "Staff Frontend Developer",
+    logo: "https://media-exp1.licdn.com/dms/image/C560BAQGJSrmlPyGOTQ/company-logo_200_200/0/1652442822162?e=1675296000&v=beta&t=ZvOn0iw47DuvQUGM7adcq13htnT08MSBZHDImIfiNy0",
+    desc: [
+      "Migrated all the services from TrendMicro to TXOne",
+      "Develop and maintain automated all OT security products."
+    ],
+    duration: "Nov 2022 - Now"
+  },
   {
     company: "Good Finance",
     location: "Taipei, Taiwan",
@@ -85,7 +85,7 @@ const myWorkExperience = [
   {
     company: "Uitox global e-commerce group",
     location: "Shanghai China, Taipei Taiwan",
-    position: "Frontend Lead",
+    position: "Frontend Lead & Design Lead",
     logo: "https://media-exp1.licdn.com/dms/image/C4D0BAQFGxaUvN8QW_w/company-logo_200_200/0/1519949244269?e=1674691200&v=beta&t=C4HkHYa7ZC5-Y4YYmhJTkfxgeH9Jhu7ipGvpK5w3BJc",
     desc: [
       "Lead UX/UI for e-commerce system: web and App store, payment, shipping features and dashboard for buyers and sellers from research, concepting and validation, through documentation, implementation and launch.",
