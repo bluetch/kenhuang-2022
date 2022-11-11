@@ -15,7 +15,7 @@ const App = ({ Component, pageProps }) => {
       <Head>
         <meta
           property="og:image"
-          content="https://careers.tcstock.com.tw/images/banners/goodfinance_office_04.jpg"
+          content="https://kenhuang.tw/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkenhuang_portrait.49e86ef1.png&w=1200&q=75"
         />
       </Head>
       <MemoComponent {...pageProps} />
