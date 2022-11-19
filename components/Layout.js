@@ -8,7 +8,7 @@ export const Layout = ({ children, title = "Ken Huang | " }) => {
       <Head>
         <title>{`${title}`}</title>
         <meta charSet="utf-8" />
-        <meta name="description" content="美好證券內部網站" />
+        <meta name="description" content="Ken Huang is a product designer and front-end developer for 12 years experience." />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={title} />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
