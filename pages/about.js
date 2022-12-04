@@ -110,9 +110,9 @@ const About = () => {
   return (
     <Layout title="About | Ken Huang">
       <Container>
-        <div className="grid grid-cols-5 gap-8 my-32">
-          <Image src={portrait} alt="Ken Huang" className="p-8 col-span-2 overflow-hidden hover:transition-all hover:scale-110" />
-          <div className="space-y-8 col-span-3">
+        <div className="grid lg:grid-cols-5 gap-8 my-32">
+          <Image src={portrait} alt="Ken Huang" className="p-8 lg:col-span-2 overflow-hidden hover:transition-all hover:scale-110" />
+          <div className="space-y-8 lg:col-span-3">
             <H1 className="mb-8">Ken Huang</H1>
             <H3>I am a UX Engineer based in Taipei, Taiwan.</H3>
             <p className="text-gray-500">Since 2005, I have enjoyed turning complex problems into simple, beautiful and intuitive designs. When I am not pushing pixels, you will find me cooking, gardening or working out in the park.</p>
@@ -124,7 +124,7 @@ const About = () => {
       </Container>
       <section className="bg-gray-50 py-20">
         <Container>
-          <div className="grid grid-cols-3 gap-8 text-center">
+          <div className="grid lg:grid-cols-3 gap-8 lg:text-center">
             <div className="space-y-4">
               <H3>Designer</H3>
               <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
