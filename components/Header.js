@@ -97,7 +97,7 @@ export const Header = () => {
           >
             {[1, 2, 3].map((line) => (
               <span
-                key={line}
+                key={`nav-btn-${line}`}
                 className="w-full border-2 rounded border-current block"
               ></span>
             ))}
