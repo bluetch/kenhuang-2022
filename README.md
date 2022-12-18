@@ -1,2 +1,11 @@
 # Kenhuang-2022
-front-end
+Ken Huang, a passionate front-end developer / product designer from Taipei Taiwan.
+
+### Built With
+
+- [React.js](https://reactjs.org)
+
+## Installation
+```
+yarn install
+```
