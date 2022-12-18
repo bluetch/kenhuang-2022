@@ -45,7 +45,7 @@ export default function Home() {
       </section>
       <section className="mb-32 bg-gradient-to-t from-gray-100 py-32">
         <Container>
-          <H2 className="mb-12">Featured posts</H2>
+          <H2 className="mb-12">Featured post</H2>
           <div className="grid lg:grid-cols-3 gap-8 sm:grid-cols-2">
             {articles.map((item) => {
               return (
