@@ -128,7 +128,7 @@ const About = () => {
             <div className="space-y-4">
               <H3>Designer</H3>
               <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
-              <ul className="text-gray-500 space-y-2">
+              <ul className="text-gray-500 space-y-2 lg:list-none list-disc lg:pl-0 pl-6">
                 <li>Product thinking of business</li>
                 <li>UX/UI Design (Figma)</li>
                 <li>Web/Apps</li>
@@ -139,7 +139,7 @@ const About = () => {
             <div className="space-y-4">
               <H3>Frontend Developer</H3>
               <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
-              <ul className="text-gray-500 space-y-2">
+              <ul className="text-gray-500 space-y-2 lg:list-none list-disc lg:pl-0 pl-6">
                 <li>HTML</li>
                 <li>CSS/SASS/Tailwind</li>
                 <li>JavaScript, React.js, Next.js, Node.js</li>
@@ -150,7 +150,7 @@ const About = () => {
             <div className="space-y-4">
               <H3>Mentor</H3>
               <p>I genuinely care about people, and love helping fellow designers work on their craft.</p>
-              <ul className="text-gray-500 space-y-2">
+              <ul className="text-gray-500 space-y-2 lg:list-none list-disc lg:pl-0 pl-6">
                 <li>8 years experience</li>
                 <li>26 short courses</li>
                 <li>20+ students</li>
@@ -204,7 +204,7 @@ const About = () => {
             <H3>My Trip</H3>
             <p className="text-gray-500">Learn a little bit more about me, how I got into design, and how I built my career as a product designer. I’ve included key things I have learned, book recommendations, and even some sneak peeks of the first websites I created.</p>
           </div>
-          <div className="grid grid-cols-6 gap-8 my-12">
+          <div className="grid lg:grid-cols-6 grid-cols-2 lg:gap-8 gap-4 my-12">
             {myTrips.map((item) => {
               return (
                 <img key={`trip-${item.name}`} src={item.img} alt={item.name} className="rounded-lg object-cover aspect-[4/3]" />

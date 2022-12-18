@@ -71,7 +71,7 @@ export const PortfolioProcess = ({ data }) => {
 
 export const PortfolioList = ({ data }) => {
   return (
-    <div className="grid lg:grid-cols-3 gap-x-8 gap-y-20">
+    <div className="grid lg:grid-cols-3 gap-x-8 lg:gap-y-20 gap-y-8">
       {data.map((item) => {
         if (!item.state) return;
         return (
