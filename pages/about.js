@@ -107,11 +107,11 @@ const myWorkExperience = [
   },
 ];
 
-useEffect(()=>{
-  console.log("window cookie:", window.document.cookie);
-},[]);
 
 const About = () => {
+  useEffect(()=>{
+    console.log("window cookie:", window.document.cookie);
+  },[]);
   return (
     <Layout title="About | Ken Huang">
       <Container>
