@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button, H1, H2, H3, H4, H5, H6, Container, Gallery, Layout } from "components";
 import portrait from "public/images/about/kenhuang_portrait.png";
+import { useEffect } from "react";
 // import shopeeLogo from "public/images/about/logo-shopee.png";
 // import goodFinanceLogo from "public/images/about/logo-shopee.png";
 // import shopeeLogo from "public/images/about/logo-shopee.png";
@@ -105,6 +106,10 @@ const myWorkExperience = [
     duration: "Aug 2010 - Feb 2013"
   },
 ];
+
+useEffect(()=>{
+  console.log("window cookie:", window.document.cookie);
+},[]);
 
 const About = () => {
   return (
