@@ -46,7 +46,7 @@ const myWorkExperience = [
     company: "TXOne Networks",
     location: "Taipei, Taiwan",
     position: "Staff Frontend Developer",
-    logo: "https://media-exp1.licdn.com/dms/image/C560BAQGJSrmlPyGOTQ/company-logo_200_200/0/1652442822162?e=1675296000&v=beta&t=ZvOn0iw47DuvQUGM7adcq13htnT08MSBZHDImIfiNy0",
+    logo: "/images/about/logo_txone.jpg",
     desc: [
       "Migrated all the services from TrendMicro to TXOne",
       "Develop and maintain automated all OT security products."
@@ -57,7 +57,7 @@ const myWorkExperience = [
     company: "Good Finance",
     location: "Taipei, Taiwan",
     position: "Sr. Frontend Developer",
-    logo: "https://media-exp1.licdn.com/dms/image/C560BAQHlC26xHX4dmw/company-logo_100_100/0/1643192905460?e=1674691200&v=beta&t=a8JhCZg-K-rv-QTR-zhUwhToKf0qenRFKMkv37f4fZs",
+    logo: "/images/about/logo_goodfinance.jpg",
     desc: ["Planned and developed fin tech such as trading system, assets management system, and learning center. Lead front end developers and manage the efforts of the front-end development team in the creation of front-end website code to support both tactical day-to-day business operations and major IT portfolio projects."],
     duration: "Apr 2021 - Aug 2022"
   },
@@ -65,7 +65,7 @@ const myWorkExperience = [
     company: "Shopee",
     location: "Singapore",
     position: "Product Designer lead / UX Engineer",
-    logo: "https://media-exp1.licdn.com/dms/image/D560BAQH28vC_-y7x8A/company-logo_100_100/0/1665393746935?e=1674691200&v=beta&t=abFq4_VouKn6RsWKktR2a2y2AYOqmsaNdmM53Vt_gH4",
+    logo: "/images/about/logo_shopee.jpg",
     desc: [
       "Executing design at all stages from early concept to end to end experience including user research, data analytics, interactive prototype, and usability test. ",
       "Lead Shopee design language system (web, iOS, Android) with developers’ workspace base on HTML, CSS and React JavaScript frameworks."
@@ -76,7 +76,7 @@ const myWorkExperience = [
     company: "Yulon Group",
     location: "Taipei, Taiwan",
     position: "Product Designer",
-    logo: "https://media-exp1.licdn.com/dms/image/C560BAQHTlmxGDfMQYA/company-logo_200_200/0/1610264272621?e=1674691200&v=beta&t=7ONSltJwHElO6B_-olol0CwaktaBmLeVNCOHDpvTrqw",
+    logo: "/images/about/logo_yulon.jpg",
     desc: [
       "Manage projects for travel website, car service system, Roadside Assistance App, airport pick-up service and e-commerce App.",
       "Designed the structure, features, and workflow of website applications and backend systems."
@@ -87,7 +87,7 @@ const myWorkExperience = [
     company: "Uitox global e-commerce group",
     location: "Shanghai China, Taipei Taiwan",
     position: "Frontend Lead & Design Lead",
-    logo: "https://media-exp1.licdn.com/dms/image/C4D0BAQFGxaUvN8QW_w/company-logo_200_200/0/1519949244269?e=1674691200&v=beta&t=C4HkHYa7ZC5-Y4YYmhJTkfxgeH9Jhu7ipGvpK5w3BJc",
+    logo: "/images/about/logo_uitox.jpg",
     desc: [
       "Lead UX/UI for e-commerce system: web and App store, payment, shipping features and dashboard for buyers and sellers from research, concepting and validation, through documentation, implementation and launch.",
       "Led a team of designers & front-end developers, hiring and mentor, responsible for direct reports, and designed brand e-commerce for ASUS, LINE, Feiniu."
@@ -97,8 +97,8 @@ const myWorkExperience = [
   {
     company: "Trend Micro",
     location: "Taipei Taiwan",
-    position: "Frontend Developer",
-    logo: "https://media-exp1.licdn.com/dms/image/C510BAQETIHCjbYMW7w/company-logo_200_200/0/1519856569371?e=1674691200&v=beta&t=r0_tFFhVYEL_zJvV_KhWE1Kwt_cepzoEFLKolV-FKAE",
+    position: "Web Developer",
+    logo: "/images/about/logo_trendmicro.jpg",
     desc: [
       "Developed Lost Device Protection, Site Safety Center, Jewelry Box, TV game and Hadoop database query system.",
       "Utilized HTML, CSS, Javascript, SASS, NPM, Node.js, and Git for site development."
