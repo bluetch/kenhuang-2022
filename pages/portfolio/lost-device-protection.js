@@ -1,4 +1,4 @@
-import { H3, HR } from "components";
+import { HR, Typography } from "components";
 import Link from "next/link";
 import Image from "next/image";
 import { Button, Container, Layout, PortfolioSummary, PortfolioOverview } from "components";
@@ -39,7 +39,7 @@ const lostDeviceProtection = () => {
             },
           ]}
         />
-        <H3 className="text-center">Background</H3>
+        <Typography className="text-center" variant="h3">Background</Typography>
         <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
           <div className="lg:w-1/2 space-y-4 text-gray-500">
             <p>There was a project called Lost Device Protection when I worked at Trend Micro. The product team asked me to develop the next version for new UI and responsive web design. I used a bootstrap framework, I also assisted with the HTML & CSS for the mobile version of the site, and wrote a separate stylesheet specifically for the site when being viewed on an iPad.</p>
@@ -50,7 +50,7 @@ const lostDeviceProtection = () => {
           </div>
         </div>
         <HR />
-        <H3 className="text-center">Process</H3>
+        <Typography className="text-center" variant="h3">Process</Typography>
         <div className="lg:flex lg:flex-row gap-8 py-8">
           <div className="lg:w-1/2 space-y-4 text-gray-500">
             <p>The PM was very happy with the designs and with the back-end already in place we were able to quickly move onto the build of the front-end.</p>
@@ -71,7 +71,7 @@ const lostDeviceProtection = () => {
           </div>
         </div>
         <HR />
-        <H3 className="text-center">Outcome</H3>
+        <Typography className="text-center" variant="h3">Outcome</Typography>
         <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
           <div className="lg:w-1/2 space-y-4 text-gray-500">
             <p>The Lost Device Protection site is a culmination of my skills in 2012, taking designs and converting them into a responsive, cross browser website, whilst maintaining the highest standard that Lost Device Protection offer their clients.</p>
