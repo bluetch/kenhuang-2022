@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { H3, H4, HR, Container, Layout, PortfolioOverview, PortfolioSummary } from "components";
+import { HR, Container, Layout, PortfolioOverview, PortfolioSummary, Typography } from "components";
 
 const DesignLanguageSystem = () => {
   return (
@@ -38,7 +38,7 @@ const DesignLanguageSystem = () => {
             },
           ]}
         />
-        <H3 className="text-center">Background</H3>
+        <Typography className="text-center" variant="h3">Background</Typography>
         <div className="">
           <div className="space-y-4 text-gray-500">
             <p>Design language system is no longer a new conception in a mature company, it’s a complex system. With the
@@ -61,7 +61,7 @@ const DesignLanguageSystem = () => {
                   </g>
                 </svg>
               </div>
-              <H4 className="text-center">Design Guideline</H4>
+              <Typography className="text-center" variant="h4">Design Guideline</Typography>
             </div>
             <div>
               <div className="h-20 w-20 mx-auto">
@@ -79,7 +79,7 @@ const DesignLanguageSystem = () => {
                   </g>
                 </svg>
               </div>
-              <H4 className="text-center">Resource Management</H4>
+              <Typography className="text-center" variant="h4">Resource Management</Typography>
             </div>
             <div>
               <div className="h-20 w-20 mx-auto">
@@ -103,7 +103,7 @@ const DesignLanguageSystem = () => {
                   </g>
                 </svg>
               </div>
-              <H4 className="text-center">Work Efficiency</H4>
+              <Typography className="text-center" variant="h4">Work Efficiency</Typography>
             </div>
             <div>
               <div className="h-20 w-20 mx-auto">
@@ -119,14 +119,14 @@ const DesignLanguageSystem = () => {
                   </g>
                 </svg>
               </div>
-              <H4 className="text-center">Knowledge Sharing</H4>
+              <Typography className="text-center" variant="h4">Knowledge Sharing</Typography>
             </div>
           </div>
         </div>
         <HR />
         <div className="flex lg:flex-row flex-col gap-8 py-8">
           <div className="lg:w-1/3 space-y-4 text-gray-500">
-            <H3 className="text-black">Process</H3>
+            <Typography className="text-black" variant="h3">Process</Typography>
           </div>
           <div className="lg:w-2/3 space-y-8 text-gray-500">
             <p>The goal we set for the DLS was to create a more beautiful and accessible design language. Our designs
@@ -136,21 +136,21 @@ const DesignLanguageSystem = () => {
             <p>We started by auditing and printing out many of our designs, both old and new. Laying the flows side by
               side on a board, we could see where and how the experiences were breaking and where we needed to start
               making changes. We figured that the best way to begin was by tackling issues head on.</p>
-            <H4>Unified</H4>
+            <Typography variant="h4">Unified</Typography>
             <p>Each piece is part of a greater whole and should contribute positively to the system at scale. There should
               be no isolated features or outliers.</p>
             <Image
               src={require("public/images/portfolio/design-language-system-color.png")}
               alt="design language color management"
             />
-            <H4>Iconic</H4>
+            <Typography variant="h4">Iconic</Typography>
             <p>We’re focused when it comes to both design and functionality. Our work should speak boldly and clearly to
               this focus.</p>
             <Image
               src={require("public/images/portfolio/design-language-system-iconic.png")}
               alt="design-language-system-iconic"
             />
-            <H3 className="text-black">Tools</H3>
+            <Typography className="text-black" variant="h3">Tools</Typography>
             <p>Standardize the tools different teams use in different phases of the project. Right from the discovery of
               the project through the design, development and validation phases. Make sure everyone is aware of the tools
               other teams use. Tools used for collaboration should be easily accessible and agreed upon by everyone in
@@ -159,7 +159,7 @@ const DesignLanguageSystem = () => {
               src={require("public/images/portfolio/design-language-system-tools.png")}
               alt="design-language-system-tool"
             />
-            <H3 className="text-black">Folder System</H3>
+            <Typography className="text-black" variant="h3">Folder System</Typography>
             <p>Create a folder system to organize work. Standardize the naming convention. This will make it easier to
               find a particular file. Find a formula that works best for all the teams, perfect a naming convention and
               STICK TO IT.</p>
@@ -167,13 +167,13 @@ const DesignLanguageSystem = () => {
               src={require("public/images/portfolio/design-language-system-folder.png")}
               alt="design-language-system-folder"
             />
-            <H3 className="text-black">Documentation</H3>
+            <Typography className="text-black" variant="h3">Documentation</Typography>
             <p>Document all these standardizations. Create a one stop shop for every information related to the system
               followed.</p>
             <Image src={require("public/images/portfolio/design-language-system-documents.png")}
               alt="design-language-system-documents"
             />
-            <H3 className="text-black">Style Guide</H3>
+            <Typography className="text-black" variant="h3">Style Guide</Typography>
             <p>Conduct a UI Audit (If working on an already existing platform). This is essentially making an inventory of
               all the components that make up the digital product. All we have to do is take screenshots of all the
               elements and components that make up your product and categorize them. The components range from right, from
@@ -181,7 +181,7 @@ const DesignLanguageSystem = () => {
             <Image src={require("public/images/portfolio/design-language-system-style.png")}
               alt="design-language-system-style"
             />
-            <H3 className="text-black">Foundation</H3>
+            <Typography className="text-black" variant="h3">Foundation</Typography>
             <p>We had already created a basic style guide, that we called the foundation. This foundation loosely defined
               our typography, colors, icons, spacing and information architecture. The foundation proved essential for
               guiding our work in a unified direction while allowing room for us to individually explore creative design
@@ -192,7 +192,7 @@ const DesignLanguageSystem = () => {
               src={require("public/images/portfolio/design-language-system-foundation.png")}
               alt="design-language-system-foundation"
             />
-            <H3 className="text-black">Brand</H3>
+            <Typography className="text-black" variant="h3">Brand</Typography>
             <p>A DLS creates a personality for a digital product. A personality that has its own character and other
               quirks which gives it its own identity and allows it to be recognized in this over populated world of
               digital products.</p>
@@ -203,13 +203,13 @@ const DesignLanguageSystem = () => {
           </div>
         </div>
         <HR />
-        <H3 className="text-center">Result</H3>
+        <Typography className="text-center" variant="h3">Result</Typography>
         <div className="space-y-8 lg:w-1/2 lg:mx-auto text-gray-500">
           <p>Since the design language are often shared, we can now build and release features on all native platforms
             at roughly the same time. Development is generally faster, since product engineers can focus more on writing
             the feature logic rather than the view code. Additionally, engineers and designers now share a common
             language.</p>
-          <H4 className="text-center">Lessons Learned</H4>
+          <Typography className="text-center" variant="h4">Lessons Learned</Typography>
           <p>We knew that this was a challenging project. It meant re-designing and rebuilding the majority of the views
             in our app. We managed to make our goal of creating the system. As with any project, there are things we
             wish we would have done differently.</p>
@@ -219,27 +219,27 @@ const DesignLanguageSystem = () => {
           alt="design-language-system-overall"
         />
         <div className="space-y-8 lg:w-1/2 lg:mx-auto text-gray-500">
-          <H4>Not all components are created equal.</H4>
+          <Typography variant="h4">Not all components are created equal.</Typography>
           <p>In most apps there are a set of components that repeat often. For us, these components are still some
             little different hard to define. Looking back, I wish we had taken more time to think about the marketing
             purpose or business purpose and come up with a stronger set of patterns and components. In the end, we wound
             up with many different kinds with some inconsistencies.</p>
-          <H4>Sketch</H4>
+          <Typography variant="h4">Sketch</Typography>
           <p>We initially tried to create these components as symbols in Sketch, which resulted in a mess. Even now, our
             Sketch files are sometimes challenging to maintain. Moving forward, we hope to find better ways of
             maintaining and creating new components.</p>
-          <H4>Inspection</H4>
+          <Typography variant="h4">Inspection</Typography>
           <p>Due to there are too many guidelines, styles, and images, sometimes we are not sure current project belong
             to part of DLS, or special case. It make people confused and complex. We think there should have some tools
             to help check.</p>
-          <H4>Work Efficiency</H4>
+          <Typography variant="h4">Work Efficiency</Typography>
           <p>In the other hand, we realize some of the repeat works could solve by automation tool, like the banners of
             marketing daily work, designers usually have to resize lots of banners to upload many different
             advertisement platforms. We are building the auto-layout to help they work efficiency.</p>
           <iframe title="autolayout" width="560" height="315" src="https://www.youtube.com/embed/CwmaUkF94dc"
             frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen></iframe>
-          <H4>Reference</H4>
+          <Typography variant="h4">Reference</Typography>
           <ul className="list-disc pl-4 space-y-2">
             <li>
               <Link href="https://polaris.shopify.com/" target="_blank" rel="noopener noreferrer"

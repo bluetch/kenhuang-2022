@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Button, H1, H2, H3, H4, H5, H6, Container, Gallery, Layout } from "components";
+import { Button, Container, Gallery, Layout, Typography } from "components";
 import portrait from "public/images/about/kenhuang_portrait.png";
 import { useEffect } from "react";
 // import shopeeLogo from "public/images/about/logo-shopee.png";
@@ -109,17 +109,17 @@ const myWorkExperience = [
 
 
 const About = () => {
-  useEffect(()=>{
+  useEffect(() => {
     console.log("window cookie:", window.document.cookie);
-  },[]);
+  }, []);
   return (
     <Layout title="About | Ken Huang">
       <Container>
         <div className="grid lg:grid-cols-5 gap-8 my-32">
           <Image src={portrait} alt="Ken Huang" className="p-8 lg:col-span-2 overflow-hidden hover:transition-all hover:scale-110" />
           <div className="space-y-8 lg:col-span-3">
-            <H1 className="mb-8">Ken Huang</H1>
-            <H3>I am a UX Engineer based in Taipei, Taiwan.</H3>
+            <Typography className="mb-8" variant="h1">Ken Huang</Typography>
+            <Typography variant="h3">I am a UX Engineer based in Taipei, Taiwan.</Typography>
             <p className="text-gray-500">Since 2005, I have enjoyed turning complex problems into simple, beautiful and intuitive designs. When I am not pushing pixels, you will find me cooking, gardening or working out in the park.</p>
             <p className="text-gray-500">Over 12 years of experience within 6 years as a Designer and 6 years as a Developer, and execution across multiple industries such as hospitality, IT, consumer services, e-commerce, and security, which has worked extensively with corporate executives and businesses from APAC and Europe.</p>
             <Button href="https://www.linkedin.com/in/bluetch/" target="_blank">LinkedIn</Button>
@@ -131,7 +131,7 @@ const About = () => {
         <Container>
           <div className="grid lg:grid-cols-3 gap-8 lg:text-center">
             <div className="space-y-4">
-              <H3>Designer</H3>
+              <Typography variant="h3">Designer</Typography>
               <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
               <ul className="text-gray-500 space-y-2 lg:list-none list-disc lg:pl-0 pl-6">
                 <li>Product thinking of business</li>
@@ -142,7 +142,7 @@ const About = () => {
               </ul>
             </div>
             <div className="space-y-4">
-              <H3>Frontend Developer</H3>
+              <Typography variant="h3">Front-end Developer</Typography>
               <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
               <ul className="text-gray-500 space-y-2 lg:list-none list-disc lg:pl-0 pl-6">
                 <li>HTML</li>
@@ -153,7 +153,7 @@ const About = () => {
               </ul>
             </div>
             <div className="space-y-4">
-              <H3>Mentor</H3>
+              <Typography variant="h3">Mentor</Typography>
               <p>I genuinely care about people, and love helping fellow designers work on their craft.</p>
               <ul className="text-gray-500 space-y-2 lg:list-none list-disc lg:pl-0 pl-6">
                 <li>8 years experience</li>
@@ -176,7 +176,7 @@ const About = () => {
               <img src="/images/about/20161206.jpg" alt="" className="rounded-lg aspect-square object-cover" />
             </div>
             <div className="m-auto space-y-4">
-              <H3>Funny facts?</H3>
+              <Typography variant="h3">Fun facts?</Typography>
               <ul className="text-gray-500 space-y-2">
                 <li>Hiking around 800km in Spain</li>
                 <li>I am a bit of a clean freak</li>
@@ -191,7 +191,7 @@ const About = () => {
         <Container>
           <div className="grid grid-cols-2 gap-8">
             <div className="m-auto space-y-4">
-              <H3>My story</H3>
+              <Typography variant="h3">My Story</Typography>
               <p className="text-gray-500">Learn a little bit more about me, how I got into design, and how I built my career as a product designer. I’ve included key things I have learned, book recommendations, and even some sneak peeks of the first websites I created.</p>
             </div>
             <div className="grid grid-cols-2 gap-8">
@@ -206,7 +206,7 @@ const About = () => {
       <section>
         <Container>
           <div className="mx-auto space-y-4">
-            <H3>My Trip</H3>
+            <Typography variant="h3">My Trip</Typography>
             <p className="text-gray-500">Learn a little bit more about me, how I got into design, and how I built my career as a product designer. I’ve included key things I have learned, book recommendations, and even some sneak peeks of the first websites I created.</p>
           </div>
           <div className="grid lg:grid-cols-6 grid-cols-2 lg:gap-8 gap-4 my-12">
@@ -221,15 +221,15 @@ const About = () => {
       <hr className="my-24" />
       <section>
         <Container>
-          <H3>Work Experience</H3>
+          <Typography variant="h3">Work Experience</Typography>
           <div className="space-y-8 my-12">
             {myWorkExperience.map((job) => {
               return (
                 <div key={job.company} className="flex p-4 hover:bg-gray-100 hover:rounded-lg">
                   <img src={job.logo} alt={job.company} className="w-20 h-20 p-2 inline-block border border-gray-100 rounded-lg bg-white" />
                   <div className="ml-4">
-                    <H6 className="font-bold mb-2">{job.company} <span className="font-light">| {job.location}</span></H6>
-                    <H5 className="mb-4">{job.position} <span className="font-light">| {job.duration}</span></H5>
+                    <Typography variant="h4">{job.company} <span className="font-light">| {job.location}</span></Typography>
+                    <Typography variant="h6">{job.position} <span className="font-light">| {job.duration}</span></Typography>
                     <ul className="list-disc pl-4 space-y-2 text-gray-500">
                       {job.desc.map((p, pindex) => <li key={`${job.company}-${pindex}`}>{p}</li>)}
                     </ul>

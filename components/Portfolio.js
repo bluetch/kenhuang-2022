@@ -1,16 +1,16 @@
-import { H1, H3, H4 } from "components";
+import { Typography } from "components";
 import Link from "next/link";
 import { Tag } from "./Tag";
 import { dateConvert } from "utils";
 
 export const PortfolioSummary = ({ tags, date, title, duration, myRole, responsibility, company }) => {
   return (
-    <div className="rounded-lg -mt-24 relative bg-white lg:p-10 p-4 shadow-lg">
+    <div className="rounded-lg -mt-24 mb-24 relative bg-white lg:p-10 p-4 shadow-lg">
       <div className="lg:flex justify-between">
         <Tag className="hidden lg:block">{tags}</Tag>
         <p className="font-mono">{date}</p>
       </div>
-      <H1>{title}</H1>
+      <Typography variant="h1">{title}</Typography>
       <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-16 gap-4">
         <div>
           <p className="text-xs">Duration</p>
@@ -36,12 +36,12 @@ export const PortfolioSummary = ({ tags, date, title, duration, myRole, responsi
 export const PortfolioOverview = ({ overview }) => {
   return (
     <div className="py-8">
-      <H3 className="text-center">Project Overview</H3>
+      <Typography className="text-center" variant="h3">Project Overview</Typography>
       <div className="grid lg:grid-cols-2 gap-4">
         {overview.map((item) => {
           return (
             <div key={item.title} className="border rounded-lg lg:p-8 p-4">
-              <h3 className="font-semibold mb-2">{item.title}</h3>
+              <Typography variant="h4">{item.title}</Typography>
               <p className="text-gray-500">{item.desc}</p>
             </div>
           )
@@ -80,7 +80,7 @@ export const PortfolioList = ({ data }) => {
               <img src={item.img} alt={item.name} className="rounded-lg object-cover aspect-[4/3] lg:w-full w-1/4 h-auto" />
               <figcaption className="lg:px-0 px-8">
                 <p className="text-gray-500">{item.company}, {item.date}</p>
-                <H4 className="text-gray-500 font-normal">{item.name}</H4>
+                <Typography className="text-gray-500 font-normal" variant="h4">{item.name}</Typography>
                 <p className=" lg:text-gray-500 font-light">{item.desc}</p>
               </figcaption>
             </figure>

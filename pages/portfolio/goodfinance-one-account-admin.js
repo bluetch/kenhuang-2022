@@ -1,12 +1,12 @@
 import Image from "next/image";
 import {
   Container,
-  H3,
   HR,
   Layout,
   PortfolioSummary,
   PortfolioOverview,
   Tag,
+  Typography
 } from "components";
 // import { useState } from "react";
 
@@ -55,7 +55,7 @@ const goodfinanceOneAccountAdmin = () => {
             },
           ]}
         />
-        <H3 className="text-center">Situation</H3>
+        <Typography className="text-center" variant="h3">Situation</Typography>
         <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
           <div className="lg:w-1/2 space-y-4 text-gray-500">
             <p>
@@ -82,7 +82,7 @@ const goodfinanceOneAccountAdmin = () => {
           </div>
         </div>
         <HR />
-        <H3 className="text-center">Task</H3>
+        <Typography className="text-center" variant="h3">Task</Typography>
         <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
           <div className="lg:w-1/2 space-y-4 text-gray-500">
             <p>
@@ -113,7 +113,7 @@ const goodfinanceOneAccountAdmin = () => {
           </div>
         </div>
         <hr className="my-24" />
-        <h3 className="text-center mb-12 text-3xl font-bold">Action</h3>
+        <Typography className="text-center" variant="h3">Action</Typography>
         <div className="space-y-4 text-gray-500 text-center lg:w-1/2 mx-auto">
           <p>
             I am the first one frontend developer in this company, and worked
@@ -142,7 +142,7 @@ const goodfinanceOneAccountAdmin = () => {
           </p>
         </div>
         <hr className="my-24" />
-        <h3 className="text-center mb-12 text-3xl font-bold">Result</h3>
+        <Typography className="text-center" variant="h3">Result</Typography>
       </Container>
       <Image
         src={require("public/images/portfolio/goodfinance_one_account_admin_cover.png")}

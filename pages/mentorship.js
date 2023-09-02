@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button, Container, H1, H2, H3, Icon, Layout } from "components";
+import { Button, Container, Layout, Typography } from "components";
 import mentorshipHero from "public/images/mentorship/mentorship_hero.jpg";
 
 const Mentorship = () => {
@@ -82,7 +82,7 @@ const Mentorship = () => {
     <Layout title="Mentorship | Ken Huang">
       <section className="flex flex-col justify-center items-center space-y-8 lg:py-32 py-16">
         <Container>
-          <H1 className="text-center">Mentor Program</H1>
+          <Typography className="text-center" variant="h1">Mentor Program</Typography>
           <div className="grid lg:grid-cols-2 gap-8">
             <div className="space-y-4">
               <p className="text-gray-500">Boost your career and become a better designer or engineer</p>
@@ -93,37 +93,16 @@ const Mentorship = () => {
           </div>
         </Container>
       </section>
-      {/* <section className="py-32 px-20 space-y-8 bg-gray-50">
-        <H2 className="text-center">Select your program</H2>
-        <div className="grid grid-cols-3 gap-4">
-          {programs.map((program, i) => {
-            return (
-              <div key={`program-${i}`} className="shadow-md flex flex-col rounded-lg p-12 space-y-4 bg-white text-black">
-                <div className="tag">共{program.section}場，60分鐘</div>
-                <H3>{program.name}</H3>
-                <p className="text-gray-500">{program.desc}</p>
-                <div>
-                  <p className="text-sm font-black">平均${program.price}/場</p>
-                  <p className="font-bold">{program.price * program.section}</p>
-                </div>
-
-                <Button>{program.button}</Button>
-              </div>
-            )
-          }
-          )}
-        </div>
-      </section> */}
       <section className="lg:py-32">
         <Container className="text-center space-y-8">
-          <H2>Benefits of Mentorship</H2>
+          <Typography variant="h2">Benefits of Mentorship</Typography>
           <p>I know a thing or two because I have done a thing or two in my design career, and I am committed to helping you make use of that knowledge.</p>
           <div className="grid lg:grid-cols-2 gap-8">
             {benefits.map((benefit, i) => {
               return (
                 <div key={`benefit-${i}`} className="shadow-md space-y-4 rounded-lg p-8">
                   {/* <Icon name={benefit.img} className="w-12 h-12 inline-block bg-black rounded-lg" /> */}
-                  <H3>{benefit.name}</H3>
+                  <Typography variant="h3">{benefit.name}</Typography>
                   <p className="text-gray-500">{benefit.desc}</p>
                 </div>
               )
@@ -133,7 +112,7 @@ const Mentorship = () => {
       </section>
       <section className="my-32">
         <Container className="text-center space-y-20">
-          <H2>I’ve mentored talented <br />designers & engineers from all over the world</H2>
+          <Typography variant="h2">I’ve mentored talented <br />designers & engineers from all over the world</Typography>
           <div className="grid lg:grid-cols-4 lg:gap-20 grid-cols-2 gap-4">
             <div className="flex items-center">
               <img src="/images/mentorship/facebook_logo.png" alt="Facebook" />
@@ -162,27 +141,10 @@ const Mentorship = () => {
           </div>
         </Container>
       </section>
-      {/* <section className="my-32 bg-gray-50">
-        <Container className="text-center space-y-8 py-32">
-          <H2>My Mentoring Style</H2>
-          <p className="w-1/2 mx-auto">I strive to function as a catalyst and challenge you to grow as both a designer and a human. I care about the details and will encourage you to think, plan, and dream. These are the qualities I will bring to every conversation.</p>
-          <div className="grid grid-cols-2 gap-8">
-            {mentoringStyle.map((style, i) => {
-              return (
-                <div key={`style-${i}`} className="text-black bg-white rounded-lg p-12 space-y-8">
-                  <Icon name={style.img} className="w-8 h-8 inline-block" />
-                  <H3>{style.name}</H3>
-                  <p>{style.desc}</p>
-                </div>
-              )
-            })}
-          </div>
-        </Container>
-      </section> */}
       <section className="py-32 bg-gray-50">
         <Container className="text-center">
           <div className="flex flex-col justify-center items-center space-y-8">
-            <H2>Book a consult</H2>
+          <Typography variant="h2">Book a consult</Typography>
             <p>Thinking about mentorship? Lets talk about it. The first call is on me.</p>
             {/* <Button href="">Introduce yourself</Button> */}
             <p>Contace Me: <a href="mailto:bluetch@gmail.com" className="text-sky-500">bluetch@gmail.com</a></p>

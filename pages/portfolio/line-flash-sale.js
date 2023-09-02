@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Container, Layout, PortfolioSummary } from "components";
+import { Container, Layout, PortfolioSummary, Typography } from "components";
 
 const lineFlashSale = () => {
   return (
@@ -18,7 +18,7 @@ const lineFlashSale = () => {
           company="Uitox, Taipei, Taiwan & 
           Naver LINE, South Korea"
         />
-        <h3 className="text-center mt-24 mb-12 text-3xl font-bold">Situation</h3>
+        <Typography variant="h3">Situation</Typography>
         <div className="grid grid-cols-2 gap-8">
           <div className="space-y-4 text-gray-500">
             <p>LINE Flash Sale is the first E-commerce service of LINE in Asia. I was very excited to be a part of this team. It was my proud project for LINE when I worked in Uitox and business trip in South Korea.</p>
@@ -27,7 +27,7 @@ const lineFlashSale = () => {
           <Image src={require('public/images/portfolio/line-business-trip.jpg')} alt="LINE HQ in Korea" />
         </div>
         <hr className="my-24" />
-        <h3 className="text-center mt-24 mb-12 text-3xl font-bold">Task & Action</h3>
+        <Typography variant="h3">Task & Action</Typography>
         <div className="grid grid-cols-2 gap-8">
           <div className="space-y-4 text-gray-500">
             <p>In the beginning, we will have a kick-off meeting with business units (LINE HQ). After we understand their strategy and vision, we do not just start design and sketch, we want to learn from users and find out users pain point. we want to know why our user wants to shopping and their shopping behavior. So we start walking their daily lives, visit their favorite spots.</p>
@@ -36,7 +36,7 @@ const lineFlashSale = () => {
           <Image src={require('public/images/portfolio/line-flash-sale-working.png')} alt="work with LINE employee in Korea" />
         </div>
         <hr className="my-24" />
-        <h3 className="text-center mt-24 mb-12 text-3xl font-bold">Result</h3>
+        <Typography variant="h3">Result</Typography>
         <p className="text-gray-500">In shopping team, I need to clearly deliver core value for new app features. Once the feature to be implemented is confirmed, I always comes out the UI mockup, animation and prototype by JavaScript and CSS very quickly, so that team members can discuss following details more easily. Flash Sale design and favorite brand list for instance, I made the prototype and animation with real front-end environment as starts, so that engineers can have more detail discussion by referring to these designs.</p>
       </Container>
       <Image src={require('public/images/portfolio/line-flash-sale-mockup-01.png')} alt="work with LINE employee in Korea" className="mt-20"/>

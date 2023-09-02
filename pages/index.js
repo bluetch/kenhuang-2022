@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { H1, H2, H3, H4, H6, CategoryBar, Container, Layout, PortfolioList } from 'components';
+import { CategoryBar, Container, Layout, PortfolioList, Typography } from 'components';
 import { codeMapping, dateConvert, fetcher } from "utils";
 import { useEffect, useState, useMemo } from "react";
 import Link from "next/link";
@@ -45,7 +45,7 @@ export default function Home() {
       </section>
       <section className="mb-32 bg-gradient-to-t from-gray-100 py-32">
         <Container>
-          <H2 className="mb-12">Featured post</H2>
+          <Typography className="mb-12" variant="h2">Featured post</Typography>
           <div className="grid lg:grid-cols-3 gap-8 sm:grid-cols-2">
             {articles.map((item) => {
               return (
@@ -54,7 +54,7 @@ export default function Home() {
                     <img src={item.img} alt="" className="object-cover aspect-[1/1] w-1/4 m-4" />
                     <figcaption className="p-4 pl-0 space-y-2 relative">
                       <p className="text-gray-500 text-sm">{dateConvert(item.date)}</p>
-                      <H6 className="line-clamp-2 text-sm">{item.name}</H6>
+                      <Typography variant="h6" className="line-clamp-2 text-sm">{item.name}</Typography>
                     </figcaption>
                   </figure>
                 </Link>
@@ -65,12 +65,12 @@ export default function Home() {
       </section>
       <section className="my-32">
         <Container>
-          <H2>Portfolio</H2>
+          <Typography className="mb-12" variant="h2">Featured post</Typography>
           <CategoryBar
             data="portfolioSpec"
             method={(e) => setCategory(e)}
           />
-          <PortfolioList data={portfolioResult}/>
+          <PortfolioList data={portfolioResult} />
         </Container>
       </section>
     </Layout>

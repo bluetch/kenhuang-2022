@@ -1,4 +1,4 @@
-import { CategoryBar, Container, H1, H2, H3, H4, Layout, PortfolioList } from "components";
+import { CategoryBar, Container, Layout, PortfolioList, Typography } from "components";
 import { useEffect, useState, useMemo } from "react";
 import { fetcher } from "utils";
 import Link from "next/link";
@@ -26,7 +26,7 @@ export default function Portfolio() {
   return (
     <Layout title="Portfolio | Ken Huang">
       <Container>
-        <H1 className="pt-16">Portfolio</H1>
+        <Typography variant="h1">Portfolio</Typography>
         <CategoryBar
           data="portfolioSpec"
           method={(e) => setCategory(e)}

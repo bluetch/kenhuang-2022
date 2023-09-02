@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Container, H3, H4, HR, Layout, PortfolioSummary, PortfolioOverview, PortfolioProcess } from "components";
+import { Container, HR, Layout, PortfolioSummary, PortfolioOverview, PortfolioProcess, Typography } from "components";
 
 const shopeeProductDetailPageRefactor = () => {
   return (
@@ -38,7 +38,7 @@ const shopeeProductDetailPageRefactor = () => {
             },
           ]}
         />
-        <H3 className="text-center">Background</H3>
+        <Typography className="text-center" variant="h3">Background</Typography>
         <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
           <div className="lg:w-1/2 space-y-4 text-gray-500">
             <p>In order to help our users browsing service in south east area, especially in Indonesia, there are not enough internet infrastructure to support friendly web service, we have to make it better.</p>
@@ -60,7 +60,7 @@ const shopeeProductDetailPageRefactor = () => {
           </div>
         </div>
         <HR />
-        <H3 className="text-center">Design Process</H3>
+        <Typography className="text-center" variant="h3">Design Process</Typography>
         <PortfolioProcess data={[
           {
             title: "Research",
@@ -80,10 +80,10 @@ const shopeeProductDetailPageRefactor = () => {
           },
         ]} />
         <HR />
-        <H3 className="text-center">01. Research</H3>
+        <Typography className="text-center" variant="h3">01. Research</Typography>
         <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
           <div className="lg:w-1/2 space-y-4 text-gray-500">
-            <H4>Data Analytics</H4>
+            <Typography variant="h4">Data Analytics</Typography>
             <p>Via Google analytics, we pick some statistics up and figure out what might be helpful to measure success and pain point.</p>
             <p>There are some data we might track or enhance:</p>
             <ul className="list-disc pl-4 space-y-2">
@@ -103,7 +103,7 @@ const shopeeProductDetailPageRefactor = () => {
           </div>
         </div>
         <HR />
-        <H3 className="text-center">02. Design Sprint</H3>
+        <Typography className="text-center" variant="h3">02. Design Sprint</Typography>
         <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
           <div className="lg:w-1/2 space-y-4 text-gray-500">
             <p>The sprint is a five-day process for answering critical business questions through design, prototyping, and testing ideas with customers. Developed at GV, it’s a “greatest hits” of business strategy, innovation, behavior science, design thinking, and more—packaged into a battle-tested process that any team can use.</p>
@@ -117,12 +117,12 @@ const shopeeProductDetailPageRefactor = () => {
           </div>
         </div>
         <HR />
-        <H3 className="text-center">Affinity Mapping</H3>
+        <Typography className="text-center" variant="h3">Affinity Mapping</Typography>
         <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
           <div className="lg:w-1/2 space-y-4 text-gray-500">
             <p>Each participant watched user interview videos from 1 of 6 different user segments and came prepared with their observations written on post-it notes.</p>
             <p>Affinity mapswere then used to organize and categorize these many different data points, from which common themes and relationships surrounding the observations emerged — even uncovering previously hidden ones.</p>
-            <H4>Solution Discovery</H4>
+            <Typography variant="h4">Solution Discovery</Typography>
             <p>The second half of the day focused on devising a design that met different user groups’ needs. To do this, participants were regrouped so each group had a mix of user personas.</p>
           </div>
           <div className="lg:w-1/2">
@@ -132,7 +132,7 @@ const shopeeProductDetailPageRefactor = () => {
           </div>
         </div>
         <HR />
-        <H3 className="text-center">Card Sorting</H3>
+        <Typography className="text-center" variant="h3">Card Sorting</Typography>
         <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
           <div className="lg:w-1/2 space-y-4 text-gray-500">
             <p>Teams were given cards with components of Shopee’s digital interface and tasked to first classify, then sort according to importance. The open card sort method allowed participants to explore each others’ conceptions of user mental models. From this, teams were able to organically determine their design guidelines for the next phase of the sprint.</p>
@@ -157,7 +157,7 @@ const shopeeProductDetailPageRefactor = () => {
           </div>
         </div>
         <HR />
-        <H3 className="text-center">Sketch Storming</H3>
+        <Typography className="text-center" variant="h3">Sketch Storming</Typography>
         <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
           <div className="lg:w-1/2 space-y-4 text-gray-500">
             <p>Participants first put pen to paper and individually sketched their ideal product, then sketched a single mock-up as a group. The insights that emerged from the diverse set of participants will no doubt be invaluable to future product development and innovations.</p>
@@ -172,7 +172,7 @@ const shopeeProductDetailPageRefactor = () => {
       <section>
         <HR />
         <Container>
-          <H3 className="text-center">03. Execution</H3>
+          <Typography className="text-center" variant="h3">03. Execution</Typography>
           <div className="space-y-4 text-gray-500">
             <p>Base on the sketch storming of design sprint, we could start from product detail page. My goal is to solve all the problems and implement the idea of design.</p>
           </div>
@@ -181,7 +181,7 @@ const shopeeProductDetailPageRefactor = () => {
         <Container>
           <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
             <div className="lg:w-1/2 space-y-4 text-gray-500">
-              <H4>First Screen</H4>
+              <Typography variant="h4">First Screen</Typography>
               <p>According to the card sorting and user survey, beyond the images, product page needs to give high-level information of the product right off the bat.</p>
               <p>That information includes:</p>
               <ul className="list-disc pl-4 space-y-2">
@@ -202,7 +202,7 @@ const shopeeProductDetailPageRefactor = () => {
           <HR />
           <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
             <div className="lg:w-1/2 space-y-4 text-gray-500">
-              <H4>Fourth Screen: Recommendation</H4>
+              <Typography variant="h4">Fourth Screen: Recommendation</Typography>
               <p>There are 3 recommendation sections, We put these under the product information, it can help users find out more ideal, similiar, cheaper products. For You May Also Like section, it relate the users browse history and current product, make people more choice.</p>
               <ul className="list-disc pl-4 space-y-2">
                 <li>From the same shop</li>
@@ -217,7 +217,7 @@ const shopeeProductDetailPageRefactor = () => {
             </div>
           </div>
           <HR />
-          <H3 className="text-center">Visual Design</H3>
+          <Typography className="text-center" variant="h3">Visual Design</Typography>
           <p>Instead of using heavy text for an overview (this is *not* the description), we use colors, fonts, and icons. And we could only fetch some representative signal for that information.</p>
         </Container>
         <Image src={require('public/images/portfolio/shopee-amp-pdp-mockup-02.png')} alt="mockup 01" className="my-20" />
@@ -227,7 +227,7 @@ const shopeeProductDetailPageRefactor = () => {
       <HR />
       <section>
         <Container>
-          <H3 className="text-center">Technical solution</H3>
+          <Typography className="text-center" variant="h3">Technical solution</Typography>
           <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
             <div className="lg:w-1/2 space-y-4 text-gray-500">
               <p>Via workshop with Google, we launch the <Link href="AMP project" target="_blank" className="font-bold text-black">AMP project</Link> for this version which is an open-source initiative aiming to make the web better for all. The project enables the creation of websites and ads that are consistently fast, beautiful and high-performing across devices and distribution platforms.</p>
@@ -244,7 +244,7 @@ const shopeeProductDetailPageRefactor = () => {
       <HR />
       <section>
         <Container>
-          <H3 className="text-center">Product Management</H3>
+          <Typography className="text-center" variant="h3">Product Management</Typography>
           <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
             <div className="lg:w-1/2 space-y-4 text-gray-500">
               <p>Due to this project was new and start up with designers and developers for the beginning, I raise myself to be a product manager in this project to work with each team:</p>
@@ -257,7 +257,7 @@ const shopeeProductDetailPageRefactor = () => {
                 <li>QA(Quality assurance) team</li>
                 <li>Local country team (7 countries)</li>
               </ul>
-              <H4>Documentation</H4>
+              <Typography variant="h4">Documentation</Typography>
               <p>I created and maintaind some documents like PRD (Product Requirements Document) containing all the requirements to a certain product. It is written to allow people to understand what a product should do.</p>
               <ul className="list-disc pl-4 space-y-2">
                 <li>Product Requirements Document (PRD)</li>
@@ -277,7 +277,7 @@ const shopeeProductDetailPageRefactor = () => {
       <HR />
       <section>
         <Container>
-          <H3 className="text-center">04. Validation</H3>
+          <Typography className="text-center" variant="h3">04. Validation</Typography>
           <div className="flex lg:flex-row flex-col-reverse gap-8 py-8">
             <div className="lg:w-1/2 space-y-4 text-gray-500">
               <p>We use Google Analytics and NPS (Net Promoter Score) to track the performance with internal data to validate the result.</p>
