@@ -65,7 +65,7 @@ export default function Home() {
       </section>
       <section className="my-32">
         <Container>
-          <Typography className="mb-12" variant="h2">Featured post</Typography>
+          <Typography className="mb-12" variant="h2">Featured project</Typography>
           <CategoryBar
             data="portfolioSpec"
             method={(e) => setCategory(e)}
