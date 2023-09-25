@@ -22,7 +22,7 @@ const shopeeProductDetailPageRefactor = () => {
           overview={[
             {
               title: "01. Objective",
-              desc: "The team wanted to refactor the existing mobile product detail page for South Ease area customers to get better user experience.",
+              desc: "The team wanted to refactor the existing mobile product detail page for South East area customers to get better user experience.",
             },
             {
               title: "02. Role & Deliverables",

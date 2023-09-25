@@ -20,7 +20,7 @@ const shopeeRecruitment = () => {
         <h3 className="text-center mt-24 mb-12 text-3xl font-bold">Background</h3>
         <div className="grid grid-cols-2 gap-8">
           <div className="space-y-4 text-gray-500">
-            <p>In the beginning of 2018, Travel Frog (Japan name: Tabi Kaeru 旅かえる) has topped the charts in the free game category in Apple's App Store in China for more than a fortnight. Soon after, it also becomes popular in South ease area.</p>
+            <p>In the beginning of 2018, Travel Frog (Japan name: Tabi Kaeru 旅かえる) has topped the charts in the free game category in Apple's App Store in China for more than a fortnight. Soon after, it also becomes popular in South east area.</p>
             <p>So that we would like to leverage this fashion as Shopee recruitment.</p>
             <p>What are the advantages to using social media for recruitment?</p>
             <ul className="list-disc pl-4 space-y-2">
