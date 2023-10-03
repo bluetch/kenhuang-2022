@@ -41,7 +41,7 @@ export const Footer = () => {
       <p>
         <a href="maitl:bluetch@gmail.com">bluetch@gmail.com</a>
       </p>
-      <p>© Ken Huang 2023 Copyright. All Rights Reserved.</p>
+      <p>© Ken Huang 2022 - 2023 Copyright. All Rights Reserved.</p>
       </div>
     </footer>
   );
