@@ -121,7 +121,7 @@ const About = () => {
             <Typography className="mb-8" variant="h1">Ken Huang</Typography>
             <Typography variant="h3">I am a UX Engineer based in Taipei, Taiwan.</Typography>
             <p className="text-gray-500">Since 2005, I have enjoyed turning complex problems into simple, beautiful and intuitive designs. When I am not pushing pixels, you will find me cooking, gardening or working out in the park.</p>
-            <p className="text-gray-500">Over 12 years of experience within 6 years as a Designer and 6 years as a Developer, and execution across multiple industries such as hospitality, IT, consumer services, e-commerce, and security, which has worked extensively with corporate executives and businesses from APAC and Europe.</p>
+            <p className="text-gray-500">Over 15 years of experience within 6 years as a Designer and 10 years as a Developer, and execution across multiple industries such as hospitality, IT, consumer services, e-commerce, and security, which has worked extensively with corporate executives and businesses from APAC and Europe.</p>
             <Button href="https://www.linkedin.com/in/bluetch/" target="_blank">LinkedIn</Button>
           </div>
         </div>
