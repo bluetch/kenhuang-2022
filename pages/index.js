@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { CategoryBar, Container, Layout, PortfolioList, Typography } from 'components';
-import { codeMapping, dateConvert, fetcher } from "utils";
+import { dateConvert, fetcher } from "utils";
 import { useEffect, useState, useMemo } from "react";
 import Link from "next/link";
 import styles from "./index.module.scss";
