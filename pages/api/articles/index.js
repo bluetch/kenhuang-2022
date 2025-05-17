@@ -1,6 +1,15 @@
 const Articles = (req, res) => {
   const articles = [
     {
+      name: "Git 指令教學全攻略：初學者必備的常用指令與實用情境整理",
+      category: [],
+      desc: "想學 Git 卻總是記不起指令？這篇文章整理了最常用的 Git 指令，搭配簡單說明與實際使用情境，讓你從版本控制新手快速進入開發者日常必備技能。適合自學者與前端/後端工程師參考！",
+      url: "https://medium.com/@bluetch/git-%E6%8C%87%E4%BB%A4%E6%95%99%E5%AD%B8%E5%85%A8%E6%94%BB%E7%95%A5-%E5%88%9D%E5%AD%B8%E8%80%85%E5%BF%85%E5%82%99%E7%9A%84%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E8%88%87%E5%AF%A6%E7%94%A8%E6%83%85%E5%A2%83%E6%95%B4%E7%90%86-9448fd1024e6",
+      img: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*WzN1eeQsje4W8e9i8VVs5g.jpeg",
+      code: "20250517",
+      date: 20250517,
+    },
+    {
       name: "Reflection of Nvidia CEO Jensen Huang keynote at Computex 2024",
       category: [],
       desc: "Reflection of Nvidia CEO Jensen Huang keynote at Computex 2024.",
