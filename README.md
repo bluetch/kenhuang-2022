@@ -9,3 +9,6 @@ Ken Huang, a passionate front-end developer / product designer from Taipei Taiwa
 ```
 yarn install
 ```
+
+## Run
+http://localhost:3000/
