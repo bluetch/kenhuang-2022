@@ -6,7 +6,7 @@ import {
   PortfolioSummary,
   Typography,
 } from "components";
-import { CAMINO_IMG_ROOT_URL } from "./constants";
+import { CAMINO_IMG_ROOT_URL } from "../../constants";
 
 const Camino = () => {
   return (

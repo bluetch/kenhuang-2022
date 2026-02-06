@@ -13,6 +13,8 @@ export const portfolioSpec = [
   },
 ];
 
+export const CAMINO_IMG_ROOT_URL = "/images/articles/camino";
+
 export default {
   portfolioSpec,
 }
