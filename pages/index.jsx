@@ -48,8 +48,9 @@ export default function Home() {
           <Typography className="mb-12" variant="h2">Featured post</Typography>
           <div className="grid lg:grid-cols-3 gap-8 sm:grid-cols-2">
             {articles.slice(0, 6).map((item) => {
+              const isExternal = item.url.startsWith("http");
               return (
-                <Link key={item.url} href={item.url} target="_blank">
+                <Link key={item.url} href={item.url} target={isExternal ? "_blank" : "_self"}>
                   <figure className="bg-white shadow-md flex rounded-lg hover:opacity-75 hover:bg-gray-100 transition ease-in-out">
                     <img src={item.img} alt="" className="object-cover aspect-[1/1] w-1/4 m-4" />
                     <figcaption className="p-4 pl-0 space-y-2 relative">

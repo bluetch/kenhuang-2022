@@ -4,30 +4,24 @@ import { Tag } from "./Tag";
 import { dateConvert } from "utils";
 
 export const PortfolioSummary = ({ tags, date, info, title }) => {
+  const displayInfo = info?.slice(0, 4) || [];
+
   return (
     <div className="rounded-lg -mt-24 mb-24 relative bg-white lg:p-10 p-4 shadow-lg">
       <div className="lg:flex justify-between">
         <Tag className="hidden lg:block">{tags}</Tag>
         <p className="font-mono">{date}</p>
       </div>
-      <Typography variant="h1">{title}</Typography>
-      <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-16 gap-4">
-        <div>
-          <p className="text-xs">{info[0]?.key}</p>
-          <h6 className="font-light">{info[0]?.value}</h6>
-        </div>
-        <div>
-          <p className="text-xs">{info[1]?.key}</p>
-          <h6 className="font-light">{info[1]?.value}</h6>
-        </div>
-        <div>
-          <p className="text-xs">{info[2]?.key}</p>
-          <h6 className="font-light">{info[2]?.value}</h6>
-        </div>
-        <div>
-          <p className="text-xs">{info[3]?.key}</p>
-          <h6 className="font-light">{info[3]?.value}</h6>
-        </div>
+      
+      <Typography variant="h1" className="my-4">{title}</Typography>
+
+      <div className={`grid grid-cols-2 lg:gap-16 gap-4 lg:grid-cols-${displayInfo.length}`}>
+        {displayInfo.map((item, index) => (
+          <div key={index}>
+            <p className="text-xs text-gray-500 uppercase">{item.key}</p>
+            <h6 className="font-light">{item.value}</h6>
+          </div>
+        ))}
       </div>
     </div>
   )

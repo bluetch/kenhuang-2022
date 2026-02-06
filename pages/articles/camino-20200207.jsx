@@ -14,7 +14,7 @@ const Camino = () => {
     <Layout title="朝聖之路 Camino de Santiago Day 0 - Saint-Jean Pied du Port">
       <section>
         <Image
-          src={`${CAMINO_IMG_ROOT_URL}/camino_20200207_130756.jpg`}
+          src={`${CAMINO_IMG_ROOT_URL}/camino_day00_20200207_130756.jpg`}
           alt="790km"
           className="h-96 w-full object-cover"
           width={1200}
@@ -25,19 +25,10 @@ const Camino = () => {
         <PortfolioSummary
           date="2026-02-07"
           info={[
-            { key: "Trip", value: "Day 0" },
-            {
-              key: "From",
-              value: "Bordeaux",
-            },
-            {
-              key: "To",
-              value: "Saint-Jean Pied du Port",
-            },
-            { key: "Distance", value: "0 km" },
+            { key: "Trip", value: "Bordeaux → Saint-Jean Pied du Port" },
           ]}
           tags={["Camino de Santiago", "徒步旅行"]}
-          title="朝聖之路起點: 聖讓皮耶德波爾"
+          title="朝聖之路 Day 0: 聖讓皮耶德波爾"
         />
         <Typography className="text-center" variant="h3">
           起點 (事件回顧：2020.02.07)
@@ -59,7 +50,7 @@ const Camino = () => {
               在中間翻譯，每一句話都像被時間放慢，溫暖又小心翼翼地傳達。
             </p>
             <img
-              src={`${CAMINO_IMG_ROOT_URL}/camino_20200207_094019.jpg`}
+              src={`${CAMINO_IMG_ROOT_URL}/camino_day00_20200207_094019.jpg`}
               alt="SJPP火車站"
               className="w-full object-cover"
             />
@@ -88,12 +79,12 @@ const Camino = () => {
               辦公室角落放著一本簽到簿。翻開一看，短短一天內已經有八位韓國人留下名字，而最近的一位台灣人，是幾天前簽的。我闔上簿子，心裡有些失落，也許很難遇到原本期待的旅伴，但轉念一想，或許這趟路本來就該一個人走。孤單並不可怕，反而讓人更能專注在步伐、在沿途的風景，甚至在自己的思緒上。
             </p>
             <img
-              src={`${CAMINO_IMG_ROOT_URL}/camino_20200207_145815.jpg`}
+              src={`${CAMINO_IMG_ROOT_URL}/camino_day00_20200207_145815.jpg`}
               alt="朝聖之路辦公室留言板"
               className="w-full object-cover"
             />
             <img
-              src={`${CAMINO_IMG_ROOT_URL}/camino_20200207_195435.jpg`}
+              src={`${CAMINO_IMG_ROOT_URL}/camino_day00_20200207_195435.jpg`}
               alt="夜晚的街道"
               className="w-full object-cover"
             />
@@ -111,7 +102,7 @@ const Camino = () => {
             </blockquote>
             <figure>
               <img
-                src={`${CAMINO_IMG_ROOT_URL}/camino_20200207_193333.jpg`}
+                src={`${CAMINO_IMG_ROOT_URL}/camino_day00_20200207_193333.jpg`}
                 alt="旅行筆記"
                 className="w-full object-cover"
               />
@@ -165,6 +156,22 @@ const Camino = () => {
                   rel="noreferrer"
                 >
                   Google Map
+                </a>
+              </li>
+            </ul>
+            <div className="h-4"></div>
+            <Typography className="text-red-600" variant="h6">
+              其他朝聖者文章
+            </Typography>
+            <ul className="list-disc list-inside">
+              <li>
+                <a
+                  className="underline"
+                  href="https://prosabrina.com/sjpp/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  法國之路的起點 – Saint Jean Pied de Port (SJPP) 聖讓皮耶德波爾
                 </a>
               </li>
             </ul>
