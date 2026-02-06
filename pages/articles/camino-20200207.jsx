@@ -83,11 +83,20 @@ const Camino = () => {
               alt="朝聖之路辦公室留言板"
               className="w-full object-cover"
             />
+            <Typography variant="h3">關於貝殼</Typography>
+            <p>朝聖之路上最常出現的符號，是貝殼。它掛在背包上、刻在路標上、嵌在牆面與地上，安靜卻反覆出現，像是在提醒你不要走偏，也不要走得太急。</p>
+            <p>關於貝殼的由來，有許多說法。最常被提起的是，它來自聖地牙哥所在的加利西亞海岸。中世紀的朝聖者抵達終點後，會撿起一枚貝殼，證明自己真的走到了世界的盡頭，再把它一路帶回家，作為完成旅程的記號。久而久之，貝殼不再只是終點的象徵，而成為整條路的標誌。</p>
+            <p>領取貝殼時，管理員也提到，讓我仔細看貝殼上的紋路，放射狀的線條，從四面八方延生，最後匯集到同一個點。在朝聖之路解讀為：來自世界各地的人儘管走的是不同的路線，最終都會朝向同一個方向前進。</p>
+            <p>當我在辦公室把貝殼掛在背包上時，雖然只是多了一個會晃來晃去的小物件，但是這同時也能告訴周圍的人，我們是同伴，都在這條路上尋找著什麼，不用覺得孤單，路上的朝聖者隨時都是陪伴者，貝殼也是，我們都還在路上努力著，在迷惘的時候可以看一下貝殼，給我們一個繼續走下去也沒關係的指引。</p>
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day00_20200207_195435.jpg`}
               alt="夜晚的街道"
               className="w-full object-cover"
             />
+            <Typography variant="h3">朝聖者的起點：聖讓皮耶德波爾（Saint-Jean-Pied-de-Port）</Typography>
+            <p>聖讓皮耶德波爾，是法國之路的起點，也是一個在地圖上看起來很小、卻在朝聖者心中佔據極大位置的城鎮。整座城被城牆環繞，石板路順著坡度緩緩向上，街道狹窄卻安靜，像是刻意為了讓人放慢腳步而存在。</p>
+            <p>白天的 SJPP 很有秩序。朝聖者辦公室、裝備店、咖啡館與庇護所沿著主街排列，彼此之間的距離不遠，卻各自承接不同階段的心情——有人剛抵達，還帶著城市的節奏；有人正準備出發，反覆檢查背包、鞋帶與心裡的不安。走在街上，很容易辨認誰是朝聖者，因為大家的眼神都帶著一點相似的緊張與期待。</p>
+            <p>午後的城鎮顯得特別安靜。當店家拉下鐵門、街道暫時空出來，整個地方像是進入一段過渡時間。對我來說，這段空白反而很重要。它讓人有機會真正意識到：明天開始，生活的節奏、身體的使用方式，還有思考事情的方式，都將不一樣了。</p>
             <p>
               晚上，我還是習慣性滑著手機，看著新聞。武漢肺炎的疫情開始擴散，死亡人數已經超過當年的
               SARS。澳洲大火也奪走了上億動物的生命。世界沒有因為我停下。朋友傳訊息說，我這時候跑來西班牙，像是在避難。我沒有回覆，只是看著遠方的山峰，感受夜色的冷冽與沉靜。那一刻，我第一次試著不去想未來，也不去想過去。
@@ -114,7 +123,7 @@ const Camino = () => {
           <HR />
             <div className="mx-auto max-w-3xl text-gray-600 leading-relaxed">
             <Typography variant="h3">朝聖紀錄點</Typography>
-            <Typography className="text-red-600" variant="h6">
+            <Typography className="text-gray-600" variant="h6">
               朝聖者辦公室 Les Amis Du Chemin De Saint Jacques
             </Typography>
             <div>
@@ -139,7 +148,7 @@ const Camino = () => {
               </ul>
             </div>
             <div className="h-4"></div>
-            <Typography className="text-red-600" variant="h6">
+            <Typography className="text-gray-600" variant="h6">
               住宿：Albergue municipal SJPP
             </Typography>
             <ul className="list-disc list-inside">

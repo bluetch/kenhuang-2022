@@ -90,6 +90,11 @@ const Camino = () => {
             <p>
               晚餐時，三位韓國年輕人邀我一起用餐。雖然溝通有些吃力，但氣氛不錯，大多數年輕人20~30歲。晚上，我嘗試不吃藥入睡，卻仍每兩小時醒來一次，被周圍鼾聲、翻身、床的震動聲喚醒。這種生活節奏還將持續30天，藥剩下10份，需要珍惜與適應。
             </p>
+            <Typography variant="h3">倫塞斯瓦列斯（Roncesvalles）</Typography>
+            <p>倫塞斯瓦列斯位在庇里牛斯山腳下，是許多朝聖者翻越法西邊界後的第一個落腳點。與其說是小鎮，不如說它更像一個被山林包圍的據點——建築不多，卻承載了無數旅人第一天的疲憊與安靜。這裡的存在，本身就像是為了接住那些剛走完最艱難路段的人。</p>
+            <p>歷史上，倫塞斯瓦列斯以中世紀的修道院群聞名，也與《羅蘭之歌》中的戰役傳說有所連結。但對朝聖者來說，這些傳說往往在抵達當下顯得遙遠。更真實的，是濕冷的空氣、被汗水浸透的背包肩帶，還有一種「今天真的走到了」的踏實感。</p>
+            <p>傍晚時分，山谷裡的光線很快暗下來，整個地方彷彿隨著日落一起慢慢收聲。人們陸續走進唯一的庇護所，卸下裝備、交換眼神，卻不一定多話。第一天走到這裡，沒有人急著成為朋友，但所有人都默默共享著同一種狀態——疲憊、安靜，還有對明天未知路線的一點點期待。</p>
+            <p>對我而言，倫塞斯瓦列斯不是一個會讓人停留太久的地方，但它很誠實地告訴我：真正的朝聖，已經開始了。</p>
             <blockquote className="border-l-4 border-gray-300 pl-6 italic text-gray-700 my-8 space-y-2">
               <p>
                 不斷告訴自己：學習與自己相處，孤單不可怕，反而讓人更專注於每一步、每一景，甚至每一個呼吸與思緒。每一個轉角、每一個標誌，都是前行的陪伴。
@@ -111,15 +116,15 @@ const Camino = () => {
           <div className="mx-auto max-w-3xl text-gray-600 leading-relaxed">
             <Typography variant="h3">朝聖紀錄點</Typography>
             <div className="h-4"></div>
-            <Typography className="text-red-600" variant="h6">
-              住宿：Hostel Rio Arga
+            <Typography className="text-gray-600" variant="h6">
+              歷史地標：納瓦拉國王桑喬七世陵墓 Mausoleo del rey Sancho el Fuerte
             </Typography>
             <ul className="list-disc list-inside">
-              <li>地址：Calle Río Arga, 7, 31630 Zubiri, Navarra, 西班牙</li>
+              <li>地址：31650 Roncesvalles, Navarre, 西班牙</li>
               <li>
                 <a
                   className="underline"
-                  href="https://maps.app.goo.gl/Muv6bqxMayHNg1KRA"
+                  href="https://maps.app.goo.gl/mDBikdCcs3Xn2FYD9"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -128,7 +133,7 @@ const Camino = () => {
               </li>
             </ul>
             <div className="h-4"></div>
-            <Typography className="text-red-600" variant="h6">
+            <Typography className="text-gray-600" variant="h6">
               其他朝聖者文章
             </Typography>
             <ul className="list-disc list-inside">
