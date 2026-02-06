@@ -20,7 +20,7 @@ const links = [
   },
   {
     name: "instagram",
-    url: "https://www.instagram.com/kenbluerr/",
+    url: "https://www.instagram.com/noa.tzu/",
   },
 ];
 
@@ -41,7 +41,7 @@ export const Footer = () => {
       <p>
         <a href="maitl:bluetch@gmail.com">bluetch@gmail.com</a>
       </p>
-      <p>© Ken Huang 2022 - 2023 Copyright. All Rights Reserved.</p>
+      <p>© Ken Huang 2022 - 2026 Copyright. All Rights Reserved.</p>
       </div>
     </footer>
   );

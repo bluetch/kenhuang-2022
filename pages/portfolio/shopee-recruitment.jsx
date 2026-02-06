@@ -12,10 +12,12 @@ const shopeeRecruitment = () => {
           date="2018 Apr"
           tags={["Design", "Mobile", "Recruitment", "Social media"]}
           title="Graphic for Recruitment"
-          duration="1 month"
-          myRole="Designer"
-          responsibility="Plan, design, social media"
-          company="Shopee, Singapore"
+          info={[
+            { key: "Duration", value: "1 month" },
+            { key: "My Role", value: "Designer" },
+            { key: "Responsibility", value: "Plan, design, social media" },
+            { key: "Company", value: "Shopee, Singapore" },
+          ]}
         />
         <h3 className="text-center mt-24 mb-12 text-3xl font-bold">Background</h3>
         <div className="grid grid-cols-2 gap-8">

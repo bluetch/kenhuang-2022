@@ -13,10 +13,18 @@ const shopeeProductDetailPageRefactor = () => {
           date="2018 Feb - 2018 October"
           tags={["UX/UI Design", "Mobile", "Research", "Workshop", "PM"]}
           title="Product Detail Page Refactor"
-          duration="6 months"
-          myRole="Product Designer"
-          responsibility="UX/UI, project management"
-          company="Shopee, Singapore"
+          info={[
+            { key: "Duration", value: "8 months" },
+            {
+              key: "My Role",
+              value: "UX/UI Designer, Product Manager",
+            },
+            {
+              key: "Responsibility",
+              value: "UX research, workshop facilitation, prototyping, project management",
+            },
+            { key: "Company", value: "Shopee, Singapore" },
+          ]}
         />
         <PortfolioOverview
           overview={[

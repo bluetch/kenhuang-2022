@@ -13,10 +13,12 @@ const designExercisePetAdoption = () => {
           date="2021 Apr - 2022 Apr"
           tags={["Design Exercise", "UX", "Mobile", "Research"]}
           title="Pet Adoption"
-          duration="16 hrs"
-          myRole="Interaction Designer"
-          responsibility="UX Research, UI Design"
-          company="Google, Singapore"
+          info={[
+            { key: "Duration", value: "16 hrs" },
+            { key: "My Role", value: "Interaction Designer" },
+            { key: "Responsibility", value: "UX Research, UI Design" },
+            { key: "Company", value: "Google, Singapore" },
+          ]}
         />
         <PortfolioOverview
           overview={[

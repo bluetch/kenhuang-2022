@@ -28,12 +28,20 @@ const goodfinanceOneAccountAdmin = () => {
       <Container>
         <PortfolioSummary
           date="2021 Apr - 2022 Apr"
+          info={[
+            { key: "Duration", value: "12 months" },
+            {
+              key: "My Role",
+              value: "Sr. Front-end developer",
+            },
+            {
+              key: "Responsibility",
+              value: "React, MUI, SASS, Jest",
+            },
+            { key: "Company", value: "Good Finance, Taipei, Taiwan" },
+          ]}
           tags={["Front-end", "APIs", "React", "Finance"]}
           title="One Account Admin"
-          duration="12 months"
-          myRole="Sr. Front-end developer"
-          responsibility="React, Semantic HTML, APIs, Testing"
-          company="Good Finance, Taipei, Taiwan"
         />
         <PortfolioOverview
           overview={[

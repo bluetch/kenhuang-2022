@@ -1,8 +1,6 @@
 import { CategoryBar, Container, Layout, PortfolioList, Typography } from "components";
 import { useEffect, useState, useMemo } from "react";
 import { fetcher } from "utils";
-import Link from "next/link";
-import { portfolioSpec } from "constants";
 
 export default function Portfolio() {
   const [portfolio, setPortfolio] = useState([]);

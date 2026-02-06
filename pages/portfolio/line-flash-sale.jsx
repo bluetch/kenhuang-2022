@@ -12,11 +12,12 @@ const lineFlashSale = () => {
           date="2018 Feb - 2018 October"
           tags={["Front-end", "Mobile", "App"]}
           title="LINE Flash Sale"
-          duration="6 months"
-          myRole="Front-end lead"
-          responsibility="End to end Front-end developer"
-          company="Uitox, Taipei, Taiwan & 
-          Naver LINE, South Korea"
+          info={[
+            { key: "Duration", value: "6 months" },
+            { key: "My Role", value: "Front-end lead" },
+            { key: "Responsibility", value: "End to end Front-end developer" },
+            { key: "Company", value: "Uitox, Taipei, Taiwan & Naver LINE, South Korea" },
+          ]}
         />
         <Typography variant="h3">Situation</Typography>
         <div className="grid grid-cols-2 gap-8">

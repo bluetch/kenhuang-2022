@@ -14,10 +14,12 @@ const lostDeviceProtection = () => {
           date="2012 Feb - 2013 Feb"
           tags={["Front-end", "RWD", "L10N", "Google Map API"]}
           title="Lost Device Protection"
-          duration="1 Year"
-          myRole="Front-end Developer"
-          responsibility="End to end Front-end Developer"
-          company="TrendMicro, Taiwan"
+          info={[
+            { key: "Duration", value: "1 Year" },
+            { key: "My Role", value: "Front-end Developer" },
+            { key: "Responsibility", value: "End to end Front-end Developer" },
+            { key: "Company", value: "TrendMicro, Taiwan" },
+          ]}
         />
         <PortfolioOverview
           overview={[

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Tag } from "./Tag";
 import { dateConvert } from "utils";
 
-export const PortfolioSummary = ({ tags, date, title, duration, myRole, responsibility, company }) => {
+export const PortfolioSummary = ({ tags, date, info, title }) => {
   return (
     <div className="rounded-lg -mt-24 mb-24 relative bg-white lg:p-10 p-4 shadow-lg">
       <div className="lg:flex justify-between">
@@ -13,20 +13,20 @@ export const PortfolioSummary = ({ tags, date, title, duration, myRole, responsi
       <Typography variant="h1">{title}</Typography>
       <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-16 gap-4">
         <div>
-          <p className="text-xs">Duration</p>
-          <h6 className="font-light">{duration}</h6>
+          <p className="text-xs">{info[0]?.key}</p>
+          <h6 className="font-light">{info[0]?.value}</h6>
         </div>
         <div>
-          <p className="text-xs">My Role</p>
-          <h6 className="font-light">{myRole}</h6>
+          <p className="text-xs">{info[1]?.key}</p>
+          <h6 className="font-light">{info[1]?.value}</h6>
         </div>
         <div>
-          <p className="text-xs">Responsibility</p>
-          <h6 className="font-light">{responsibility}</h6>
+          <p className="text-xs">{info[2]?.key}</p>
+          <h6 className="font-light">{info[2]?.value}</h6>
         </div>
         <div>
-          <p className="text-xs">Company</p>
-          <h6 className="font-light">{company}</h6>
+          <p className="text-xs">{info[3]?.key}</p>
+          <h6 className="font-light">{info[3]?.value}</h6>
         </div>
       </div>
     </div>

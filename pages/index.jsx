@@ -37,7 +37,7 @@ export default function Home() {
         <Container className="space-y-16">
           <h1 className="font-light lg:text-4xl leading-relaxed text-black w-2/3 mx-auto">Hi, I am Ken Huang, a passionate Front-end engineer / product designer from Taipei, Taiwan.</h1>
           <img src="/images/about/kenhuang_avatar.png" alt="Ken Huang" className="w-32 mx-auto" />
-          <p className="text-xl text-red-500">Play every where</p>
+          {/* <p className="text-xl text-red-500">Play every where</p> */}
         </Container>
         <ul className={styles.circles}>
           {circles.map((index) => <li key={`circle-${index}`}></li>)}
@@ -47,7 +47,7 @@ export default function Home() {
         <Container>
           <Typography className="mb-12" variant="h2">Featured post</Typography>
           <div className="grid lg:grid-cols-3 gap-8 sm:grid-cols-2">
-            {articles.map((item) => {
+            {articles.slice(0, 6).map((item) => {
               return (
                 <Link key={item.url} href={item.url} target="_blank">
                   <figure className="bg-white shadow-md flex rounded-lg hover:opacity-75 hover:bg-gray-100 transition ease-in-out">

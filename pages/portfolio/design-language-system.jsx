@@ -13,10 +13,12 @@ const DesignLanguageSystem = () => {
           date="2018 Mar - 2018 Jul"
           tags={["UX/UI Design", "Research", "Workshop"]}
           title="Design Language System"
-          duration="5 months"
-          myRole="Product Designer"
-          responsibility="UX/UI, project management"
-          company="Shopee, Singapore"
+          info={[
+            { key: "Duration", value: "5 months" },
+            { key: "My Role", value: "Product Designer" },
+            { key: "Responsibility", value: "UX/UI, project management" },
+            { key: "Company", value: "Shopee, Singapore" },
+          ]}
         />
         <PortfolioOverview
           overview={[

@@ -27,7 +27,7 @@ export const Header = () => {
     },
     {
       label: "Art",
-      path: "http://instgram.com/kenbluerr",
+      path: "http://instgram.com/noa.tzu",
     },
     {
       label: "Mentorship",
