@@ -6,8 +6,7 @@ import {
   PortfolioSummary,
   Typography,
 } from "components";
-
-const CAMINO_IMG_ROOT_URL = "/images/articles/camino";
+import { CAMINO_IMG_ROOT_URL } from "./constants";
 
 const Camino = () => {
   return (
@@ -31,7 +30,7 @@ const Camino = () => {
           title="朝聖之路 Day 0: 聖讓皮耶德波爾"
         />
         <Typography className="text-center" variant="h3">
-          起點 (事件回顧：2020.02.07)
+          事件回顧：2020.02.07
         </Typography>
         <div className="py-8">
           <div className="mx-auto max-w-3xl space-y-8 text-gray-600 leading-relaxed">

@@ -6,8 +6,7 @@ import {
   PortfolioSummary,
   Typography,
 } from "components";
-
-const CAMINO_IMG_ROOT_URL = "/images/articles/camino";
+import { CAMINO_IMG_ROOT_URL } from "./constants";
 
 const Camino = () => {
   return (
@@ -123,21 +122,21 @@ const Camino = () => {
               <li>
                 <a
                   className="underline"
-                  href="https://www.xinmedia.com/article/210161"
+                  href="https://travel.yam.com/article/134003"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  相遇，在Camino｜如地獄般的庇里牛斯山，法國之路上充滿勇氣與挑戰的考驗
+                  西班牙朝聖之路│橋之城Zubiri：感受橋上的神話色彩，阿爾加河畔的小鎮
                 </a>
               </li>
               <li>
                 <a
                   className="underline"
-                  href="https://travel.yam.com/article/134002"
+                  href="https://vocus.cc/article/67e6247bfd89780001874b2d"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  龍塞斯瓦耶斯：超小城鎮卻有大庇護所，聖騎士羅蘭在此長眠
+                  西班牙朝聖之路-D3 祖比里(Zubiri)午後的極樂時光與意外的「震撼教育」
                 </a>
               </li>
             </ul>
