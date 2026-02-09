@@ -10,6 +10,18 @@ export default function Home() {
   const [articles, setArticles] = useState([]);
   const [portfolio, setPortfolio] = useState([]);
   const [category, setCategory] = useState("");
+  const [articleCategory, setArticleCategory] = useState("");
+
+  const articleResult = useMemo(() => {
+    return articles
+      .sort((a, b) => (a.date > b.date ? -1 : 1))
+      .filter((item) => {
+        if (articleCategory) {
+          return item.category.includes(articleCategory);
+        }
+        return true;
+      });
+  }, [articleCategory, articles]);
 
   const portfolioResult = useMemo(() => {
     return portfolio
@@ -46,8 +58,12 @@ export default function Home() {
       <section className="mb-32 bg-gradient-to-t from-gray-100 py-32">
         <Container>
           <Typography className="mb-12" variant="h2">Featured post</Typography>
+          <CategoryBar
+            type="articlesSpec"
+            method={(e) => setArticleCategory(e)}
+          />
           <div className="grid lg:grid-cols-3 gap-8 sm:grid-cols-2">
-            {articles.slice(0, 6).map((item) => {
+            {articleResult.slice(0, 6).map((item) => {
               const isExternal = item.url.startsWith("http");
               return (
                 <Link key={item.url} href={item.url} target={isExternal ? "_blank" : "_self"}>
@@ -68,7 +84,7 @@ export default function Home() {
         <Container>
           <Typography className="mb-12" variant="h2">Featured project</Typography>
           <CategoryBar
-            data="portfolioSpec"
+            type="portfolioSpec"
             method={(e) => setCategory(e)}
           />
           <PortfolioList data={portfolioResult} />

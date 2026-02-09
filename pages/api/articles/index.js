@@ -1,17 +1,17 @@
 const Articles = (req, res) => {
   const articles = [
-    // {
-    //   name: "朝聖之路 Camino de Santiago Day 2 - Roncesvalles to Zubiri",
-    //   category: [],
-    //   desc: "從Roncesvalles出發，第二天的目的地是Zubiri。這段路程約20公里，沿途經過迷人的山谷、古老的石橋和歷史悠久的村莊。雖然路途充滿挑戰，但每一步都帶來新的風景和深刻的體驗，讓人感受到朝聖之路獨特的魅力。",
-    //   url: "articles/camino-20200209",
-    //   img: "/images/articles/camino/camino_day02_20200209_075601.jpg",
-    //   code: "20260209",
-    //   date: 20260209,
-    // },
+    {
+      name: "朝聖之路 Camino de Santiago Day 2 - Roncesvalles to Zubiri",
+      category: ["camino"],
+      desc: "從Roncesvalles出發，第二天的目的地是Zubiri。這段路程約20公里，沿途經過迷人的山谷、古老的石橋和歷史悠久的村莊。雖然路途充滿挑戰，但每一步都帶來新的風景和深刻的體驗，讓人感受到朝聖之路獨特的魅力。",
+      url: "articles/camino-20200209",
+      img: "/images/articles/camino/camino_day02_20200209_075601.jpg",
+      code: "20260209",
+      date: 20260209,
+    },
     {
       name: "朝聖之路 Camino de Santiago Day 1 - Saint-Jean Pied du Port to Roncesvalles",
-      category: [],
+      category: ["camino"],
       desc: "從聖讓皮耶德波爾（Saint-Jean-Pied-du-Port）出發，第一天的目的地是位於西班牙境內的Roncesvalles。這段路程約25公里，沿途經過壯麗的山谷、古老的石橋和歷史悠久的村莊。雖然路途充滿挑戰，但每一步都帶來新的風景和深刻的體驗，讓人感受到朝聖之路獨特的魅力。",
       url: "articles/camino-20200208",
       img: "/images/articles/camino/camino_day01_20200208_122615.jpg",
@@ -20,7 +20,7 @@ const Articles = (req, res) => {
     },
     {
       name: "朝聖之路 Camino de Santiago Day 0 - Saint-Jean Pied du Port",
-      category: [],
+      category: ["camino"],
       desc: "凌晨三點從巴黎出發，轉乘三段列車，我抵達了 Saint-Jean-Pied-de-Port，也就是朝聖之路法國段的起點，SJPP。雖然前一晚幾乎沒睡，但一踏上這座南法小鎮，整個人瞬間清醒。空氣很乾淨，街道是那種連 Google Maps 都無法完全表達的實感，一種你得親自站在那裡才會明白的空間感。",
       url: "articles/camino-20200207",
       img: "/images/articles/camino/camino_day00_20200207_cover.jpg",
@@ -29,7 +29,7 @@ const Articles = (req, res) => {
     },
     {
       name: "Git 指令教學全攻略：初學者必備的常用指令與實用情境整理",
-      category: [],
+      category: ["frontend"],
       desc: "想學 Git 卻總是記不起指令？這篇文章整理了最常用的 Git 指令，搭配簡單說明與實際使用情境，讓你從版本控制新手快速進入開發者日常必備技能。適合自學者與前端/後端工程師參考！",
       url: "https://medium.com/@bluetch/git-%E6%8C%87%E4%BB%A4%E6%95%99%E5%AD%B8%E5%85%A8%E6%94%BB%E7%95%A5-%E5%88%9D%E5%AD%B8%E8%80%85%E5%BF%85%E5%82%99%E7%9A%84%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E8%88%87%E5%AF%A6%E7%94%A8%E6%83%85%E5%A2%83%E6%95%B4%E7%90%86-9448fd1024e6",
       img: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*WzN1eeQsje4W8e9i8VVs5g.jpeg",
@@ -47,7 +47,7 @@ const Articles = (req, res) => {
     },
     {
       name: "JavaScript from ES6 to ES12 in 2022",
-      category: [],
+      category: ["frontend"],
       desc: "Javascript a one of the three most crucial programming at front-end positions. However, the author Brendan Eich just spent 10 days on it. It helps a lot in the website technically, but it also caused many issues to fix, that’s why there are from ES6(2015) to ES12(2021) born to fix better JavaScript.",
       url: "https://medium.com/p/519d8be7d48c",
       img: "https://miro.medium.com/max/1400/1*AXj2HwF25HVmch0RvIZplQ.png",
@@ -56,7 +56,7 @@ const Articles = (req, res) => {
     },
     {
       name: "Next.js project quick deploy with Vercel",
-      category: [],
+      category: ["frontend"],
       desc: "工程師及設計師的證券公司Side project。",
       url: "https://medium.com/@bluetch/vercel-quick-start-with-next-js-f7becc28d4bb",
       img: "https://miro.medium.com/max/1400/1*EEEPht7Ch-B2BuLCT7AnDA.jpeg",
@@ -83,7 +83,7 @@ const Articles = (req, res) => {
     },
     {
       name: "Ways to Improve Mobile Conversion Rate: AMP, A/B Testing, Design Sprint And More You Need To Know!",
-      category: [],
+      category: ["frontend"],
       desc: "Wish to increase your conversion rate on mobile devices but unsure of what to do? Recently, Shopee was invited by Google to join a Design Sprint Workshop.",
       url: "https://medium.com/shopee/improve-mobile-search-roi-with-ux-ninja-google-design-spirit-7a7d89c93390",
       img: "https://miro.medium.com/max/1400/1*LXhlsMEbQMPDNeOAQY8Fuw.jpeg",

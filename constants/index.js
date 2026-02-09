@@ -13,6 +13,21 @@ export const portfolioSpec = [
   },
 ];
 
+export const articlesSpec = [
+  {
+    name: "All",
+    code: null,
+  },
+  {
+    name: "Camino",
+    code: "camino",
+  },
+  {
+    name: "Front-end",
+    code: "frontend",
+  },
+];
+
 export const CAMINO_IMG_ROOT_URL = "/images/articles/camino";
 
 export default {
