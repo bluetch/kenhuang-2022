@@ -97,7 +97,7 @@ const Camino = () => {
             />
             <figure>
               <img
-                src={`${CAMINO_IMG_ROOT_URL}/camino_day02_20200209_diary.jpg`}
+                src={`${CAMINO_IMG_ROOT_URL}/camino_day03_20200211_165146.jpg`}
                 alt="旅行筆記"
                 className="w-full object-cover"
               />
