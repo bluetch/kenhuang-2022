@@ -23,7 +23,8 @@ export const Header = () => {
     },
     {
       label: "Writing",
-      path: "https://medium.com/@bluetch",
+      path: "/articles",
+      // path: "https://medium.com/@bluetch",
     },
     {
       label: "Art",
@@ -56,7 +57,7 @@ export const Header = () => {
   }, [scrollTop]);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-10 bg-white lg:py-4 ${scrolling && "shadow-md"}`}>
+    <header className={`fixed top-0 left-0 right-0 z-10 bg-white lg:py-4 ${scrolling ? "shadow-md" : ""}`}>
       <Container>
         <div className="flex flex-wrap justify-between items-center py-4 lg:py-0">
           <Link href="/" className="flex items-center group">

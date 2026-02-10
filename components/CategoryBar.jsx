@@ -1,15 +1,18 @@
 import { useState, useEffect } from "react";
 import { articlesSpec, portfolioSpec } from "constants";
 
-export const CategoryBar = ({ name = "", type , method }) => {
-  console.log('portfolioSpec', portfolioSpec)
+export const CategoryBar = ({ name = "", type, method, value = null }) => {
   const _data = type === "articlesSpec" ? articlesSpec : portfolioSpec;
-  const [category, setCategory] = useState(null);
+  const [category, setCategory] = useState(value ?? null);
   const [isSSR, setIsSSR] = useState(true);
 
   useEffect(() => {
     setIsSSR(false);
   }, []);
+
+  useEffect(() => {
+    setCategory(value ?? null);
+  }, [value]);
 
   return (
     <div className="space-x-2 py-4 mb-4 rounded-lg">

@@ -84,3 +84,27 @@ export const PortfolioList = ({ data }) => {
     </div>
   )
 }
+
+export const ArticleList = ({ data }) => {
+  return (
+    <div className="grid lg:grid-cols-2 gap-8">
+      {data.map((item) => {
+        const isExternal = item.url.startsWith("http");
+        return (
+          <Link key={item.url} href={item.url} target={isExternal ? "_blank" : "_self"}>
+            <figure className="bg-white shadow-md flex rounded-lg hover:opacity-75 hover:bg-gray-100 transition ease-in-out">
+              <img src={item.img} alt="" className="object-cover aspect-[1/1] w-1/4 m-4" />
+              <figcaption className="p-4 pl-0 space-y-2 relative">
+                <p className="text-gray-500 text-sm">{dateConvert(item.date)}
+                  <span> | </span><span className="text-sky-600">{item.category[0]}</span>
+                </p>
+                <Typography variant="h6" className="line-clamp-2 text-sm">{item.name}</Typography>
+                <p className="text-gray-500 font-light line-clamp-2">{item.desc}</p>
+              </figcaption>
+            </figure>
+          </Link>
+        )
+      })}
+    </div>
+  )
+}

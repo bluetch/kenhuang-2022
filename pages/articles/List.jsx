@@ -1,8 +1,10 @@
-import { CategoryBar, Container, Layout, PortfolioList, Typography } from "components";
+
+import { CategoryBar, Container, Layout, ArticleList, Typography } from "components";
 import { useEffect, useState, useMemo } from "react";
+import { useRouter } from "next/router";
 import { fetcher } from "utils";
 
-export default function Portfolio() {
+export default function Content() {
   const [portfolio, setPortfolio] = useState([]);
   const [category, setCategory] = useState("");
 
@@ -18,18 +20,26 @@ export default function Portfolio() {
   }, [category, portfolio]);
 
   useEffect(() => {
-    fetcher("/api/portfolio", { setState: setPortfolio });
+    fetcher("/api/articles", { setState: setPortfolio });
   }, []);
+  
+  const router = useRouter();
+  useEffect(() => {
+    if (!router.isReady) return;
+    const q = router.query?.type;
+    if (q) setCategory(q);
+  }, [router.isReady, router.query]);
 
   return (
-    <Layout title="Portfolio | Ken Huang">
+    <Layout title="Articles | Ken Huang">
       <Container>
-        <Typography variant="h1">Portfolio</Typography>
+        <Typography variant="h1">Article</Typography>
         <CategoryBar
-          type="portfolioSpec"
+          type="articlesSpec"
           method={(e) => setCategory(e)}
+          value={category}
         />
-        <PortfolioList data={data} layout="list"/>
+        <ArticleList data={data} layout="list"/>
       </Container>
     </Layout>
   );
