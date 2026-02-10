@@ -133,8 +133,7 @@ const Camino = () => {
               景點：潘普洛納主教座堂
             </Typography>
             <ul className="list-disc list-inside">
-              <li>地址：C. de la Compañía, 4, 31001 Pamplona, Navarra, 西班牙</li>
-              <li>一晚9歐，無餐，洗衣不用錢，烘衣好像1歐，都還滿乾淨的，但洗澡要一直按壓才有水，好像十秒就停</li>
+              <li>地址：C. Dormitalería, 1, 31001 Pamplona, Navarra, 西班牙</li>
               <li>
                 <a
                   className="underline"

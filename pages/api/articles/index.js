@@ -1,5 +1,14 @@
 const Articles = (req, res) => {
   const articles = [
+    // {
+    //   name: "朝聖之路 Camino de Santiago Day 4 - Pamplona to Puente la Reina",
+    //   category: ["camino"],
+    //   desc: "從潘普洛納出發，第四天的目的地是普恩特拉雷納（Puente la Reina）。這段路程約24公里，沿途經過迷人的山谷、古老的石橋和歷史悠久的村莊。雖然路途充滿挑戰，但每一步都帶來新的風景和深刻的體驗，讓人感受到朝聖之路獨特的魅力。",
+    //   url: "articles/camino-20200211",
+    //   img: "/images/articles/camino/camino_day04_20200210_201947.jpg",
+    //   code: "20260211",
+    //   date: 20260211,
+    // },
     {
       name: "朝聖之路 Camino de Santiago Day 3 - Zubiri to Pamplona",
       category: ["camino"],
