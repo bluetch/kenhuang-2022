@@ -11,4 +11,8 @@ yarn install
 ```
 
 ## Run
+```
+yarn dev
+```
+
 http://localhost:3000/
