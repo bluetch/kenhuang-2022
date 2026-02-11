@@ -42,6 +42,14 @@ const Camino = () => {
               alt="旅行筆記"
               className="w-full object-cover"
             />
+            <Typography className="text-center" variant="h3">
+              紀念碑故事
+            </Typography>
+            <p>這張照片中的紀念碑是獻給一位比利時朝聖者 Frans Koks（全名 Franz Joseph Koks）的路邊十字架。他是一位67歲的比利時朝聖者，在2004年4月28日或29日，於西班牙納瓦拉地區（Navarra）的 Cizur Menor 和 Zariquiegui 之間的 Camino Francés 路線上，因心臟病發作突然去世。</p>
+            <p>Frans 當時正在帶領一個團體進行他的第四次聖地亞哥之路（Camino de Santiago）朝聖之旅。他據說走在隊伍最前面，突然倒下，就在原地離世。這個地點位於帕姆普洛納（Pamplona）之後不久，經過一段陡坡，接近著名的 Alto del Perdón 高地。</p>
+            <p>他的家人於2005年4月2日在事故現場為他豎立了這個十字架。十字架是由他的兒子 Michel Koks 親手用鐵製成，使用了 Frans 自己工作室的材料。十字架頂端有他的帽子、鞋子，以及一枚朝聖象徵的扇貝殼（scallop shell）指向上方。獻碑儀式上，Michel 還彈著吉他唱了《Take Me Home, Country Roads》這首歌，以紀念父親。</p>
+            <p>十字架上附著的小照片，正是 Frans 本人在朝聖途中背著背包行走的樣子。這個地點周圍有樹蔭下的長椅，供疲憊的朝聖者休息，也因此成為許多人經過時停下來反思的地方。隨著時間推移，朝聖者們在這裡留下絲帶、石頭、緞帶和其他紀念物，包括照片中可見的六芒星（Star of David），可能反映 Frans 有猶太血統，或是訪客的個人祈願。</p>
+            <p>這個紀念碑提醒人們 Camino 雖然美麗，但也存在風險（如心臟問題或意外），同時也象徵 Frans 「永遠與 Camino 合一」，成為朝聖之路的一部分。許多走過這裡的朝聖者都形容這是個溫暖而感人的休息點，讓人感受到生命的無常與連結。1.5秒快速60 sourcesAre you satisfied with Grok's answer?</p>
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day04_20200211_104113.jpg`}
               alt="旅行筆記"
