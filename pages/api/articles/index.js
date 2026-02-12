@@ -1,6 +1,15 @@
 const Articles = (req, res) => {
   const articles = [
     {
+      name: "朝聖之路 Camino de Santiago Day 5 - 蓬特拉雷納 (Puente la Reina) to 埃斯特利亞 (Estella)",
+      category: ["camino"],
+      desc: "從蓬特拉雷納（Puente la Reina）出發，第五天的目的地是埃斯特利亞（Estella）。這段路程約22公里，沿途經過迷人的山谷、古老的石橋和歷史悠久的村莊。雖然路途充滿挑戰，但每一步都帶來新的風景和深刻的體驗，讓人感受到朝聖之路獨特的魅力。",
+      url: "articles/camino-20200212",
+      img: "/images/articles/camino/camino_day05_20200212-WA0002.jpg",
+      code: "20260212",
+      date: 20260212,
+    },
+    {
       name: "朝聖之路 Camino de Santiago Day 4 - Pamplona to Puente la Reina",
       category: ["camino"],
       desc: "從潘普洛納出發，第四天的目的地是普恩特拉雷納（Puente la Reina）。這段路程約24公里，沿途經過迷人的山谷、古老的石橋和歷史悠久的村莊。雖然路途充滿挑戰，但每一步都帶來新的風景和深刻的體驗，讓人感受到朝聖之路獨特的魅力。",
