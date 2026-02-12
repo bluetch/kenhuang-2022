@@ -113,7 +113,10 @@ const About = () => {
     console.log("window cookie:", window.document.cookie);
   }, []);
   return (
-    <Layout title="About | Ken Huang">
+    <Layout
+      title="About | Ken Huang"
+      description="About Ken Huang – UX engineer, product designer, and front-end developer based in Taipei."
+    >
       <Container>
         <div className="grid lg:grid-cols-5 gap-8 my-32">
           <Image src={portrait} alt="Ken Huang" className="p-8 lg:col-span-2 overflow-hidden hover:transition-all hover:scale-110" />

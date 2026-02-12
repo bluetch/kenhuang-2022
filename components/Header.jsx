@@ -8,37 +8,38 @@ import { useState, useEffect } from "react";
 //   weight: "400"
 // });
 
+const LINKS = [
+  {
+    label: "About",
+    path: "/about",
+  },
+  {
+    label: "Portfolio",
+    path: "/portfolio",
+  },
+  {
+    label: "Writing",
+    path: "/articles",
+    // path: "https://medium.com/@bluetch",
+  },
+  {
+    label: "Art",
+    path: "http://instgram.com/noa.tzu",
+  },
+  {
+    label: "Mentorship",
+    path: "/mentorship",
+  },
+  // {
+  //   label: "Contact",
+  //   path: "/contact",
+  // },
+];
+
 export const Header = () => {
   const [open, setOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
-  const LINKS = [
-    {
-      label: "About",
-      path: "/about",
-    },
-    {
-      label: "Portfolio",
-      path: "/portfolio",
-    },
-    {
-      label: "Writing",
-      path: "/articles",
-      // path: "https://medium.com/@bluetch",
-    },
-    {
-      label: "Art",
-      path: "http://instgram.com/noa.tzu",
-    },
-    {
-      label: "Mentorship",
-      path: "/mentorship",
-    },
-    // {
-    //   label: "Contact",
-    //   path: "/contact",
-    // },
-  ];
 
   const router = useRouter();
 

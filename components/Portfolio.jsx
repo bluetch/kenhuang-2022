@@ -12,8 +12,10 @@ export const PortfolioSummary = ({ tags, date, info, title }) => {
         <Tag className="hidden lg:block">{tags}</Tag>
         <p className="font-mono">{date}</p>
       </div>
-      
-      <Typography variant="h1" className="my-4">{title}</Typography>
+
+      <Typography variant="h1" className="my-4">
+        {title}
+      </Typography>
 
       <div className={`grid grid-cols-2 lg:gap-16 gap-4 lg:grid-cols-${displayInfo.length}`}>
         {displayInfo.map((item, index) => (
@@ -24,13 +26,15 @@ export const PortfolioSummary = ({ tags, date, info, title }) => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export const PortfolioOverview = ({ overview }) => {
   return (
     <div className="py-8">
-      <Typography className="text-center" variant="h3">Project Overview</Typography>
+      <Typography className="text-center" variant="h3">
+        Project Overview
+      </Typography>
       <div className="grid lg:grid-cols-2 gap-4">
         {overview.map((item) => {
           return (
@@ -38,12 +42,12 @@ export const PortfolioOverview = ({ overview }) => {
               <Typography variant="h4">{item.title}</Typography>
               <p className="text-gray-500">{item.desc}</p>
             </div>
-          )
+          );
         })}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export const PortfolioProcess = ({ data }) => {
   return (
@@ -57,54 +61,86 @@ export const PortfolioProcess = ({ data }) => {
             </h6>
             <p className="text-gray-500">{item.desc}</p>
           </div>
-        )
+        );
       })}
     </div>
-  )
-}
+  );
+};
 
-export const PortfolioList = ({ data }) => {
-  return (
-    <div className="grid lg:grid-cols-3 gap-x-8 lg:gap-y-20 gap-y-8">
-      {data.map((item) => {
-        if (!item.state) return;
-        return (
-          <Link key={item.url} href={item.url}>
-            <figure className="flex lg:flex-col lg:space-y-4 transition ease-in-out hover:opacity-75">
-              <img src={item.img} alt={item.name} className="rounded-lg object-cover aspect-[4/3] lg:w-full w-1/4 h-auto" />
-              <figcaption className="lg:px-0 px-8">
-                <p className="text-gray-500">{item.company}, {item.date}</p>
-                <Typography className="text-gray-500 font-normal" variant="h4">{item.name}</Typography>
-                <p className=" lg:text-gray-500 font-light">{item.desc}</p>
-              </figcaption>
-            </figure>
-          </Link>
-        )
-      })}
-    </div>
-  )
-}
+// 單一共用卡片元件：拆成 Portfolio / Article 兩種卡片
+const PortfolioCard = ({ item }) => {
+  if (!item.state) return null;
 
-export const ArticleList = ({ data }) => {
+  const figureClassName =
+    "flex lg:flex-col lg:space-y-4 transition ease-in-out hover:opacity-75";
+
   return (
-    <div className="grid lg:grid-cols-2 gap-8">
-      {data.map((item) => {
-        const isExternal = item.url.startsWith("http");
-        return (
-          <Link key={item.url} href={item.url} target={isExternal ? "_blank" : "_self"}>
-            <figure className="bg-white shadow-md flex rounded-lg hover:opacity-75 hover:bg-gray-100 transition ease-in-out">
-              <img src={item.img} alt="" className="object-cover aspect-[1/1] w-1/4 m-4" />
-              <figcaption className="p-4 pl-0 space-y-2 relative">
-                <p className="text-gray-500 text-sm">{dateConvert(item.date)}
-                  <span> | </span><span className="text-sky-600">{item.category[0]}</span>
-                </p>
-                <Typography variant="h6" className="line-clamp-2 text-sm">{item.name}</Typography>
-                <p className="text-gray-500 font-light line-clamp-2">{item.desc}</p>
-              </figcaption>
-            </figure>
-          </Link>
-        )
-      })}
+    <Link key={item.url} href={item.url}>
+      <figure className={figureClassName}>
+        <img
+          src={item.img}
+          alt={item.name}
+          className="rounded-lg object-cover aspect-[4/3] lg:w-full w-1/4 h-auto"
+        />
+        <figcaption className="lg:px-0 px-8">
+          <p className="text-gray-500">
+            {item.company}, {item.date}
+          </p>
+          <Typography className="text-gray-500 font-normal" variant="h4">
+            {item.name}
+          </Typography>
+          <p className=" lg:text-gray-500 font-light">{item.desc}</p>
+        </figcaption>
+      </figure>
+    </Link>
+  );
+};
+
+const ArticleCard = ({ item }) => {
+  const isExternal = item.url.startsWith("http");
+  const figureClassName =
+    "bg-white shadow-md flex rounded-lg hover:opacity-75 hover:bg-gray-100 transition ease-in-out";
+
+  return (
+    <Link
+      key={item.url}
+      href={item.url}
+      target={isExternal ? "_blank" : "_self"}
+    >
+      <figure className={figureClassName}>
+        <img
+          src={item.img}
+          alt=""
+          className="object-cover aspect-[1/1] w-1/4 m-4"
+        />
+        <figcaption className="p-4 pl-0 space-y-2 relative">
+          <p className="text-gray-500 text-sm">
+            {dateConvert(item.date)}
+            <span> | </span>
+            <span className="text-sky-600">{item.category[0]}</span>
+          </p>
+          <Typography variant="h6" className="line-clamp-2 text-sm">
+            {item.name}
+          </Typography>
+          <p className="text-gray-500 font-light line-clamp-2">{item.desc}</p>
+        </figcaption>
+      </figure>
+    </Link>
+  );
+};
+
+// 單一共用 List 元件，透過 mode 切換使用不同卡片
+const BaseList = ({ data, mode }) => {
+  const isPortfolio = mode === "portfolio";
+  const Card = isPortfolio ? PortfolioCard : ArticleCard;
+
+  return (
+    <div className={isPortfolio ? "grid lg:grid-cols-3 gap-x-8 lg:gap-y-20 gap-y-8" : "grid lg:grid-cols-2 gap-8"}>
+      {data.map((item) => (
+        <Card key={item.url} item={item} />
+      ))}
     </div>
-  )
-}
+  );
+};
+
+export const ContentList = ({ data, mode }) => <BaseList data={data} mode={mode} />;

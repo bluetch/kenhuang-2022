@@ -1,5 +1,5 @@
 
-import { CategoryBar, Container, Layout, ArticleList, Typography } from "components";
+import { CategoryBar, Container, Layout, ContentList, Typography } from "components";
 import { useEffect, useState, useMemo } from "react";
 import { useRouter } from "next/router";
 import { fetcher } from "utils";
@@ -31,7 +31,10 @@ export default function Content() {
   }, [router.isReady, router.query]);
 
   return (
-    <Layout title="Articles | Ken Huang">
+    <Layout
+      title="Articles | Ken Huang"
+      description="Writing by Ken Huang on front-end engineering, product design, and career."
+    >
       <Container>
         <Typography variant="h1">Article</Typography>
         <CategoryBar
@@ -39,7 +42,7 @@ export default function Content() {
           method={(e) => setCategory(e)}
           value={category}
         />
-        <ArticleList data={data} layout="list"/>
+        <ContentList data={data} mode="article" />
       </Container>
     </Layout>
   );
