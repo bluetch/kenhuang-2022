@@ -3,22 +3,15 @@ import { CategoryBar, Container, Layout, ContentList, Typography } from "compone
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/router";
 import { ARTICLES } from "constants/articles";
+import { getSortedItemsByCategory } from "utils";
 
 export default function Content() {
-  const portfolio = ARTICLES;
   const [category, setCategory] = useState("");
 
-  const data = useMemo(() => {
-    return portfolio
-      .slice() // avoid mutating the original constant array
-      .sort((a, b) => (a.date > b.date ? -1 : 1))
-      .filter((item) => {
-        if (category) {
-          return item.category.includes(category);
-        }
-        return true;
-      });
-  }, [category, portfolio]);
+  const data = useMemo(
+    () => getSortedItemsByCategory(ARTICLES, category),
+    [category]
+  );
 
   const router = useRouter();
   useEffect(() => {

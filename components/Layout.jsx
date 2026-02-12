@@ -36,11 +36,9 @@ export const Layout = ({
 export const Container = ({ className = "", children }) => {
   return (
     <div className={`container mx-auto lg:px-8 px-4 ${className}`}>{children}</div>
-  )
-}
+  );
+};
 
-export const HR = () =>{
-  return(
-    <hr className="lg:my-24 my-12" />
-  )
-}
+export const HR = () => {
+  return <hr className="lg:my-24 my-12" />;
+};

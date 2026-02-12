@@ -3,6 +3,27 @@ import Link from "next/link";
 import { forwardRef, memo } from "react";
 import clsx from "clsx";
 
+const BUTTON_VARIANTS = {
+  primary:
+    "cursor-pointer py-3 px-8 bg-black hover:bg-gray-700 text-white flex-shrink-0 rounded-full h-12",
+  "primary-outline":
+    "cursor-pointer py-3 px-8 bg-white border border-sky-600 hover:bg-sky-700 hover:text-white text-sky-700 rounded-full h-12",
+  secondary:
+    "bg-white md:hover:bg-blue-lightest md:hover:bg-opacity-70 active:bg-white text-blue-light ring-1 ring-blue-light",
+  plain:
+    "text-blue-light md:hover:bg-blue-lightest active:bg-white md:hover:bg-opacity-70",
+  link: "",
+  action:
+    "text-white bg-gray-darker md:hover:bg-opacity-70 active:bg-opacity-100",
+};
+
+const ICON_SIZES = {
+  xs: "h-4 w-4",
+  sm: "h-5 w-5",
+  md: "h-6 w-6",
+  lg: "h-8 w-8",
+};
+
 export const Button = memo(
   forwardRef(
     (
@@ -21,31 +42,8 @@ export const Button = memo(
       },
       ref
     ) => {
-      const variants = {
-        primary:
-          "cursor-pointer py-3 px-8 bg-black hover:bg-gray-700 text-white flex-shrink-0 rounded-full h-12",
-        ["primary-outline"]:
-          "cursor-pointer py-3 px-8 bg-white border border-sky-600 hover:bg-sky-700 hover:text-white text-sky-700 rounded-full h-12",
-        // primary:
-        //   "bg-gradient-to-r from-blue-light to-purple-light text-gray-darker md:hover:from-[#78DAFF] md:hover:to-[#BAD3FF] active:from-[#78DAFF] active:to-[#BAD3FF]",
-        secondary:
-          "bg-white md:hover:bg-blue-lightest md:hover:bg-opacity-70 active:bg-white text-blue-light ring-1 ring-blue-light",
-        plain:
-          "text-blue-light md:hover:bg-blue-lightest active:bg-white md:hover:bg-opacity-70",
-        link: "",
-        action:
-          "text-white bg-gray-darker md:hover:bg-opacity-70 active:bg-opacity-100",
-      };
-
-      const variantClass = variants[variant];
-
-      const iconSize = {
-        xs: "h-4 w-4",
-        sm: "h-5 w-5",
-        md: "h-6 w-6",
-        lg: "h-8 w-8",
-      }[icon.size || "md"];
-
+      const variantClass = BUTTON_VARIANTS[variant];
+      const iconSize = ICON_SIZES[icon.size || "md"];
       const Tag = link ? "span" : href ? "a" : "button";
 
       const element = (
@@ -85,17 +83,19 @@ export const Button = memo(
         </Tag>
       );
 
-      return link ? (
-        <Link
-          href={href}
-          onClick={(e) => (disabled ? e.preventDefault() : undefined)}
-          className={className}
-        >
-          {element}
-        </Link>
-      ) : (
-        element
-      );
+      if (link && href) {
+        return (
+          <Link
+            href={href}
+            onClick={(e) => (disabled ? e.preventDefault() : undefined)}
+            className={className}
+          >
+            {element}
+          </Link>
+        );
+      }
+
+      return element;
     }
   )
 );

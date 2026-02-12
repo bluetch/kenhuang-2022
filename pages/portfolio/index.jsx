@@ -1,22 +1,15 @@
 import { CategoryBar, Container, Layout, ContentList, Typography } from "components";
 import { useMemo, useState } from "react";
 import { PORTFOLIO } from "constants/portfolioData";
+import { getSortedItemsByCategory } from "utils";
 
 export default function Portfolio() {
-  const portfolio = PORTFOLIO;
   const [category, setCategory] = useState("");
 
-  const data = useMemo(() => {
-    return portfolio
-      .slice() // avoid mutating the original constant array
-      .sort((a, b) => (a.date > b.date ? -1 : 1))
-      .filter((item) => {
-        if (category) {
-          return item.category.includes(category);
-        }
-        return true;
-      });
-  }, [category, portfolio]);
+  const data = useMemo(
+    () => getSortedItemsByCategory(PORTFOLIO, category),
+    [category]
+  );
 
   return (
     <Layout
