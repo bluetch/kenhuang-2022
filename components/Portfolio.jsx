@@ -130,7 +130,7 @@ const ArticleCard = ({ item }) => {
 };
 
 // 單一共用 List 元件，透過 mode 切換使用不同卡片
-const BaseList = ({ data, mode }) => {
+const BaseList = ({ data = [], mode }) => {
   const isPortfolio = mode === "portfolio";
   const Card = isPortfolio ? PortfolioCard : ArticleCard;
 

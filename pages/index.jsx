@@ -1,19 +1,22 @@
 import { CategoryBar, Container, Layout, ContentList, Typography } from 'components';
-import { dateConvert, fetcher } from 'utils';
-import { useEffect, useMemo, useState } from 'react';
+import { dateConvert } from 'utils';
+import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import styles from './index.module.scss';
 import { SITE_META_DESCRIPTION, SITE_TAGLINE, SITE_TITLE } from 'constants/site';
+import { ARTICLES } from 'constants/articles';
+import { PORTFOLIO } from 'constants/portfolioData';
 
 export default function Home() {
   const circles = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  const [articles, setArticles] = useState([]);
-  const [portfolio, setPortfolio] = useState([]);
+  const articles = ARTICLES;
+  const portfolio = PORTFOLIO;
   const [category, setCategory] = useState('');
   const [articleCategory, setArticleCategory] = useState('');
 
   const articleResult = useMemo(() => {
     return articles
+      .slice() // avoid mutating the original constant array
       .sort((a, b) => (a.date > b.date ? -1 : 1))
       .filter((item) => {
         if (articleCategory) {
@@ -25,6 +28,7 @@ export default function Home() {
 
   const portfolioResult = useMemo(() => {
     return portfolio
+      .slice() // avoid mutating the original constant array
       .sort((a, b) => (a.date > b.date ? -1 : 1))
       .filter((item) => {
         if (category) {
@@ -33,11 +37,6 @@ export default function Home() {
         return true;
       });
   }, [category, portfolio]);
-
-  useEffect(() => {
-    fetcher('/api/articles', { setState: setArticles });
-    fetcher('/api/portfolio', { setState: setPortfolio });
-  }, []);
 
   return (
     <Layout title={SITE_TITLE} description={SITE_META_DESCRIPTION}>
@@ -59,7 +58,11 @@ export default function Home() {
           <Typography className="mb-12" variant="h2">
             Featured post
           </Typography>
-          <CategoryBar type="articlesSpec" method={(e) => setArticleCategory(e)} />
+          <CategoryBar
+            type="articlesSpec"
+            value={articleCategory}
+            method={(code) => setArticleCategory(code)}
+          />
           <div className="grid lg:grid-cols-3 gap-8 sm:grid-cols-2">
             {articleResult.slice(0, 6).map((item) => {
               const isExternal = item.url.startsWith('http');
@@ -89,7 +92,11 @@ export default function Home() {
           <Typography className="mb-12" variant="h2">
             Featured project
           </Typography>
-          <CategoryBar type="portfolioSpec" method={(e) => setCategory(e)} />
+          <CategoryBar
+            type="portfolioSpec"
+            value={category}
+            method={(code) => setCategory(code)}
+          />
           <ContentList data={portfolioResult} mode="portfolio" />
         </Container>
       </section>

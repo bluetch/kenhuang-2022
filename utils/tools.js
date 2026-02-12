@@ -42,32 +42,6 @@ export const codeMapping = ({ key, data, field = "name" }) => {
   return result || key;
 };
 
-export const fetcher = async (url, { setState, method }) => {
-  const req = await fetch(url)
-    .then(async (res) => {
-      return {
-        isOk: res.ok,
-        statusCode: res.status,
-        data: await res.json(),
-      };
-    })
-    .then(async (res) => {
-      if (method === "find") {
-        const match = await res.data.find((item) => item.slackId == param.id);
-        setState(match);
-      } else {
-        setState(res.data);
-      }
-    })
-    .catch((error) => {
-      console.warn(error);
-      return {
-        isOk: false,
-        data: error,
-      };
-    });
-};
-
 export const dateConvert = (date, format) => {
   if (!date) return;
   let result;

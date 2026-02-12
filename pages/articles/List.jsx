@@ -1,15 +1,16 @@
 
 import { CategoryBar, Container, Layout, ContentList, Typography } from "components";
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/router";
-import { fetcher } from "utils";
+import { ARTICLES } from "constants/articles";
 
 export default function Content() {
-  const [portfolio, setPortfolio] = useState([]);
+  const portfolio = ARTICLES;
   const [category, setCategory] = useState("");
 
   const data = useMemo(() => {
     return portfolio
+      .slice() // avoid mutating the original constant array
       .sort((a, b) => (a.date > b.date ? -1 : 1))
       .filter((item) => {
         if (category) {
@@ -19,10 +20,6 @@ export default function Content() {
       });
   }, [category, portfolio]);
 
-  useEffect(() => {
-    fetcher("/api/articles", { setState: setPortfolio });
-  }, []);
-  
   const router = useRouter();
   useEffect(() => {
     if (!router.isReady) return;
@@ -39,8 +36,8 @@ export default function Content() {
         <Typography variant="h1">Article</Typography>
         <CategoryBar
           type="articlesSpec"
-          method={(e) => setCategory(e)}
           value={category}
+          method={(code) => setCategory(code)}
         />
         <ContentList data={data} mode="article" />
       </Container>

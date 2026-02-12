@@ -1,13 +1,14 @@
 import { CategoryBar, Container, Layout, ContentList, Typography } from "components";
-import { useEffect, useState, useMemo } from "react";
-import { fetcher } from "utils";
+import { useMemo, useState } from "react";
+import { PORTFOLIO } from "constants/portfolioData";
 
 export default function Portfolio() {
-  const [portfolio, setPortfolio] = useState([]);
+  const portfolio = PORTFOLIO;
   const [category, setCategory] = useState("");
 
   const data = useMemo(() => {
     return portfolio
+      .slice() // avoid mutating the original constant array
       .sort((a, b) => (a.date > b.date ? -1 : 1))
       .filter((item) => {
         if (category) {
@@ -16,10 +17,6 @@ export default function Portfolio() {
         return true;
       });
   }, [category, portfolio]);
-
-  useEffect(() => {
-    fetcher("/api/portfolio", { setState: setPortfolio });
-  }, []);
 
   return (
     <Layout
@@ -30,7 +27,8 @@ export default function Portfolio() {
         <Typography variant="h1">Portfolio</Typography>
         <CategoryBar
           type="portfolioSpec"
-          method={(e) => setCategory(e)}
+          value={category}
+          method={(code) => setCategory(code)}
         />
         <ContentList data={data} mode="portfolio" />
       </Container>
