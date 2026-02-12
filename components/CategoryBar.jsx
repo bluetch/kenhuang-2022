@@ -4,11 +4,6 @@ import { articlesSpec, portfolioSpec } from "constants";
 export const CategoryBar = ({ name = "", type, method, value = null }) => {
   const _data = type === "articlesSpec" ? articlesSpec : portfolioSpec;
   const [category, setCategory] = useState(value ?? null);
-  const [isSSR, setIsSSR] = useState(true);
-
-  useEffect(() => {
-    setIsSSR(false);
-  }, []);
 
   useEffect(() => {
     setCategory(value ?? null);
@@ -17,7 +12,7 @@ export const CategoryBar = ({ name = "", type, method, value = null }) => {
   return (
     <div className="space-x-2 py-4 mb-4 rounded-lg">
       {/* {name ? `${name}:` : ""} */}
-      {!isSSR && _data.map((item) => {
+      {_data.map((item) => {
         let classType =
           "bg-white px-2 py-1 border rounded-lg text-sm hover:cursor-pointer hover:border-black ";
         if (category === item.code) {

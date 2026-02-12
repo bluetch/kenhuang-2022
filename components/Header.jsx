@@ -24,7 +24,7 @@ const LINKS = [
   },
   {
     label: "Art",
-    path: "http://instgram.com/noa.tzu",
+    path: "https://instagram.com/noa.tzu",
   },
   {
     label: "Mentorship",
@@ -39,7 +39,6 @@ const LINKS = [
 export const Header = () => {
   const [open, setOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
-  const [scrollTop, setScrollTop] = useState(0);
 
   const router = useRouter();
 
@@ -48,14 +47,18 @@ export const Header = () => {
   };
 
   useEffect(() => {
-    const onScroll = e => {
-      setScrollTop(e.target.documentElement.scrollTop);
-      setScrolling(e.target.documentElement.scrollTop > scrollTop);
+    const onScroll = () => {
+      const currentTop = window.document.documentElement.scrollTop;
+      setScrolling(currentTop > 0);
     };
+
     window.addEventListener("scroll", onScroll);
 
+    // 初始化判斷一次（避免已經捲動時才掛 listener）
+    onScroll();
+
     return () => window.removeEventListener("scroll", onScroll);
-  }, [scrollTop]);
+  }, []);
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-10 bg-white lg:py-4 ${scrolling ? "shadow-md" : ""}`}>

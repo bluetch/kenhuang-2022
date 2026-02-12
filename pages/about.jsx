@@ -109,9 +109,6 @@ const myWorkExperience = [
 
 
 const About = () => {
-  useEffect(() => {
-    console.log("window cookie:", window.document.cookie);
-  }, []);
   return (
     <Layout
       title="About | Ken Huang"

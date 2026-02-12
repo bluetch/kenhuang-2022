@@ -90,7 +90,7 @@ const Mentorship = () => {
             <div className="space-y-4">
               <p className="text-gray-500">Boost your career and become a better designer or engineer</p>
               <p className="text-gray-500">As a self-thought designer with years of experience in multinational organization, I deeply understand the challenges product design learners could face so I’m able to help them achieve their goals at different stages of careers. In this mentorship program, I will provide professional advice based on your needs, help you to clarify problems and set goals, and address them systematically. In the past three years, I have helped more than 50 designers from more than 10 countries around the world to achieve their career goals.  They have better performance on projects and start to influence their team.</p>
-              <p className="text-gray-500">Contace Me: <a href="mailto:bluetch@gmail.com" className="text-sky-500">bluetch@gmail.com</a></p>
+              <p className="text-gray-500">Contact Me: <a href="mailto:bluetch@gmail.com" className="text-sky-500">bluetch@gmail.com</a></p>
             </div>
             <Image src={mentorshipHero} alt="Ken Huang mentorship" />
           </div>
@@ -150,7 +150,7 @@ const Mentorship = () => {
           <Typography variant="h2">Book a consult</Typography>
             <p>Thinking about mentorship? Lets talk about it. The first call is on me.</p>
             {/* <Button href="">Introduce yourself</Button> */}
-            <p>Contace Me: <a href="mailto:bluetch@gmail.com" className="text-sky-500">bluetch@gmail.com</a></p>
+            <p>Contact Me: <a href="mailto:bluetch@gmail.com" className="text-sky-500">bluetch@gmail.com</a></p>
           </div>
         </Container>
       </section>
