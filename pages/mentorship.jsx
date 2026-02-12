@@ -79,7 +79,10 @@ const Mentorship = () => {
     },
   ];
   return (
-    <Layout title="Mentorship | Ken Huang">
+    <Layout
+      title="Mentorship | Ken Huang"
+      description="1:1 mentorship with Ken Huang for designers and front-end engineers. Portfolio reviews, career coaching, and interview prep."
+    >
       <section className="flex flex-col justify-center items-center space-y-8 lg:py-32 py-16">
         <Container>
           <Typography className="text-center" variant="h1">Mentor Program</Typography>

@@ -1,6 +1,7 @@
 import { Icon } from "components";
 import Link from "next/link";
 import { forwardRef, memo } from "react";
+import clsx from "clsx";
 
 export const Button = memo(
   forwardRef(
@@ -20,14 +21,6 @@ export const Button = memo(
       },
       ref
     ) => {
-      const clsx = (conditionals, others) => {
-        return [
-          others,
-          Object.keys(conditionals)
-            .filter((key) => conditionals[key])
-            .join(" "),
-        ].join(" ");
-      };
       const variants = {
         primary:
           "cursor-pointer py-3 px-8 bg-black hover:bg-gray-700 text-white flex-shrink-0 rounded-full h-12",
@@ -42,7 +35,9 @@ export const Button = memo(
         link: "",
         action:
           "text-white bg-gray-darker md:hover:bg-opacity-70 active:bg-opacity-100",
-      }[variant];
+      };
+
+      const variantClass = variants[variant];
 
       const iconSize = {
         xs: "h-4 w-4",
@@ -62,24 +57,28 @@ export const Button = memo(
           type={type}
           href={href}
           className={clsx(
+            "p-3 text-center appearance-none rounded-full inline-flex items-center justify-center space-x-2 transition-all duration-300 focus:outline-none",
+            variantClass,
+            className,
             {
               "opacity-40 pointer-events-none": disabled,
-            },
-            `p-3 text-center appearance-none rounded-full inline-flex items-center justify-center space-x-2 transition-all duration-300 focus:outline-none ${variants} ${className}`
+            }
           )}
         >
           {icon.name && (
             <span
               className={clsx(
-                { "inline-block md:hidden": responsive },
-                `${iconSize} ${icon.classes} shrink-0`
+                `${iconSize} ${icon.classes} shrink-0`,
+                { "inline-block md:hidden": responsive }
               )}
             >
               <Icon name={icon.name} />
             </span>
           )}
           {children && (
-            <span className={clsx({ "hidden md:inline-block": responsive })}>
+            <span
+              className={clsx({ "hidden md:inline-block": responsive })}
+            >
               {children}
             </span>
           )}
@@ -87,8 +86,11 @@ export const Button = memo(
       );
 
       return link ? (
-        <Link href={href} onClick={(e) => (disabled ? e.preventDefault() : "")}
-          className={className}>
+        <Link
+          href={href}
+          onClick={(e) => (disabled ? e.preventDefault() : undefined)}
+          className={className}
+        >
           {element}
         </Link>
       ) : (

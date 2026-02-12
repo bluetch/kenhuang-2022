@@ -1,4 +1,4 @@
-import { CategoryBar, Container, Layout, PortfolioList, Typography } from "components";
+import { CategoryBar, Container, Layout, ContentList, Typography } from "components";
 import { useEffect, useState, useMemo } from "react";
 import { fetcher } from "utils";
 
@@ -22,14 +22,17 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <Layout title="Portfolio | Ken Huang">
+    <Layout
+      title="Portfolio | Ken Huang"
+      description="Selected product design and front-end projects by Ken Huang. Case studies across UX, UI, and engineering."
+    >
       <Container>
         <Typography variant="h1">Portfolio</Typography>
         <CategoryBar
           type="portfolioSpec"
           method={(e) => setCategory(e)}
         />
-        <PortfolioList data={data} layout="list"/>
+        <ContentList data={data} mode="portfolio" />
       </Container>
     </Layout>
   );

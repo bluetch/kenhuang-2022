@@ -16,7 +16,10 @@ const Contact = () => {
     },
   ];
   return (
-    <Layout title="Contact | Ken Huang">
+    <Layout
+      title="Contact | Ken Huang"
+      description="Contact Ken Huang for collaboration, mentorship, or speaking opportunities."
+    >
       <Container>
         <section className="text-center">
           <h1 className="text-4xl my-40">Thanks for taking the time to reach out.<br /> How can I help you today?</h1>

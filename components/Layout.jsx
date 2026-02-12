@@ -1,18 +1,26 @@
 import Head from "next/head";
 import { Footer } from "components/Footer";
 import { Header } from "components/Header";
+import { SITE_META_DESCRIPTION, SITE_TITLE, SITE_URL } from "constants/site";
 
-export const Layout = ({ children, title = "Ken Huang | " }) => {
+export const Layout = ({
+  children,
+  title = SITE_TITLE,
+  description = SITE_META_DESCRIPTION,
+}) => {
+  const pageTitle = title || SITE_TITLE;
+  const pageDescription = description || SITE_META_DESCRIPTION;
+
   return (
     <div className="flex flex-col h-screen justify-between">
       <Head>
-        <title>{`${title}`}</title>
+        <title>{pageTitle}</title>
         <meta charSet="utf-8" />
-        <meta name="description" content="Ken Huang is a product designer and front-end developer for 12 years experience." />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={title} />
+        <meta name="description" content={pageDescription} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta property="og:url" content={`https://good-note.tcstock.com.tw`} />
+        <meta property="og:url" content={SITE_URL} />
         <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
