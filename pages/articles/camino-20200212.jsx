@@ -27,7 +27,7 @@ const Camino = () => {
             { key: "Trip", value: "蓬特拉雷納 (Puente la Reina) → 埃斯特利亞 (Estella) 22km" },
           ]}
           tags={["Camino de Santiago", "徒步旅行"]}
-          title="朝聖之路 Day 5: 樂器與選擇"
+          title="朝聖之路 Day 5: 當選擇成為一條被走過千年的路"
         />
         <Typography className="text-center" variant="h3">
           事件回顧：2020.02.12

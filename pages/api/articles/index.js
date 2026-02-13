@@ -1,6 +1,15 @@
 const Articles = (req, res) => {
   const articles = [
     {
+      name: "朝聖之路 Camino de Santiago Day 6 - 埃斯特利亞 (Estella) to (托雷斯德爾裡奧 (Torres del Rio)",
+      category: ["camino"],
+      desc: "從埃斯特利亞（Estella）出發，第六天的目的地是托雷斯德爾裡奧（Torres del Rio）。這段路程約27公里，沿途經過迷人的山谷、古老的石橋和歷史悠久的村莊。雖然路途充滿挑戰，但每一步都帶來新的風景和深刻的體驗，讓人感受到朝聖之路獨特的魅力。",
+      url: "articles/camino-20200213",
+      img: "/images/articles/camino/camino_day06_20200213_093002.jpg",
+      code: "20260213",
+      date: 20260213,
+    },
+    {
       name: "朝聖之路 Camino de Santiago Day 5 - 蓬特拉雷納 (Puente la Reina) to 埃斯特利亞 (Estella)",
       category: ["camino"],
       desc: "從蓬特拉雷納（Puente la Reina）出發，第五天的目的地是埃斯特利亞（Estella）。這段路程約22公里，沿途經過迷人的山谷、古老的石橋和歷史悠久的村莊。雖然路途充滿挑戰，但每一步都帶來新的風景和深刻的體驗，讓人感受到朝聖之路獨特的魅力。",
