@@ -1,6 +1,15 @@
 const Articles = (req, res) => {
   const articles = [
     {
+      name: "朝聖之路 Camino de Santiago Day 7 - 托雷斯德爾裡奧 (Torres del Rio) to 洛格羅尼奧 (Logroño)",
+      category: ["camino"],
+      desc: "從托雷斯德爾裡奧（Torres del Rio）出發，第七天的目的地是洛格羅尼奧（Logroño）。這段路程約28公里，沿途經過迷人的山谷、古老的石橋和歷史悠久的村莊。雖然路途充滿挑戰，但每一步都帶來新的風景和深刻的體驗，讓人感受到朝聖之路獨特的魅力。",
+      url: "articles/camino-20200214",
+      img: "/images/articles/camino/camino_day07-20200214-WA0022.jpg",
+      code: "20260214",
+      date: 20260214,
+    },
+    {
       name: "朝聖之路 Camino de Santiago Day 6 - 埃斯特利亞 (Estella) to (托雷斯德爾裡奧 (Torres del Rio)",
       category: ["camino"],
       desc: "從埃斯特利亞（Estella）出發，第六天的目的地是托雷斯德爾裡奧（Torres del Rio）。這段路程約27公里，沿途經過迷人的山谷、古老的石橋和歷史悠久的村莊。雖然路途充滿挑戰，但每一步都帶來新的風景和深刻的體驗，讓人感受到朝聖之路獨特的魅力。",

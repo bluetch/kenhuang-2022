@@ -10,7 +10,7 @@ import { CAMINO_IMG_ROOT_URL } from "../../constants";
 
 const Camino = () => {
   return (
-    <Layout title="朝聖之路 Camino de Santiago Day 6 - 埃斯特利亞 (Estella) to 洛格羅尼奧 (Logroño)">
+    <Layout title="朝聖之路 Camino de Santiago Day 6 - 埃斯特利亞 (Estella) to 托雷斯德爾里奧 (Torres del Rio)">
       <section>
         <Image
           src={`${CAMINO_IMG_ROOT_URL}/camino_day06_20200213_093002.jpg`}
@@ -24,7 +24,7 @@ const Camino = () => {
         <PortfolioSummary
           date="2026-02-13"
           info={[
-            { key: "Trip", value: "埃斯特利亞 (Estella) → 托雷斯德爾裡奧 (Torres del Rio) 27km" },
+            { key: "Trip", value: "埃斯特利亞 (Estella) → 托雷斯德爾里奧 (Torres del Rio) 27km" },
           ]}
           tags={["Camino de Santiago", "徒步旅行"]}
           title="朝聖之路 Day 6: 迷霧中"
@@ -86,7 +86,7 @@ const Camino = () => {
                 的旅行筆記
               </figcaption>
             </figure>
-            <Typography variant="h3">托雷斯德爾裡奧 (Torres del Rio)</Typography>
+            <Typography variant="h3">托雷斯德爾里奧 (Torres del Rio)</Typography>
             <p>在納瓦拉荒原與葡萄園之間，靜靜坐落著小村莊，Torres del Río。</p>
             <p>它不大，卻在朝聖之路上擁有極高的辨識度。對多數走在 Camino Francés 的朝聖者而言，這裡是一段沉靜卻帶著神秘氣息的停留。</p>
             <p>村莊最重要的地標，是建於 12 世紀的Iglesia del Santo Sepulcro。</p>
