@@ -39,7 +39,7 @@ const Camino = () => {
             <p>這幾天也開始遇到各種不同型態的朝聖者：有人騎著腳踏車前進，有人只背著攻頂包、小步慢跑前行。看著他們的方式，不免讓我有些感觸。</p>
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day04_20200211_093657.jpg`}
-              alt="旅行筆記"
+              alt="西班牙朝聖之路"
               className="w-full object-cover"
             />
             <Typography className="text-center" variant="h3">
@@ -52,12 +52,12 @@ const Camino = () => {
             <p>這個紀念碑提醒人們 Camino 雖然美麗，但也存在風險（如心臟問題或意外），同時也象徵 Frans 「永遠與 Camino 合一」，成為朝聖之路的一部分。許多走過這裡的朝聖者都形容這是個溫暖而感人的休息點，讓人感受到生命的無常與連結。1.5秒快速60 sourcesAre you satisfied with Grok's answer?</p>
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day04_20200211_104113.jpg`}
-              alt="旅行筆記"
+              alt="西班牙朝聖之路"
               className="w-full object-cover"
             />
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day04_20200211_104218.jpg`}
-              alt="旅行筆記"
+              alt="西班牙朝聖之路"
               className="w-full object-cover"
             />
             <p>對啊，為什麼多數人的人生路徑看起來如此相似，但總會有少數人選擇用自己的節奏生活，而那些人，往往也走出了不太一樣的人生。</p>
@@ -66,7 +66,7 @@ const Camino = () => {
             <p>聽完也只能笑笑，硬著頭皮開口。</p>
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day04_20200211_120012.jpg`}
-              alt="旅行筆記"
+              alt="西班牙朝聖之路"
               className="w-full object-cover"
             />
             <p>結果是有提供朝聖者餐（pilgrim meal），只要 10 歐元，包含沙拉、飯、烤豬肉串作為主菜，還有一大杯紅酒和水果。整體相當不錯，除了飯稍微偏硬之外，烤豬肉串讓我印象非常深刻。雖然已經加進 Google Maps 的清單，但心裡也明白，應該很難再有機會回來了，更多是一種記錄當下的心情。</p>
@@ -74,17 +74,17 @@ const Camino = () => {
             
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day04_20200211_120523.jpg`}
-              alt="旅行筆記"
+              alt="西班牙朝聖之路"
               className="w-full object-cover"
             />
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day04_20200211_120554.jpg`}
-              alt="旅行筆記"
+              alt="西班牙朝聖之路"
               className="w-full object-cover"
             />
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day04_food.jpg`}
-              alt="旅行筆記"
+              alt="西班牙朝聖之路"
               className="w-full object-cover"
             />
             <p>聊天時認識了一位西班牙人 Manuel。他提到自己三歲時因為醫療疏失，左眼留下類似白內障的後遺症，只能感覺到光影的存在。聽起來沉重，但他卻相當平靜，因為從小就已經習慣這樣的生活。更讓我驚訝的是，這條朝聖之路他已經走到第七次了，每一次都是利用換工作的空檔前來。</p>
@@ -95,7 +95,7 @@ const Camino = () => {
             <figure>
               <img
                 src={`${CAMINO_IMG_ROOT_URL}/camino_day04_20200211_183603.jpg`}
-                alt="旅行筆記"
+                alt="西班牙朝聖之路"
                 className="w-full object-cover"
               />
               <figcaption className="text-sm text-gray-500 mt-2 text-center">

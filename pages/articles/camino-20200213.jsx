@@ -38,22 +38,22 @@ const Camino = () => {
             <p>濃霧低垂，天未亮就出發的徒步更顯得迷惘。視線只剩下幾公尺遠的輪廓，前方的路像被時間抹去，只能一步一步試探著前進。這幾天我總是比同一間庇護所的朝聖者早兩個小時出發，卻幾乎都在中午十二點左右被他們追上腳程。</p>
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day06_20200213_092150.jpg`}
-              alt="旅行筆記"
+              alt="西班牙朝聖之路"
               className="w-full object-cover"
             />
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day06_20200213_092155.jpg`}
-              alt="旅行筆記"
+              alt="西班牙朝聖之路"
               className="w-full object-cover"
             />
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day06_20200213_093002.jpg`}
-              alt="旅行筆記"
+              alt="西班牙朝聖之路"
               className="w-full object-cover"
             />
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day06_20200213_093213.jpg`}
-              alt="旅行筆記"
+              alt="西班牙朝聖之路"
               className="w-full object-cover"
             />
             <p>不只一位旅人建議我把行李寄送到下一個落腳點，減輕負擔。但我仍想堅持當初的決定：既然選擇自己背負，就把這重量當成體能訓練，也當成一種靈性的修行。背包壓在肩上時，彷彿也提醒著我：有些重量，本來就該自己承擔。</p>
@@ -69,16 +69,16 @@ const Camino = () => {
             <p>看著 David 行雲流水地彈奏，我臉都綠了。老闆教了我幾個基本和弦，但那早已超出我平常練習的範圍。我只能小聲輕刷，當作伴奏，盡量不讓自己成為破音的來源。好在 David 的功力夠好，大家的注意力都在他身上。</p>
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day06_20200213_203330.jpg`}
-              alt="旅行筆記"
+              alt="西班牙朝聖之路"
               className="w-full object-cover"
             />
-            <p>我們唱的是：「La Bamba」，和弦 C、F、G——算是安全過關。</p>
+            <p>我們唱的是：「La Bamba」，和弦 C、F、G；算是安全過關。</p>
             <p>那一刻我心裡只想著：「以後還是不要隨便說自己會彈樂器好了。」</p>
             <p>最後，老闆請我和 David 在樂器上簽名。看著上面滿滿的名字，我寫下自己的名字時竟有些心虛。但也在心裡暗暗對自己說「未來不要辜負這個簽名。」</p>
             <figure>
               <img
                 src={`${CAMINO_IMG_ROOT_URL}/camino_day06_20200213_diary.jpg`}
-                alt="旅行筆記"
+                alt="西班牙朝聖之路"
                 className="w-full object-cover"
               />
               <figcaption className="text-sm text-gray-500 mt-2 text-center">
@@ -92,15 +92,15 @@ const Camino = () => {
             <p>村莊最重要的地標，是建於 12 世紀的Iglesia del Santo Sepulcro。</p>
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day06_church.jpg`}
-              alt="旅行筆記"
+              alt="西班牙朝聖之路"
               className="w-full object-cover"
             />
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day06_20200213_182920.jpg`}
-              alt="旅行筆記"
+              alt="西班牙朝聖之路"
               className="w-full object-cover"
             />
-            <p>這座教堂外觀看似樸素，卻有著罕見的八角形結構，常被認為與聖殿騎士團有關。雖然歷史上尚無絕對證據證明騎士團直接建造了它，但八角形設計明顯呼應了耶路撒冷的聖墓教堂樣式，因此被視為象徵「通往聖城」的建築意象。對中世紀的朝聖者來說，這裡像是一座微型的耶路撒冷——即使無法前往聖地，也能在此觸碰信仰的核心。</p>
+            <p>這座教堂外觀看似樸素，卻有著罕見的八角形結構，常被認為與聖殿騎士團有關。雖然歷史上尚無絕對證據證明騎士團直接建造了它，但八角形設計明顯呼應了耶路撒冷的聖墓教堂樣式，因此被視為象徵「通往聖城」的建築意象。對中世紀的朝聖者來說，這裡像是一座微型的耶路撒冷；即使無法前往聖地，也能在此觸碰信仰的核心。</p>
             <p>走進教堂內部，更能感受到它的獨特。穹頂採用交錯拱肋設計，帶有早期穆德哈爾（Mudéjar）風格影響，融合了基督教與伊斯蘭建築元素。當陽光從小窗斜射進來，石牆顯得格外沉穩而神祕。據說過去朝聖者會在此祈禱，請求平安跨越接下來通往拉里奧哈邊境的崎嶇道路。</p>
             <p>Torres del Río 這個名字意為「河邊的塔樓」，源自中世紀防禦與邊境管理的歷史背景。這裡曾位於納瓦拉王國的重要通道上，在收復失地運動（Reconquista）時期扮演交通與宗教樞紐的角色。如今城鎮規模雖小，卻仍保有濃厚的石造建築風貌與寧靜氛圍。</p>
           </div>

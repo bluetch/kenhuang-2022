@@ -1,6 +1,24 @@
 const Articles = (req, res) => {
   const articles = [
     {
+      name: "朝聖之路 Camino de Santiago Day 9 - 阿索夫拉 (Azofra) to 卡斯蒂爾德爾加多 (Castildelgado)",
+      category: ["camino"],
+      desc: "從阿索夫拉（Azofra）出發，第九天的目的地是卡斯蒂爾德爾加多（Castildelgado）。這段路程約22公里，沿途經過迷人的山谷、古老的石橋和歷史悠久的村莊。雖然路途充滿挑戰，但每一步都帶來新的風景和深刻的體驗，讓人感受到朝聖之路獨特的魅力。",
+      url: "articles/camino-20200216",
+      img: "/images/articles/camino/camino_day09_20200216_091256.jpg",
+      code: "20260216",
+      date: 20260216,
+    },
+    {
+      name: "朝聖之路 Camino de Santiago Day 8 - 洛格羅尼奧 (Logroño) to 阿索夫拉 (Azofra)",
+      category: ["camino"],
+      desc: "從洛格羅尼奧（Logroño）出發，第八天的目的地是阿索夫拉（Azofra）。這段路程約34公里。",
+      url: "articles/camino-20200215",
+      img: "/images/articles/camino/camino_day08_20200215_074420.jpg",
+      code: "20260215",
+      date: 20260215,
+    },
+    {
       name: "朝聖之路 Camino de Santiago Day 7 - 托雷斯德爾裡奧 (Torres del Rio) to 洛格羅尼奧 (Logroño)",
       category: ["camino"],
       desc: "從托雷斯德爾裡奧（Torres del Rio）出發，第七天的目的地是洛格羅尼奧（Logroño）。這段路程約28公里，沿途經過迷人的山谷、古老的石橋和歷史悠久的村莊。雖然路途充滿挑戰，但每一步都帶來新的風景和深刻的體驗，讓人感受到朝聖之路獨特的魅力。",

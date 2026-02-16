@@ -39,17 +39,17 @@ const Camino = () => {
             <p>同梯的西班牙女孩 Jasmina 今天要脫隊了。她原本就只計畫走一週。活潑外向的她，西班牙文、英文都流利，和每個人都相處得很好。於是大家決定一起出發，為她送行。</p>
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day07_20200214_111548.jpg`}
-              alt="旅行筆記"
+              alt="西班牙朝聖之路"
               className="w-full object-cover"
             />
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day07-20200214-WA0021.jpg`}
-              alt="旅行筆記"
+              alt="西班牙朝聖之路"
               className="w-full object-cover"
             />
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day07-20200214-WA0012.jpg`}
-              alt="旅行筆記"
+              alt="西班牙朝聖之路"
               className="w-full object-cover"
             />
             <p>今天與前幾天截然不同。無霧、無雲，天空一覽無遺。地形也平緩許多，這 20 公里走得格外舒服。習慣負重之後，腰力似乎也提升了。我把背包的受力比例從肩腰 3:7 調整為 2:8，肩膀的負擔瞬間減輕不少。前幾天右肩常常酸痛，晚上還得貼痠痛貼布，現在終於好轉。</p>
@@ -60,12 +60,12 @@ const Camino = () => {
             <p>Tapas 是西班牙飲食文化裡非常重要的一部分。通常是正餐前的小點，但種類豐富，組合起來也能成為一頓完整的晚餐。常見的是在一片法國麵包上鋪著肉類、火腿、炸魚，也有海鮮飯、涼菜、起司等搭配。每份通常只是一小塊，兩三口就能吃完，很適合三五好友分食、邊聊邊品嚐。</p>
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day07-20200214-WA0007.jpg`}
-              alt="旅行筆記"
+              alt="西班牙朝聖之路"
               className="w-full object-cover"
             />
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day07_20200214_141707.jpg`}
-              alt="旅行筆記"
+              alt="西班牙朝聖之路"
               className="w-full object-cover"
             />
             <p>我們五個人像跑酒吧一樣，連續吃了四家 Tapas 店。</p>
@@ -77,7 +77,7 @@ const Camino = () => {
             <figure>
               <img
                 src={`${CAMINO_IMG_ROOT_URL}/camino_day07_20200214_202149.jpg`}
-                alt="旅行筆記"
+                alt="西班牙朝聖之路"
                 className="w-full object-cover"
               />
               <figcaption className="text-sm text-gray-500 mt-2 text-center">
@@ -91,12 +91,12 @@ const Camino = () => {
             <p>市中心保留了許多歷史建築，例如聖巴托洛梅教堂（Iglesia de San Bartolomé）與聖母圓頂主教座堂（Concatedral de Santa María de la Redonda）。紅砂岩外牆與巴洛克式塔樓，讓這座小城多了幾分莊嚴與古典氣息。</p>
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day07-20200214_142642.jpg`}
-              alt="旅行筆記"
+              alt="西班牙朝聖之路"
               className="w-full object-cover"
             />
             <img
               src={`${CAMINO_IMG_ROOT_URL}/camino_day07-20200214-WA0022.jpg`}
-              alt="旅行筆記"
+              alt="西班牙朝聖之路"
               className="w-full object-cover"
             />
           </div>
