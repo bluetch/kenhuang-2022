@@ -1,6 +1,15 @@
 const Articles = (req, res) => {
   const articles = [
     {
+      name: "朝聖之路 Camino de Santiago Day 12 - 布爾戈斯 (Burgos) to 翁塔納斯 (Hontanas)",
+      category: ["camino"],
+      desc: "從布爾戈斯（Burgos）出發，第十二天的目的地是翁塔納斯（Hontanas）。這段路程約34公里，沿途經過迷人的山谷、古老的石橋和歷史悠久的村莊。雖然路途充滿挑戰，但每一步都帶來新的風景和深刻的體驗，讓人感受到朝聖之路獨特的魅力。",
+      url: "articles/camino-20200219",
+      img: "/images/articles/camino/camino_day12_20200219_164104.jpg",
+      code: "20260219",
+      date: 20260219,
+    },
+    {
       name: "朝聖之路 Camino de Santiago Day 11 - Burgos 一日遊",
       category: ["camino"],
       desc: "在布爾戈斯（Burgos）停留一天，探索這座歷史悠久的城市。參觀壯麗的哥德式大教堂，漫步在阿爾蘭松河畔，品嚐當地美食，感受這座城市獨特的文化氛圍。",
