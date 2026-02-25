@@ -1,6 +1,24 @@
 const Articles = (req, res) => {
   const articles = [
     {
+      name: "朝聖之路 Camino de Santiago Day 11 - Burgos 一日遊",
+      category: ["camino"],
+      desc: "在布爾戈斯（Burgos）停留一天，探索這座歷史悠久的城市。參觀壯麗的哥德式大教堂，漫步在阿爾蘭松河畔，品嚐當地美食，感受這座城市獨特的文化氛圍。",
+      url: "articles/camino-20200218",
+      img: "/images/articles/camino/camino_day11_20200218_143345.jpg",
+      code: "20260218",
+      date: 20260218,
+    },
+    {
+      name: "朝聖之路 Camino de Santiago Day 10 - 卡斯蒂爾德爾加多 (Castildelgado) to Burgos",
+      category: ["camino"],
+      desc: "從卡斯蒂爾德爾加多（Castildelgado）出發，第十天的目的地是布爾戈斯（Burgos）。這段路程約35公里，沿途經過迷人的山谷、古老的石橋和歷史悠久的村莊。雖然路途充滿挑戰，但每一步都帶來新的風景和深刻的體驗，讓人感受到朝聖之路獨特的魅力。",
+      url: "articles/camino-20200217",
+      img: "/images/articles/camino/camino_day10_20200218_090808.jpg",
+      code: "20260217",
+      date: 20260217,
+    },
+    {
       name: "朝聖之路 Camino de Santiago Day 9 - 阿索夫拉 (Azofra) to 卡斯蒂爾德爾加多 (Castildelgado)",
       category: ["camino"],
       desc: "從阿索夫拉（Azofra）出發，第九天的目的地是卡斯蒂爾德爾加多（Castildelgado）。這段路程約22公里，沿途經過迷人的山谷、古老的石橋和歷史悠久的村莊。雖然路途充滿挑戰，但每一步都帶來新的風景和深刻的體驗，讓人感受到朝聖之路獨特的魅力。",
