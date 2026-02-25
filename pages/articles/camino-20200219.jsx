@@ -122,11 +122,11 @@ const Camino = () => {
               <li>
                 <a
                   className="underline"
-                  href="https://vocus.cc/article/68033b0efd897800013518cf"
+                  href="https://liaoweicing.pixnet.net/blog/posts/15321566420"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  朝聖之路Day12：今天到了Burgos布爾戈斯
+                  《西班牙》Camino 朝聖之路 Day13｜腳底板大水泡的進擊
                 </a>
               </li>
             </ul>
