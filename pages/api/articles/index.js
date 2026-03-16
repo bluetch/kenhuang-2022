@@ -1,6 +1,15 @@
 const Articles = (req, res) => {
   const articles = [
     {
+      name: "朝聖之路 Camino de Santiago Day 14 - 夫羅米斯塔 (Frómista) to 卡里翁德洛斯孔德斯 (Carrion de los Condes)",
+      category: ["camino"],
+      desc: "從夫羅米斯塔（Frómista）出發，第十四天的目的地是卡里翁德洛斯孔德斯（Carrion de los Condes）。這段路程約20公里，沿途經過迷人的山谷、古老的石橋和歷史悠久的村莊。雖然路途充滿挑戰，但每一步都帶來新的風景和深刻的體驗，讓人感受到朝聖之路獨特的魅力。",
+      url: "articles/camino-20200221",
+      img: "/images/articles/camino/camino_day14_20200221_102716.jpg",
+      code: "20260221",
+      date: 20260221,
+    },
+    {
       name: "朝聖之路 Camino de Santiago Day 13 - 翁塔納斯 (Hontanas) to 夫羅米斯塔 (Frómista)",
       category: ["camino"],
       desc: "從翁塔納斯（Hontanas）出發，第十三天的目的地是夫羅米斯塔（Frómista）。這段路程約34公里，沿途經過迷人的山谷、古老的石橋和歷史悠久的村莊。雖然路途充滿挑戰，但每一步都帶來新的風景和深刻的體驗，讓人感受到朝聖之路獨特的魅力。",
