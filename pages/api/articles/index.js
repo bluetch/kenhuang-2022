@@ -1,6 +1,15 @@
 const Articles = (req, res) => {
   const articles = [
     {
+      name: "朝聖之路 Camino de Santiago Day 13 - 翁塔納斯 (Hontanas) to 夫羅米斯塔 (Frómista)",
+      category: ["camino"],
+      desc: "從翁塔納斯（Hontanas）出發，第十三天的目的地是夫羅米斯塔（Frómista）。這段路程約34公里，沿途經過迷人的山谷、古老的石橋和歷史悠久的村莊。雖然路途充滿挑戰，但每一步都帶來新的風景和深刻的體驗，讓人感受到朝聖之路獨特的魅力。",
+      url: "articles/camino-20200220",
+      img: "/images/articles/camino/camino_day13_20200220_095418.jpg",
+      code: "20260220",
+      date: 20260220,
+    },
+    {
       name: "朝聖之路 Camino de Santiago Day 12 - 布爾戈斯 (Burgos) to 翁塔納斯 (Hontanas)",
       category: ["camino"],
       desc: "從布爾戈斯（Burgos）出發，第十二天的目的地是翁塔納斯（Hontanas）。這段路程約34公里，沿途經過迷人的山谷、古老的石橋和歷史悠久的村莊。雖然路途充滿挑戰，但每一步都帶來新的風景和深刻的體驗，讓人感受到朝聖之路獨特的魅力。",
